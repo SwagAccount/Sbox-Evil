@@ -63,7 +63,7 @@
           "pAng": "0,90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "8018a0cd-a455-467d-937c-588aa88c6006",
+            "component_id": "e8443d30-6353-4a0c-90ed-5a67ecf270f3",
             "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
             "component_type": "PlayerUI"
           },
@@ -125,7 +125,7 @@
           "pAng": "0,0,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "8018a0cd-a455-467d-937c-588aa88c6006",
+            "component_id": "e8443d30-6353-4a0c-90ed-5a67ecf270f3",
             "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
             "component_type": "PlayerUI"
           },
@@ -7587,7 +7587,7 @@
               "pAng": "0,90,0",
               "playerUI": {
                 "_type": "component",
-                "component_id": "8018a0cd-a455-467d-937c-588aa88c6006",
+                "component_id": "e8443d30-6353-4a0c-90ed-5a67ecf270f3",
                 "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
                 "component_type": "PlayerUI"
               },
@@ -12135,7 +12135,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "89a13d26-8278-4dc8-b0d2-025482f0c227",
+            "component_id": "4891bcb9-1b8e-440d-b469-64f373081945",
             "go": "35ea2738-ba53-49ec-83fe-2cb57d341557",
             "component_type": "ThreeDinv"
           },
@@ -12893,7 +12893,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "89a13d26-8278-4dc8-b0d2-025482f0c227",
+            "component_id": "4891bcb9-1b8e-440d-b469-64f373081945",
             "go": "35ea2738-ba53-49ec-83fe-2cb57d341557",
             "component_type": "ThreeDinv"
           },
@@ -14719,7 +14719,7 @@
           "sceneName": "level 3",
           "Settings": {
             "_type": "component",
-            "component_id": "a841d13f-0497-478d-8cce-d2c01fbaa73e",
+            "component_id": "fc442197-aea3-4ced-90d4-4229ef5dc1b9",
             "go": "38f00730-9bbf-446a-a5e7-6254f6d7c5dc",
             "component_type": "Settings"
           },
@@ -15667,7 +15667,7 @@
   },
   "Title": "level 3",
   "Description": "",
-  "LastSaved": "2024-04-13T21:38:11.8360753\u002B07:00",
+  "LastSaved": "2024-04-16T02:15:37.4880983\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

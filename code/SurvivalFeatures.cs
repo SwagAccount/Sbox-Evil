@@ -114,7 +114,6 @@ public sealed class SurvivalFeatures : Component
 		hd.healthResist = addicted > addictedAmount ? resistTabbacoAddicted.Evaluate(Tabbaco) : resistTabbaco.Evaluate(Tabbaco);
 
 		float normalized = (hd.healthResist - TabbacoNeedResist) / (TabbacoResist - TabbacoNeedResist);
-		Log.Info(normalized);
 		colorAdjustments.Saturation = satuationTabbaco.Evaluate(normalized);
 
 

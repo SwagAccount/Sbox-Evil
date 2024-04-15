@@ -59,14 +59,14 @@ public sealed class LightsScript : Component
 	}
 	public void Save()
 	{
-		string dirName = $"saves/{saveName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/";
 		Log.Info("FUCKING CUNT");
 		FileSystem.Data.WriteAllText($"{dirName}lights.json", Json.Serialize(levelLight));
 	}
 	public void Load()
 	{
 		Log.Info("Shit");
-		string dirName = $"saves/{saveName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/";
 		levelLight = new List<string>();
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{

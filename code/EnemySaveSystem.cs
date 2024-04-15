@@ -98,7 +98,7 @@ public sealed class EnemySaveSystem : Component
 			}
 			
 		}
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			FileSystem.Data.CreateDirectory(dirName);
@@ -108,7 +108,7 @@ public sealed class EnemySaveSystem : Component
 	}
 	public void Load()
 	{
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			

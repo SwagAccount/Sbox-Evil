@@ -23,7 +23,7 @@ public sealed class Loading : Component
 		{
 			saveName = FileSystem.Data.ReadAllText("currentSave.txt");
 		}
-		string dirName = $"saves/{saveName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			FileSystem.Data.CreateDirectory(dirName);

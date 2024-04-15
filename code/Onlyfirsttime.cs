@@ -16,9 +16,9 @@ public sealed class Onlyfirsttime : Component
 			saveName = FileSystem.Data.ReadAllText("currentSave.txt");
 		}
 		List<string> vistedMaps = new List<string>();
-		if(FileSystem.Data.FileExists($"saves/{saveName}/vistedMaps.json"))
+		if(FileSystem.Data.FileExists($"saves-{SaveSystem.saveFolderName}/{saveName}/vistedMaps.json"))
 		{
-			string shit = FileSystem.Data.ReadAllText( $"saves/{saveName}/vistedMaps.json");
+			string shit = FileSystem.Data.ReadAllText( $"saves-{SaveSystem.saveFolderName}/{saveName}/vistedMaps.json");
 			vistedMaps = Json.Deserialize<List<string>>(shit);
 		}
 		foreach(string s in vistedMaps)

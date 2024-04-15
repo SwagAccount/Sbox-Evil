@@ -4,6 +4,9 @@ Layer0
 {
 	shader "materials/rustygren/alphachanneltransparency.shader"
 
+	//---- Rendering ----
+	F_RENDER_BACKFACES 1
+
 	g_bAlphafromColour "1"
 
 	//---- Color ----

@@ -21,7 +21,7 @@ public sealed class ProgressSave : Component
 	}
 	public void Save()
 	{
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		List<List<float>> progresses = new List<List<float>>();
 		int I= 0; 
 		foreach(GameObject g in GameObject.Children)
@@ -39,7 +39,7 @@ public sealed class ProgressSave : Component
 	public void Load()
 	{
 		Log.Info(saveName);
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{

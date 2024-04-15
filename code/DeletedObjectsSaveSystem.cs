@@ -30,7 +30,7 @@ public sealed class DeletedObjectsSaveSystem : Component
 	[Property] List<bool> fart {get;set;}
 	public void Save()
 	{
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		List<bool> fart = new List<bool>();
 		for(int i = 0; i < normal.Count; i++)
 		{
@@ -51,7 +51,7 @@ public sealed class DeletedObjectsSaveSystem : Component
 	}
 	public void Load()
 	{
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			return;

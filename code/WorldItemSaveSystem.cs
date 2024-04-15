@@ -68,7 +68,7 @@ public sealed class WorldItemSaveSystem : Component
 			}
 		}
 		
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			FileSystem.Data.CreateDirectory(dirName);
@@ -86,7 +86,7 @@ public sealed class WorldItemSaveSystem : Component
 		{
 			for(int I = 0; I < GameObject.Children[i].Children.Count; I++) GameObject.Children[i].Children[I].Destroy();
 		}
-		string dirName = $"saves/{saveName}/{sceneName}/";
+		string dirName = $"saves-{SaveSystem.saveFolderName}/{saveName}/{sceneName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			return;

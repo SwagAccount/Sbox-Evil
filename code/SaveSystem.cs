@@ -4,6 +4,7 @@ using Sandbox.ActionGraphs;
 
 public sealed class SaveSystem : Component
 {
+	public const string saveFolderName = "preC1";
 	[Property] private string sceneName {get;set;}
 	[Property] private WorldItemSaveSystem worldItemSaveSystem {get; set;}
 	[Property] private EnemySaveSystem enemySaveSystem {get; set;}
@@ -28,9 +29,9 @@ public sealed class SaveSystem : Component
 			saveName = FileSystem.Data.ReadAllText("currentSave.txt");
 		}
 		vistedMaps = new List<string>();
-		if(FileSystem.Data.FileExists($"saves/{saveName}/vistedMaps.json"))
+		if(FileSystem.Data.FileExists($"saves-{saveFolderName}/{saveName}/vistedMaps.json"))
 		{
-			string shit = FileSystem.Data.ReadAllText( $"saves/{saveName}/vistedMaps.json");
+			string shit = FileSystem.Data.ReadAllText( $"saves-{saveFolderName}/{saveName}/vistedMaps.json");
 			vistedMaps = Json.Deserialize<List<string>>(shit);
 		}
 		foreach(string s in vistedMaps)
@@ -52,7 +53,7 @@ public sealed class SaveSystem : Component
 	{
 		if(vistedMaps.Contains(name)) return;
 		vistedMaps.Add(name);
-		FileSystem.Data.WriteAllText($"saves/{saveName}/vistedMaps.json", Json.Serialize(vistedMaps));
+		FileSystem.Data.WriteAllText($"saves-{saveFolderName}/{saveName}/vistedMaps.json", Json.Serialize(vistedMaps));
 	}
 	public void loadLevel(string scene, Vector3 playerPos, Angles playerAngles)
 	{
@@ -64,7 +65,7 @@ public sealed class SaveSystem : Component
 		if(progressSave!=null) progressSave.Save();
 		if(deletedObjectsSaveSystem!=null) deletedObjectsSaveSystem.Save();
 		inventorySafeSystem.Save();
-		FileSystem.Data.WriteAllText($"saves/{saveName}/levelToLoad.txt",scene);
+		FileSystem.Data.WriteAllText($"saves-{saveFolderName}/{saveName}/levelToLoad.txt",scene);
 		SavePlayer(playerPos,playerAngles);
 		Scene.LoadFromFile("scenes/loading.scene");
 	}
@@ -97,7 +98,7 @@ public sealed class SaveSystem : Component
 		{
 			pSD.ammos.Add(inv.ammoData[i].ammoCount);
 		}
-		string dirName = $"saves/{saveName}/";
+		string dirName = $"saves-{saveFolderName}/{saveName}/";
 		if(!FileSystem.Data.DirectoryExists(dirName))
 		{
 			FileSystem.Data.CreateDirectory(dirName);
@@ -108,7 +109,7 @@ public sealed class SaveSystem : Component
 	{
 		Scene.NavMesh.Generate(Scene.PhysicsWorld);
 
-		string dirName = $"saves/{saveName}/";
+		string dirName = $"saves-{saveFolderName}/{saveName}/";
 		if(FileSystem.Data.DirectoryExists(dirName) && FileSystem.Data.FileExists($"{dirName}playerSave.json"))
 		{
 			string shit = FileSystem.Data.ReadAllText( $"{dirName}playerSave.json");

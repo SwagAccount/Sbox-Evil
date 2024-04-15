@@ -2284,7 +2284,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "3576ccaa-384d-499b-9e74-d0c3ae7cef6d",
+            "component_id": "51c1ebd9-5774-42f2-9411-86ebb2aeef12",
             "go": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
             "component_type": "ThreeDinv"
           },
@@ -4844,7 +4844,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "3576ccaa-384d-499b-9e74-d0c3ae7cef6d",
+            "component_id": "51c1ebd9-5774-42f2-9411-86ebb2aeef12",
             "go": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
             "component_type": "ThreeDinv"
           },
@@ -5000,7 +5000,7 @@
           "pAng": "0,90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "3aff618a-a4f3-4ddb-8f4d-399c086427ac",
+            "component_id": "21fffb81-7f57-49ff-bc1d-8b6814be1db6",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -6517,7 +6517,7 @@
           "sceneName": "level 1",
           "Settings": {
             "_type": "component",
-            "component_id": "5e7c0742-c408-4d4d-b494-ae2d9479e995",
+            "component_id": "6498de78-1a26-4844-ae60-d92b88b571fb",
             "go": "bc876599-427b-49b4-b2ea-e5cc9264ab02",
             "component_type": "Settings"
           },
@@ -6622,7 +6622,7 @@
           "pAng": "0,-90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "3aff618a-a4f3-4ddb-8f4d-399c086427ac",
+            "component_id": "21fffb81-7f57-49ff-bc1d-8b6814be1db6",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -7132,7 +7132,7 @@
           "pAng": "0,-90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "3aff618a-a4f3-4ddb-8f4d-399c086427ac",
+            "component_id": "21fffb81-7f57-49ff-bc1d-8b6814be1db6",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -8538,7 +8538,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-13T21:37:50.6204174\u002B07:00",
+  "LastSaved": "2024-04-16T02:34:32.792806\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

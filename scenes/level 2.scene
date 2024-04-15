@@ -548,7 +548,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "c1f4f427-2f93-429f-8a79-a17bd621d12d",
+            "component_id": "09fa8659-7a20-479d-9d94-448cbbed127a",
             "go": "ff364efe-e05c-4b57-9eab-3906fd19e9ab",
             "component_type": "ThreeDinv"
           },
@@ -1783,7 +1783,7 @@
           "pAng": "0,0,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "a7673c0a-d833-4768-9013-d2c30b41a8b5",
+            "component_id": "edffe7c5-2893-4fc4-a31e-a06541646f4c",
             "go": "aa823d79-b388-4c88-95cf-579a1fdcdefa",
             "component_type": "PlayerUI"
           },
@@ -2233,7 +2233,7 @@
               "pAng": "0,-90,0",
               "playerUI": {
                 "_type": "component",
-                "component_id": "a7673c0a-d833-4768-9013-d2c30b41a8b5",
+                "component_id": "edffe7c5-2893-4fc4-a31e-a06541646f4c",
                 "go": "aa823d79-b388-4c88-95cf-579a1fdcdefa",
                 "component_type": "PlayerUI"
               },
@@ -3827,7 +3827,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "c1f4f427-2f93-429f-8a79-a17bd621d12d",
+            "component_id": "09fa8659-7a20-479d-9d94-448cbbed127a",
             "go": "ff364efe-e05c-4b57-9eab-3906fd19e9ab",
             "component_type": "ThreeDinv"
           },
@@ -4749,7 +4749,7 @@
           "sceneName": "level 2",
           "Settings": {
             "_type": "component",
-            "component_id": "9d5ca9b4-1200-4272-9d61-dfeaa044800e",
+            "component_id": "9fcda45c-5815-46ac-a78f-5ad5b355b635",
             "go": "41e8fda1-f267-4e25-bbbd-49d9449d4c06",
             "component_type": "Settings"
           },
@@ -5313,7 +5313,7 @@
   },
   "Title": "level 2",
   "Description": "",
-  "LastSaved": "2024-04-13T18:58:48.3390518\u002B07:00",
+  "LastSaved": "2024-04-16T02:32:58.4010835\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

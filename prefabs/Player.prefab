@@ -870,7 +870,7 @@
                         "BodyGroups": 18446744073709551615,
                         "CreateBoneObjects": false,
                         "Model": "models/fag/fag.vmdl",
-                        "RenderType": "On",
+                        "RenderType": "Off",
                         "Tint": "1,1,1,1"
                       },
                       {
@@ -1199,7 +1199,7 @@
                     "selectedGun": "m16",
                     "bHoleDB": {
                       "_type": "component",
-                      "component_id": "c9e2f2dd-15c7-43ef-8654-4216c1b9bc5f",
+                      "component_id": "30751d41-b4b7-40bd-9fb3-19e1cfff904e",
                       "go": "e7701585-383a-4c2e-bce4-b210ab146ff3",
                       "component_type": "BulletHoleDB"
                     },
@@ -1479,7 +1479,7 @@
                 "__guid": "6e036ae6-b121-48d6-a78a-23c922d5f15f",
                 "Attenuation": 4.01,
                 "ConeInner": 24.67,
-                "ConeOuter": 60,
+                "ConeOuter": 45,
                 "Cookie": "cookie_tutorial_texture_flashlight.vtex",
                 "FogMode": "Enabled",
                 "FogStrength": 1,
