@@ -1,0 +1,40 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div>S&Evil Test 1</div>
+	<div>-----------------------------</div>
+	<div>SaveName</div>
+	<TextEntry Value:bind="@SaveName"></TextEntry>
+	<div>-----------------------------</div>
+	<div onclick=@(loadScene)>Start Game</div>
+	<div onclick=@(Settings.ToggleMenu)>Settings</div>
+</root>
+
+@code
+{
+
+	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+	[Property] private Settings Settings {get;set;}
+	[Property] private ScreenPanel Panel {get;set;}
+	[Property] private string SaveName {get;set;}
+	protected override void OnAwake()
+	{
+		Settings.Load();
+		Panel = Components.Get<ScreenPanel>();
+		SaveName = FileSystem.Data.ReadAllText("currentSave.txt");
+	}
+	void loadScene()
+	{
+		Scene.LoadFromFile("scenes/loading.scene");
+		FileSystem.Data.WriteAllText("currentSave.txt", SaveName);
+		Settings.Save();
+		
+	}
+	protected override void OnUpdate()
+	{
+		Panel.Enabled = !Settings.InMenu;
+	}
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue , Settings, Settings.InMenu, SaveName );
+}

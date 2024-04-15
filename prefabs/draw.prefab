@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "bbbe4ab2-8d74-41bb-9caf-557c77ab7aa0",
+    "Name": "draw",
+    "Position": "-210.2953,-1197.204,9.621008",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "FollowTransform",
+        "__guid": "f369f622-d493-4924-ac4d-5ed21f1406f1",
+        "followPos": true,
+        "followRot": true,
+        "lerpDis": 0,
+        "lerpSpeedPos": 0,
+        "lerpSpeedRot": 0,
+        "lerpTo": false,
+        "locked": false
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

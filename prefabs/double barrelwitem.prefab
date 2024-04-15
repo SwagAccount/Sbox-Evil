@@ -1,0 +1,195 @@
+{
+  "RootObject": {
+    "__guid": "69507c25-759f-42da-8af1-197009cd2c9a",
+    "Name": "double barrelwitem",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "BoxCollider",
+        "__guid": "6a1b3bf5-30c1-423b-86b9-69b45da2c166",
+        "Center": "8.699998,-2,0",
+        "IsTrigger": false,
+        "Scale": "56.50002,8.199986,1.899996",
+        "Static": false
+      },
+      {
+        "__type": "Rigidbody",
+        "__guid": "16237dc0-efd1-4699-95ab-d686fef27058",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "WorldItemScript",
+        "__guid": "4bc05bc8-baa5-4318-bfc9-3a2ac649c92f",
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "interactable": {
+          "_type": "component",
+          "component_id": "d9c36502-a7a6-4292-b929-37f1d94d6b23",
+          "go": "69507c25-759f-42da-8af1-197009cd2c9a",
+          "component_type": "Interactable"
+        },
+        "name": "double barrel",
+        "rb": {
+          "_type": "component",
+          "component_id": "16237dc0-efd1-4699-95ab-d686fef27058",
+          "go": "69507c25-759f-42da-8af1-197009cd2c9a",
+          "component_type": "Rigidbody"
+        },
+        "stat": false
+      },
+      {
+        "__type": "Interactable",
+        "__guid": "d9c36502-a7a6-4292-b929-37f1d94d6b23",
+        "Interacted": false,
+        "interactType": "Pickup",
+        "ItemGrabber": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "31736653-3dfb-4c32-89b2-305ba8201b15",
+        "Name": "GunTransformIdle",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "5b8e7825-25b6-417c-87e0-ae356af8b233",
+        "Name": "GunTransformAim",
+        "Position": "10.95794,0,-4.8",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "9b38a781-e872-4803-b729-920df5f4f779",
+        "Name": "GunTransformRun",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "a63f3dca-6a57-4c87-8845-21e40833b0f9",
+        "Name": "db",
+        "Rotation": "-0.5,0.5,0.5,0.5",
+        "Scale": "0.1256559,0.126,0.1256559",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__guid": "2f62ad87-da8f-4ec3-a17b-b8b03f5b6340",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/dbshotgun/bds.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "956be559-b54a-490b-a506-527c53d7b637",
+            "Name": "Bone",
+            "Position": "0.157114,33.95148,-15.22043",
+            "Rotation": "0.6847258,0.121332,0.7003823,0.1609152",
+            "Scale": "1.002738,1,1.002738",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "56e874ae-6d22-43fc-b758-45b046b22a21",
+                "Name": "Bone_001",
+                "Position": "0.00003202715,51.97333,0.00001229937",
+                "Rotation": "0.03947452,-0.007991815,0.1718026,0.9843077",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "0902f1de-f551-461b-a1e0-944ac6979acf",
+                    "Name": "Bone_005",
+                    "Position": "1.268523,84.15805,11.556",
+                    "Rotation": "0.01827967,-0.8529993,0.02454542,0.5210139",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "d6571d5b-c4f3-4805-a929-d8c5cbd75f3e",
+                        "Name": "Bone_005_end",
+                        "Position": "-0.000009050774,22.84425,-0.00004292034",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      },
+                      {
+                        "__guid": "5d8e3d36-8fc8-4b56-8832-4e541da74f97",
+                        "Name": "Object",
+                        "Position": "0,0,9.400002",
+                        "Rotation": "-0.7366735,0.6762209,-0.004131274,0.004500485",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  },
+                  {
+                    "__guid": "493632a3-ba63-43db-b2a1-ba141d2e18c0",
+                    "Name": "Bone_004",
+                    "Position": "0.00002986238,134.8986,0.00002838317",
+                    "Rotation": "0.6447564,-0.07704008,-0.7560824,0.08181242",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "1aaa28c3-19a9-4225-971e-f5f2faa3e335",
+                "Name": "Bone_003",
+                "Position": "-4.706859,21.06522,-6.440878",
+                "Rotation": "0.02310628,0.01285745,0.2002032,0.9793974",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "ec539707-4baa-4c3f-b2db-e570fd033186",
+                    "Name": "Bone_003_end",
+                    "Position": "-0.0000003090457,11.16925,-0.000001961101",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  },
+                  {
+                    "__guid": "f57e1756-5276-443b-8632-d881f4cf1c4e",
+                    "Name": "Object",
+                    "Position": "0.04867443,-0.04286381,-0.04383025",
+                    "Rotation": "0.6642514,-0.6642522,0.2424245,-0.2424242",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "a51e60ab-a26a-4271-8e11-44ee9fcb64cf",
+                "Name": "Bone_002",
+                "Position": "0.000000000004700366,40.85024,0.000004190751",
+                "Rotation": "0.1664116,-0.1831587,0.9491826,0.1944544",
+                "Enabled": true,
+                "NetworkMode": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

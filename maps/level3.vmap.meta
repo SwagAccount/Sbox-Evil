@@ -1,0 +1,28 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "level3",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "level3",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "fpopium.crackhead_03#48495",
+        "apetavern.pavement_01a#46147",
+        "facepunch.grass_clump_a#47110"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "maps/level3.vmap"
+      }
+    }
+  }
+}

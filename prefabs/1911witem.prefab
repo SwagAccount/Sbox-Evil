@@ -1,0 +1,187 @@
+{
+  "RootObject": {
+    "__guid": "a468dced-4c63-4e88-9064-5cd3de4663c4",
+    "Name": "1911witem",
+    "Tags": "item",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "BoxCollider",
+        "__guid": "c0dc0448-051d-49df-bb18-23a8bce36fd7",
+        "Center": "0.33,0,-0.5",
+        "IsTrigger": false,
+        "Scale": "7.6,0.6,4.7",
+        "Static": false,
+        "Surface": "surfaces/metal.surface"
+      },
+      {
+        "__type": "WorldItemScript",
+        "__guid": "0bc4cc7e-5848-4eda-9a78-14902ff17fa2",
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "interactable": {
+          "_type": "component",
+          "component_id": "f8e9caff-0a40-4e85-9046-35adace03c86",
+          "go": "a468dced-4c63-4e88-9064-5cd3de4663c4",
+          "component_type": "Interactable"
+        },
+        "name": "1911",
+        "rb": {
+          "_type": "component",
+          "component_id": "6d3460c1-c164-4946-adb3-0f9ff2377d06",
+          "go": "a468dced-4c63-4e88-9064-5cd3de4663c4",
+          "component_type": "Rigidbody"
+        },
+        "stat": false
+      },
+      {
+        "__type": "Rigidbody",
+        "__guid": "6d3460c1-c164-4946-adb3-0f9ff2377d06",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Interactable",
+        "__guid": "f8e9caff-0a40-4e85-9046-35adace03c86",
+        "Interacted": false,
+        "interactType": "Pickup",
+        "ItemGrabber": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "43584ccb-1c2f-4d1e-9afb-72e931e8a1f1",
+        "Name": "GunTransformIdle",
+        "Position": "10.05794,-6.772374,-10",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "b319078d-39e3-46bc-8eeb-9e6f0ddbfcbc",
+        "Name": "GunTransformAim",
+        "Position": "4.203387,0,-9.35",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "1c8b2e9a-c0cf-45df-a817-187719639ab0",
+        "Name": "GunTransformRun",
+        "Position": "12.04642,-7.121929,-10",
+        "Rotation": "-0.0800464,0.1211665,0.5453659,0.8255224",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "97dfd447-5f74-4a3b-8112-d592961656bd",
+        "Name": "Tip",
+        "Position": "35.88581,-0.009422004,6.482862",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "eedc0126-5451-458a-87fc-8c2728362f61",
+        "Name": "1911",
+        "Position": "-2.733796,-0.000001268069,-2.714029",
+        "Rotation": "0,0,0.7071068,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__guid": "1d3d9a9c-7526-433e-9988-fc074e430cf2",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/1911/1911.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "084d7696-3923-42aa-9825-a70b15f09697",
+            "Name": "bone",
+            "Position": "0,0,0",
+            "Rotation": "0.5821284,0.3880322,0.6058394,0.3788353",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "a4503106-fe88-473c-94ae-73881f2bf892",
+                "Name": "bone_002",
+                "Position": "0.2446203,2.865586,0.01255884",
+                "Rotation": "0.007240586,0.01562425,-0.5422475,-0.8400424",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "893e7478-ffe6-4e9c-bd63-d7c576850b11",
+                "Name": "bone_003",
+                "Position": "0.8401531,2.504683,0.06233317",
+                "Rotation": "-0.1212142,-0.1588274,-0.6798784,0.7055823",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "35ece25a-1b04-433e-afcc-83407785634d",
+                "Name": "bone_004",
+                "Position": "0.4385341,1.532475,0.4727971",
+                "Rotation": "0.5274019,-0.8347777,0.09640852,0.1252951",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "e2a2f1a8-c0f8-4a71-a3f4-013b04d25f25",
+                    "Name": "Object",
+                    "Position": "0,0,0",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "f922939c-c19e-47ec-b89b-21e6b7dc9c7f",
+                "Name": "bone_006",
+                "Position": "0.3662698,1.051538,-0.3297725",
+                "Rotation": "0.5414052,-0.8368411,-0.03107321,-0.07491282",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "8ab826d7-3c5f-40da-aa37-ab42cfee5620",
+                    "Name": "Object",
+                    "Position": "0,0,0",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "751b5af9-3ab5-4145-ba6d-e3e73497f20b",
+            "Name": "blender_implicit",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0.7071067,0.7071068",
+            "Enabled": true,
+            "NetworkMode": 2
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

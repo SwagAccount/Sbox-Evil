@@ -1,0 +1,31 @@
+{
+  "RootObject": {
+    "Id": "1d76d452-fdd8-4a42-9327-c50ec582346e",
+    "Name": "concf",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SoundPointComponent",
+        "Force2d": false,
+        "MaxRepeatTime": 1,
+        "MinRepeatTime": 1,
+        "Pitch": 1,
+        "PlayOnStart": true,
+        "Repeat": false,
+        "SoundEvent": "sounds/footsteops/conc1.sound",
+        "SoundOverride": false,
+        "StopOnNew": false,
+        "Volume": 1
+      },
+      {
+        "__type": "DELETEAFTER",
+        "time": 1
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

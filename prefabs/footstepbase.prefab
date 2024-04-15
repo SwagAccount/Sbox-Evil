@@ -1,0 +1,86 @@
+{
+  "RootObject": {
+    "__guid": "802efebc-b302-45f8-9940-97035753f266",
+    "Name": "FootStepBase",
+    "Tags": "footstepbase",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "BulletHoleDB",
+        "__guid": "352deba2-3f6b-40b7-8393-0eac9828f126",
+        "bulletHoles": [
+          {
+            "bulletholeNames": [
+              "brick",
+              "concrete",
+              "plaster",
+              "sand"
+            ],
+            "bulletHoles": [
+              {
+                "_type": "gameobject",
+                "prefab": "footseps/concf.prefab"
+              }
+            ]
+          },
+          {
+            "bulletholeNames": [
+              "default"
+            ],
+            "bulletHoles": [
+              {
+                "_type": "gameobject",
+                "prefab": "footseps/concf.prefab"
+              }
+            ]
+          },
+          {
+            "bulletholeNames": [
+              "metal",
+              "metal.sheet",
+              "metal.weapon"
+            ],
+            "bulletHoles": [
+              {
+                "_type": "gameobject",
+                "prefab": "footseps/metalf.prefab"
+              }
+            ]
+          },
+          {
+            "bulletholeNames": [
+              "wood",
+              "wood.sheet"
+            ],
+            "bulletHoles": [
+              {
+                "_type": "gameobject",
+                "prefab": "footseps/woodf.prefab"
+              }
+            ]
+          },
+          {
+            "bulletholeNames": [
+              "dirt",
+              "grass"
+            ],
+            "bulletHoles": [
+              {
+                "_type": "gameobject",
+                "prefab": "footseps/mud.prefab"
+              }
+            ]
+          }
+        ],
+        "defaultHole": 1
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

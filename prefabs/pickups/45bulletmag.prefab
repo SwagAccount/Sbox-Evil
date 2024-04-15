@@ -1,0 +1,65 @@
+{
+  "RootObject": {
+    "__guid": "f5ac521f-54db-46c7-b19e-0595455a3010",
+    "Name": "45bulletmag",
+    "Scale": "0.05,0.05,0.05",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "f383e51a-efbe-4546-bb73-b39ec5378aa2",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/45bulletmag.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "dc1e4e69-3b8d-4a43-bc80-fa3c61b63d51",
+        "Center": "0,0,-2.100003",
+        "IsTrigger": false,
+        "Scale": "18.39999,48.30002,127.4998",
+        "Static": false
+      },
+      {
+        "__type": "AmmoPickup",
+        "__guid": "77661b6a-bab4-4d91-b71d-9e9cef3507d1",
+        "ammoCount": 7,
+        "ammoType": ".45",
+        "interactable": {
+          "_type": "component",
+          "component_id": "c03dbcfe-a154-4e0d-8de8-f4dca0533aad",
+          "go": "f5ac521f-54db-46c7-b19e-0595455a3010",
+          "component_type": "Interactable"
+        }
+      },
+      {
+        "__type": "Interactable",
+        "__guid": "c03dbcfe-a154-4e0d-8de8-f4dca0533aad",
+        "Interacted": false,
+        "interactType": "Pickup",
+        "ItemGrabber": true
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "b8169023-cc96-4409-b182-e02b9d28a52f",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

@@ -1,0 +1,149 @@
+{
+  "RootObject": {
+    "__guid": "0484a41b-e948-4c34-b505-7e9da4458b79",
+    "Name": "keywitem",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "ItemDetails",
+        "__guid": "b439a4f7-6319-40ea-ae9a-a584ad51cdd9",
+        "collisionCount": 0,
+        "ammoMax": 0,
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "hovered": false,
+        "name": "key",
+        "weight": 0
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "c4c11560-d46a-4c29-b6dc-27b0b92b4c6e",
+        "Center": "0,-0.00000001490116,0.09999999",
+        "IsTrigger": true,
+        "Scale": "8.700001,4.7,0.6",
+        "Static": false
+      },
+      {
+        "__type": "WorldItemScript",
+        "__guid": "a5b68f86-14a9-484a-82b3-d7d01872d44e",
+        "gunSaveData": {
+          "clipContent": [
+            0
+          ]
+        },
+        "interactable": {
+          "_type": "component",
+          "component_id": "6d2afc4a-6a40-4055-b135-1021fc1a85f0",
+          "go": "0484a41b-e948-4c34-b505-7e9da4458b79",
+          "component_type": "Interactable"
+        },
+        "name": "key",
+        "rb": {
+          "_type": "component",
+          "component_id": "ee56bb47-dffd-4c9b-8828-c594f77914cb",
+          "go": "0484a41b-e948-4c34-b505-7e9da4458b79",
+          "component_type": "Rigidbody"
+        },
+        "stat": false
+      },
+      {
+        "__type": "Interactable",
+        "__guid": "6d2afc4a-6a40-4055-b135-1021fc1a85f0",
+        "Interacted": false,
+        "interactType": "Pickup",
+        "ItemGrabber": false
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "ee56bb47-dffd-4c9b-8828-c594f77914cb",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "KeyMaterialSetter",
+        "__guid": "f1e1acf3-9df5-4ec7-8132-757f02cccf79",
+        "materials": [
+          "models/key/quad_key_material_base.vmat",
+          "models/key/greenkey.vmat",
+          "models/key/redkey.vmat",
+          "models/key/whitekey.vmat"
+        ],
+        "modelRenderer": {
+          "_type": "component",
+          "component_id": "42131982-0b6b-4903-8b7b-b8a215dbb361",
+          "go": "3997e41d-c283-4de2-b2ac-7ea4d44bf49e",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "worldItemDetails": {
+          "_type": "component",
+          "component_id": "a5b68f86-14a9-484a-82b3-d7d01872d44e",
+          "go": "0484a41b-e948-4c34-b505-7e9da4458b79",
+          "component_type": "WorldItemScript"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "3997e41d-c283-4de2-b2ac-7ea4d44bf49e",
+        "Name": "key",
+        "Position": "1.052851,-0.0000004788919,0",
+        "Rotation": "0,0,-0.7071068,0.7071068",
+        "Scale": "0.6999999,0.7,0.7",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "13da40d1-8464-40c4-aed6-94d5768a9d54",
+            "IsTrigger": false,
+            "Model": "models/key/key.vmdl",
+            "Static": false
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "42131982-0b6b-4903-8b7b-b8a215dbb361",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": false,
+            "Model": "models/key/key.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "ab44ef84-7bb4-4460-aae7-38bfd9ca2987",
+            "Name": "Object",
+            "Position": "0.000001362392,-6.899239,1.819838",
+            "Rotation": "-0.4999985,-0.4999985,0.4999985,0.4999985",
+            "Scale": "1.428572,1.428571,1.428571",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "867a2930-e27e-4ba7-8b3e-5e1b30206159",
+            "Name": "Object (1)",
+            "Position": "49.50291,-9.486383,-46.80482",
+            "Rotation": "-0.4999985,-0.4999985,0.4999985,-0.4999985",
+            "Scale": "2.040817,2.040816,2.040816",
+            "Enabled": true,
+            "NetworkMode": 2
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

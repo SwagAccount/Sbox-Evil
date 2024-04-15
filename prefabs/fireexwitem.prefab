@@ -1,0 +1,177 @@
+{
+  "RootObject": {
+    "__guid": "d3f70a0b-3657-4ce7-a678-7c1eb24ef37d",
+    "Name": "fireexwitem",
+    "Tags": "item",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "BoxCollider",
+        "__guid": "6c8286f0-7493-4294-89e0-8d5ee9cd04b9",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "21.60002,4.5,4.800011",
+        "Static": false
+      },
+      {
+        "__type": "Rigidbody",
+        "__guid": "ad52d4e1-5462-4d74-9d9f-e4e797a3827f",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "WorldItemScript",
+        "__guid": "e43b40d9-aa71-4674-a8ca-b5ef3aec09a8",
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "interactable": {
+          "_type": "component",
+          "component_id": "c9afcb19-8ae4-403b-a921-5a08c14f96e4",
+          "go": "d3f70a0b-3657-4ce7-a678-7c1eb24ef37d",
+          "component_type": "Interactable"
+        },
+        "name": "fireex",
+        "rb": {
+          "_type": "component",
+          "component_id": "ad52d4e1-5462-4d74-9d9f-e4e797a3827f",
+          "go": "d3f70a0b-3657-4ce7-a678-7c1eb24ef37d",
+          "component_type": "Rigidbody"
+        },
+        "stat": false
+      },
+      {
+        "__type": "Interactable",
+        "__guid": "c9afcb19-8ae4-403b-a921-5a08c14f96e4",
+        "Interacted": false,
+        "interactType": "Pickup",
+        "ItemGrabber": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "485cf2f2-eb1d-4dc8-94bc-56fc5f6ed99f",
+        "Name": "fireex",
+        "Position": "10.7026,0.03144529,-0.00003559036",
+        "Rotation": "-0.00000002980232,-0.7071067,-0.00000002980232,0.7071067",
+        "Scale": "0.02,0.02,0.02",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__guid": "f752efc6-5591-4adf-8a66-8c1ffae489c3",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/fireex.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "4b5bd847-2e33-4b16-82f7-dd762755883b",
+            "Name": "Object",
+            "Position": "-0.0001576354,1273.808,966.9563",
+            "Rotation": "0,0,0.7071068,0.7071068",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "eff7d98c-295f-4045-a0ff-b281ae350707",
+            "Name": "Bone",
+            "Position": "0,0,0",
+            "Rotation": "0.5,0.4999999,0.4999999,0.5000005",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "259a7053-b4ae-4c02-be8d-7ba0229d80f9",
+                "Name": "Bone_002",
+                "Position": "-50.99649,1054.882,0.0008448017",
+                "Rotation": "-0.0000001746357,0.00000006933479,-0.9849886,-0.1726201",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "3c10babb-9c0e-4c77-9094-4f3c9fa235a2",
+                    "Name": "Bone_003",
+                    "Position": "-0.0007689,138.0389,0.0002184054",
+                    "Rotation": "-0.06377843,0.0605687,0.6652649,-0.7414083",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "36156c40-de53-4039-9ed3-5bb64ad5a3d4",
+                        "Name": "Bone_003_end",
+                        "Position": "-0.0007697003,46.64932,0.0003822148",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "__guid": "3ab7eb31-9e7d-410d-9f5f-9bbfaedee453",
+                "Name": "Bone_001",
+                "Position": "0.0009069848,1039.814,0.0008676893",
+                "Rotation": "-0.0000000992253,-0.0000001109141,0.5986045,0.8010448",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "2608d887-a452-47ca-9ec0-e6e66f7fbbe0",
+                "Name": "Bone_004",
+                "Position": "0,0,0",
+                "Rotation": "-0.09656779,0.0000001341105,0.00000003866531,0.9953265",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "80afb40b-2d54-4fec-8d88-bf19e8ffb652",
+                    "Name": "Bone_005",
+                    "Position": "0.0004849603,716.0076,0.0004053116",
+                    "Rotation": "0.0000001639128,0.0000001759445,-0.7071065,0.707107",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "3ec63457-a80f-4315-a50a-479935d45b74",
+                        "Name": "Bone_005_end",
+                        "Position": "0.0006072822,104.9187,0.0002890769",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      },
+                      {
+                        "__guid": "9a5f7f8e-a6bc-4aac-b5af-a256fdfa7427",
+                        "Name": "Object",
+                        "Position": "0,0,0",
+                        "Rotation": "0.5,-0.5,-0.5,0.5",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

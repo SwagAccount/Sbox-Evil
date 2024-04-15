@@ -1,0 +1,30 @@
+{
+  "RootObject": {
+    "Id": "4a0f5448-a212-4a8e-b12b-797311ea4aa5",
+    "Name": "debugthingewr",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "838cf414-c922-4437-bac9-5b86028dce0d",
+        "Name": "Sphere",
+        "Scale": "0.1,0.1,0.1",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/dev/sphere.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

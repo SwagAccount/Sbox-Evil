@@ -1,0 +1,337 @@
+{
+  "RootObject": {
+    "__guid": "ab3e57e4-afe9-4aa2-b5b9-d22a3dda755e",
+    "Name": "m16item",
+    "Tags": "item",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "a8d6f643-a1cc-43a3-94f2-72e06001b113",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Scale": "48.70001,12.30001,3.999982",
+        "Static": false
+      },
+      {
+        "__type": "ItemDetails",
+        "__guid": "65d07928-fe33-4dfe-b6e4-65f5afdedaba",
+        "collisionCount": 0,
+        "ammoMax": 0,
+        "gunSaveData": {
+          "clipContent": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hovered": false,
+        "name": "m16",
+        "weaponInfo": {
+          "_type": "gameobject",
+          "go": "e0a2d033-2732-4ff5-afd9-087c4c0d191c"
+        },
+        "weight": 5
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "5fd49025-245d-4802-8275-9b3e1ee406a2",
+        "Name": "Object",
+        "Position": "-11.20219,-3.48238,0.0000007550868",
+        "Rotation": "-0.00000003090862,0.7071068,0.7071068,-0.00000003090862",
+        "Scale": "10,10,10",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "eb91a0b3-ee9f-4fe5-8cca-5965020b3cd9",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/m4a1/new m4/collectino.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "1e9d0715-22d8-4a38-af5f-b492a464254d",
+            "Name": "bone",
+            "Position": "0,0,0",
+            "Rotation": "-0.3606374,-0.3606374,-0.6082275,-0.6082274",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "a42d3ee2-f71d-4f67-b36a-75a39743fcb0",
+                "Name": "bone_002",
+                "Position": "-0.00000003757853,0.742936,-0.4149729",
+                "Rotation": "0.9688649,0,0,-0.2475903",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "11753945-723a-43d7-9abd-48413753dbdf",
+                    "Name": "bone_007",
+                    "Position": "-0.101588,0.03646938,0.2181861",
+                    "Rotation": "-0.6488372,-0.2810871,-0.2810871,-0.6488379",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "2bde87dc-2a69-48f0-b372-a6e6823506be",
+                        "Name": "bone_008",
+                        "Position": "0.0000003338681,0.1487577,-0.0000001553771",
+                        "Rotation": "0.01336569,0.0000002533197,-0.02489725,0.9996006",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      },
+                      {
+                        "__guid": "8d335999-d2fc-4247-8d18-f6e007141a83",
+                        "Name": "Object",
+                        "Position": "0.04867443,-0.04286381,-0.04383025",
+                        "Rotation": "0.2876061,-0.2876062,-0.6459741,0.6459738",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "__guid": "2cc12c06-b493-4b5d-b665-e183e0f6ab58",
+                "Name": "bone_004",
+                "Position": "0.00000000348491,0.7523461,0.1619021",
+                "Rotation": "0.8601637,-0.000000007450581,0,0.5100182",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "6246c696-76b2-49a2-9317-c62b57cab639",
+                    "Name": "bone_005",
+                    "Position": "0.00000003125881,0.262218,0.00000005007016",
+                    "Rotation": "0.00000008940697,0.00000002980232,0.02792132,0.9996102",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "75d4c0c2-09d4-48e3-8257-dccc251ef2a3",
+                "Name": "bone_003",
+                "Position": "0.09766698,0.298821,-0.03929003",
+                "Rotation": "-0.5100183,0,0,0.8601636",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "6d108c4e-e3e3-448f-b2b1-9930e77fe14a",
+                    "Name": "bone_006",
+                    "Position": "0,0.1215899,0.000000006773484",
+                    "Rotation": "-0.1654551,-0.0000001788139,0.3753377,-0.9120012",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  },
+                  {
+                    "__guid": "8d10ecae-7361-48d0-b349-f436ab9d400d",
+                    "Name": "Object",
+                    "Position": "0,0,0",
+                    "Rotation": "0,-0,-0.7071068,0.7071068",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "c90d7407-9c71-4faa-a9d5-290e16c7b923",
+            "Name": "bone_001",
+            "Position": "-0.7205293,-0.00000006299067,0.4527621",
+            "Rotation": "-0.4999998,-0.4999999,0.5000001,0.5000002",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "a6c4ee78-1d04-4790-8b4b-99c95f821c9d",
+            "Name": "bone_002",
+            "Position": "-0.2188949,-0.0000001979503,0.7377816",
+            "Rotation": "-0.7071068,-0.7071068,0.0000001490116,0.0000002086163",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "d0db0eaf-febc-4442-9c0d-d70b5d15ae5d",
+            "Name": "blender_implicit",
+            "Position": "0,0,0",
+            "Rotation": "-0.00000003090861,-0.00000002980232,0.7071067,0.7071068",
+            "Enabled": true,
+            "NetworkMode": 2
+          }
+        ]
+      },
+      {
+        "__guid": "974f1483-96d2-498e-8cbc-9d0c9367eec4",
+        "Name": "Plane",
+        "Position": "0,0,-0.49",
+        "Scale": "0.974,0.246,0.02",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "a68e7ba9-52ec-437d-b54b-88010169014d",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/black_matte.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e0a2d033-2732-4ff5-afd9-087c4c0d191c",
+        "Name": "WeaponInfoUI",
+        "Position": "0,0,2",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "WeaponInfoUI",
+            "__guid": "9693483a-4911-4c9d-9c9f-c0bc2c42cfff",
+            "ammo": {
+              "_type": "gameobject",
+              "go": "66deef49-d9da-4720-8f93-e5b2b83aaeeb"
+            },
+            "AmmoChar": "r",
+            "ammoSpace": 5,
+            "chamberRound": {
+              "_type": "gameobject",
+              "go": "424f503e-3fa6-491a-a230-a4296fb8dd4b"
+            },
+            "fontSize": 85,
+            "Name": {
+              "_type": "component",
+              "component_id": "0e37e6db-1930-4ff4-9041-3be2c0b1969d",
+              "go": "80e7ab19-8705-4bdf-8f56-08d3c0472b05",
+              "component_type": "TextRenderer"
+            },
+            "scale": 0.3,
+            "Type": {
+              "_type": "component",
+              "component_id": "acf5ae6b-dc4e-4d2f-afd3-974fd9086004",
+              "go": "81ad484c-db73-4595-800b-99a3b8acb0e8",
+              "component_type": "TextRenderer"
+            }
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "424f503e-3fa6-491a-a230-a4296fb8dd4b",
+            "Name": "ChamberRound",
+            "Position": "-1.549623,0,2.382507",
+            "Rotation": "0,0.7071068,0,0.7071068",
+            "Scale": "0.06,0.06,0.06",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "4a802796-dba0-4bbe-ad8d-2a09604852ed",
+                "Color": "1,1,1,1",
+                "FontFamily": "halflife2",
+                "FontSize": 85,
+                "Scale": 0.3,
+                "Text": "r"
+              }
+            ]
+          },
+          {
+            "__guid": "66deef49-d9da-4720-8f93-e5b2b83aaeeb",
+            "Name": "Ammo",
+            "Position": "-2.1,0,2.382507",
+            "Rotation": "0,0.7071068,0,0.7071068",
+            "Scale": "0.06,0.06,0.06",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "81ad484c-db73-4595-800b-99a3b8acb0e8",
+            "Name": "Type",
+            "Position": "-0.7579215,0.000001374908,2.382504",
+            "Rotation": "0,0.7071068,0,0.7071068",
+            "Scale": "0.1,0.1,0.1",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "acf5ae6b-dc4e-4d2f-afd3-974fd9086004",
+                "Color": "1,1,1,1",
+                "FontFamily": "diediedie",
+                "FontSize": 60.51,
+                "Scale": 0.17,
+                "Text": "ammo"
+              }
+            ]
+          },
+          {
+            "__guid": "80e7ab19-8705-4bdf-8f56-08d3c0472b05",
+            "Name": "Name",
+            "Position": "0.5858647,0.000001455004,2.382505",
+            "Rotation": "0,0.7071067,0,0.7071067",
+            "Scale": "0.1,0.1,0.1",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "0e37e6db-1930-4ff4-9041-3be2c0b1969d",
+                "Color": "1,1,1,1",
+                "FontFamily": "diediedie",
+                "FontSize": 64,
+                "Scale": 0.3,
+                "Text": "Gun"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

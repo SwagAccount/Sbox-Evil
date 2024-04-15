@@ -1,0 +1,28 @@
+{
+  "UI": false,
+  "Volume": "10.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 280,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/screams/scream9.vsnd",
+    "sounds/screams/scream8.vsnd",
+    "sounds/screams/scream7.vsnd",
+    "sounds/screams/scream6.vsnd",
+    "sounds/screams/scream5.vsnd",
+    "sounds/screams/scream4.vsnd",
+    "sounds/screams/scream3.vsnd",
+    "sounds/screams/scream2.vsnd",
+    "sounds/screams/scream10.vsnd",
+    "sounds/screams/scream1.vsnd"
+  ],
+  "Occlusion": true,
+  "Reflections": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

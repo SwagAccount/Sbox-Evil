@@ -1,0 +1,155 @@
+{
+  "RootObject": {
+    "__guid": "a7b3e5eb-0c79-4a9a-ac4b-80fccd35bd74",
+    "Name": "spit",
+    "Tags": "particles",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "ParticleEffect",
+        "__guid": "42a71c68-13d2-474e-ba5a-a0824aaabfa9",
+        "Alpha": {
+          "Constants": "1,0,0,0"
+        },
+        "ApplyColor": false,
+        "ApplyRotation": false,
+        "ApplyShape": true,
+        "Bounce": {
+          "Constants": "1,0,0,0"
+        },
+        "Brightness": {
+          "Constants": "1,0,0,0"
+        },
+        "Bumpiness": {},
+        "Collision": false,
+        "CollisionRadius": 1,
+        "Damping": {},
+        "DieOnCollisionChance": {},
+        "Force": false,
+        "ForceDirection": "0,0,0",
+        "ForceScale": {
+          "Constants": "1,0,0,0"
+        },
+        "Friction": {
+          "Constants": "1,0,0,0"
+        },
+        "Gradient": {
+          "GradientA": {
+            "color": [
+              {
+                "t": 0.5,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "GradientB": {
+            "color": [
+              {
+                "t": 0.5,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "ConstantA": "1,1,1,1",
+          "ConstantB": "1,1,1,1"
+        },
+        "Lifetime": {
+          "Constants": "1,0,0,0"
+        },
+        "MaxParticles": 1400,
+        "PerParticleTimeScale": {
+          "Constants": "1,0,0,0"
+        },
+        "PreWarm": 0,
+        "PushStrength": {},
+        "Roll": {},
+        "Scale": {
+          "Constants": "4,0,0,0"
+        },
+        "SequenceId": {},
+        "SequenceSpeed": {
+          "Constants": "1,0,0,0"
+        },
+        "SequenceTime": {
+          "Constants": "1,0,0,0"
+        },
+        "SheetSequence": false,
+        "Space": "World",
+        "StartVelocity": {
+          "Constants": "1,0,0,0"
+        },
+        "Stretch": {},
+        "TimeScale": 1,
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ParticleSpriteRenderer",
+        "__guid": "8c634df5-a594-4c74-a484-797882faca66",
+        "Additive": false,
+        "BlurAmount": 0.5,
+        "BlurOpacity": 0.5,
+        "BlurSpacing": 0.5,
+        "DepthFeather": 0,
+        "FaceVelocity": false,
+        "FogStrength": 1,
+        "LeadingTrail": true,
+        "MotionBlur": true,
+        "Opaque": false,
+        "RotationOffset": 111.68,
+        "Scale": 1,
+        "Shadows": true,
+        "SortMode": "Unsorted",
+        "Texture": "decals/swag/vomit.vtex"
+      },
+      {
+        "__type": "ParticleSphereEmitter",
+        "__guid": "2fb37872-279e-47a4-aafb-14a9e964ce97",
+        "Burst": 0,
+        "Delay": 0,
+        "DestroyOnEnd": false,
+        "Duration": 1,
+        "Loop": true,
+        "OnEdge": false,
+        "Radius": 0,
+        "Rate": 572.99,
+        "Velocity": 0
+      },
+      {
+        "__type": "SphereCollider",
+        "__guid": "289294e9-1f3e-41e3-98db-0b6ef559fb19",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 2.7999997,
+        "Static": false
+      },
+      {
+        "__type": "Rigidbody",
+        "__guid": "db2ecf66-c927-4db2-ae76-6a911249c20a",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "SimpleProjectileDamage",
+        "__guid": "1d99cf26-43f7-4552-be6c-392397cdd68d",
+        "bleedDamage": 0,
+        "damage": 15
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

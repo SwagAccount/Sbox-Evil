@@ -1,0 +1,275 @@
+{
+  "RootObject": {
+    "__guid": "884fa9e4-a4d4-49ab-adc2-1059ecbef3c9",
+    "Name": "double barrelitem",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "20d52024-08f0-4461-ad5b-d0dc4e2434a9",
+        "Center": "8.699998,-2,0",
+        "IsTrigger": false,
+        "Scale": "56.50002,8.199986,1.899996",
+        "Static": false
+      },
+      {
+        "__type": "ItemDetails",
+        "__guid": "82c2d370-d771-4398-8280-7912200f6e3c",
+        "collisionCount": 0,
+        "ammoMax": 2,
+        "bulletType": "12 Gauge",
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "hovered": false,
+        "name": "Buckshot",
+        "weaponInfo": {
+          "_type": "gameobject",
+          "go": "7158a4bc-62c2-4da5-b0ea-5fb5b94fbbcd"
+        },
+        "weight": 0
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "d20b41ea-3ac5-4b75-9e43-71a94a814734",
+        "Name": "GunTransformIdle",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "735bbb56-2b0c-4bdb-b874-8df806f05d77",
+        "Name": "GunTransformAim",
+        "Position": "10.95794,0,-4.8",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "88eca284-a8cf-4ea8-abdf-dd7649b73a45",
+        "Name": "GunTransformRun",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "c317457b-316f-418b-bbc1-daa98ed35cca",
+        "Name": "db",
+        "Rotation": "-0.5,0.5,0.5,0.5",
+        "Scale": "0.1256559,0.126,0.1256559",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "13c98bbc-e6cc-4a70-a0ba-08f4567ce34b",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/dbshotgun/bds.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "0cda6b25-c78d-4f46-8a56-719b11e75565",
+            "Name": "Bone",
+            "Position": "0.157114,33.95148,-15.22043",
+            "Rotation": "0.6847258,0.121332,0.7003823,0.1609152",
+            "Scale": "1.002738,1,1.002738",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "cb3097ac-0a14-4bdb-b547-da54d0838b1c",
+                "Name": "Bone_001",
+                "Position": "0.00003202715,51.97333,0.00001229937",
+                "Rotation": "0.03947452,-0.007991815,0.1718026,0.9843077",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "0c0cf405-2182-41c2-bb37-846f2b00f999",
+                    "Name": "Bone_005",
+                    "Position": "1.268523,84.15805,11.556",
+                    "Rotation": "0.01827967,-0.8529993,0.02454542,0.5210139",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "2b982dc9-b75d-4a55-9ee1-ba981f3b6083",
+                        "Name": "Bone_005_end",
+                        "Position": "-0.000009050774,22.84425,-0.00004292034",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      },
+                      {
+                        "__guid": "bc26a5b4-e175-42f6-91f1-4b54ac404cf8",
+                        "Name": "Object",
+                        "Position": "0,0,9.400002",
+                        "Rotation": "-0.7366735,0.6762209,-0.004131274,0.004500485",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  },
+                  {
+                    "__guid": "5a9587d7-82b4-4c7a-ba34-601910f51076",
+                    "Name": "Bone_004",
+                    "Position": "0.00002986238,134.8986,0.00002838317",
+                    "Rotation": "0.6447564,-0.07704008,-0.7560824,0.08181242",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "db5fca1c-7b27-408e-a161-2ceba6d53433",
+                "Name": "Bone_003",
+                "Position": "-4.706859,21.06522,-6.440878",
+                "Rotation": "0.02310628,0.01285745,0.2002032,0.9793974",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "6cc50136-f064-4f7a-aa86-8c27ffd1d61e",
+                    "Name": "Bone_003_end",
+                    "Position": "-0.0000003090457,11.16925,-0.000001961101",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  },
+                  {
+                    "__guid": "81c846ac-0b68-4ece-b2d4-b581a45fb4c3",
+                    "Name": "Object",
+                    "Position": "0.04867443,-0.04286381,-0.04383025",
+                    "Rotation": "0.6642514,-0.6642522,0.2424245,-0.2424242",
+                    "Enabled": true,
+                    "NetworkMode": 2
+                  }
+                ]
+              },
+              {
+                "__guid": "f2127d5f-e45b-49ff-9204-7078a063ba4e",
+                "Name": "Bone_002",
+                "Position": "0.000000000004700366,40.85024,0.000004190751",
+                "Rotation": "0.1664116,-0.1831587,0.9491826,0.1944544",
+                "Enabled": true,
+                "NetworkMode": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "2ecfa0be-48af-49b2-a404-044446381922",
+        "Name": "Plane",
+        "Position": "8.2,-2,-0.49",
+        "Scale": "1.13,0.164,0.02",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "b42afcff-2a07-4c49-ba89-6d8223d8ab50",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/black_matte.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "7158a4bc-62c2-4da5-b0ea-5fb5b94fbbcd",
+        "Name": "WeaponInfoUI",
+        "Position": "0,0,2",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "WeaponInfoUI",
+            "__guid": "01ff660c-c75b-4b7f-b507-2669b59573fa",
+            "ammo": {
+              "_type": "gameobject",
+              "go": "4ffb373d-e23a-4282-8d4e-125b855b7e73"
+            },
+            "AmmoChar": "q",
+            "ammoSpace": 6,
+            "fontSize": 85,
+            "Name": {
+              "_type": "component",
+              "component_id": "b63e0daa-0a22-4e4a-8d4f-8ff2f601b22e",
+              "go": "03aa438e-2b27-40bb-b5ee-873f8d269054",
+              "component_type": "TextRenderer"
+            },
+            "scale": 0.3,
+            "Type": {
+              "_type": "component",
+              "component_id": "fdac0229-be5a-4b18-81cc-c59e12724ee4",
+              "go": "26f66849-6298-44df-83a5-6c3cc51ca236",
+              "component_type": "TextRenderer"
+            }
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "4ffb373d-e23a-4282-8d4e-125b855b7e73",
+            "Name": "Ammo",
+            "Position": "-1.55,0,2.382507",
+            "Rotation": "0,0.7071068,0,0.7071068",
+            "Scale": "0.06,0.06,0.06",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "26f66849-6298-44df-83a5-6c3cc51ca236",
+            "Name": "Type",
+            "Position": "-0.7579215,0.000001374908,2.382504",
+            "Rotation": "0,0.7071068,0,0.7071068",
+            "Scale": "0.1,0.1,0.1",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "fdac0229-be5a-4b18-81cc-c59e12724ee4",
+                "Color": "1,1,1,1",
+                "FontFamily": "diediedie",
+                "FontSize": 60.51,
+                "Scale": 0.17,
+                "Text": "ammo"
+              }
+            ]
+          },
+          {
+            "__guid": "03aa438e-2b27-40bb-b5ee-873f8d269054",
+            "Name": "Name",
+            "Position": "0.5858647,0.000001455004,2.382505",
+            "Rotation": "0,0.7071067,0,0.7071067",
+            "Scale": "0.1,0.1,0.1",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "b63e0daa-0a22-4e4a-8d4f-8ff2f601b22e",
+                "Color": "1,1,1,1",
+                "FontFamily": "diediedie",
+                "FontSize": 64,
+                "Scale": 0.3,
+                "Text": "Gun"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

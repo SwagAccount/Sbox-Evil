@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "88ce3043-665d-4e49-988d-bb986d975981",
+    "Name": "bholew",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "4c33c10f-466c-45a1-842d-b4759575fc0c",
+        "Name": "Projector",
+        "Position": "-0.3842604,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "DecalRenderer",
+            "CutoffAngle": 47.92,
+            "CutoffAngleSoftness": 5.21,
+            "Material": "decals/woodhole.vmat",
+            "Mod2XBlending": true,
+            "Size": "3.75,3.75,2",
+            "TintColor": "1,1,1,1",
+            "TriPlanar": false
+          }
+        ]
+      },
+      {
+        "Id": "253d65b6-3c0c-48eb-9423-ab289f6ba5a5",
+        "Name": "SoundPlayer",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SoundPointComponent",
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Pitch": 1,
+            "PlayOnStart": true,
+            "Repeat": false,
+            "SoundEvent": "sounds/impacts/impact-bullet-wood.sound",
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "Volume": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

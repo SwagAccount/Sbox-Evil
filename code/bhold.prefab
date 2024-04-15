@@ -1,0 +1,12 @@
+{
+  "RootObject": {
+    "Id": "307437ec-a2bb-4612-a8b8-fc91dca99518",
+    "Name": "holderbullet",
+    "Position": "-187.8171,-163.4094,-62.99553",
+    "Enabled": true
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

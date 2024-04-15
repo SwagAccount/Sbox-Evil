@@ -1,0 +1,86 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+<root style="pointer-events: @(InMenu ? "all" : "none")">
+	@if(InMenu)
+	{
+		<div class="settings-box">
+			<div class="setting">
+				<div class="button" onclick=@ToggleMenu>@("<-- Back")</div>
+			</div>
+			<div class="setting">
+				<div class="settingname">Field of View</div>
+				<SliderControl Min=@(60f) Max=@(120f) Step=@(1f) Value:bind=@fovValue/>
+				<div>@(fovValue)</div>
+			</div>
+			<div class="setting">
+				<div class="settingname">Mouse Sensitivty</div>
+				<SliderControl Min=@(0f) Max=@(2f) Step=@(0.05f) Value:bind=@MouseSens/>
+				<div>@(MouseSens)</div>
+			</div>
+			<div class="setting">
+				<div class="settingname">Master Volume</div>
+				<SliderControl Min=@(0f) Max=@(1f) Step=@(0.05f) Value:bind=@MasterVolume/>
+				<div>@(MasterVolume)</div>
+			</div>
+		</div>
+	}
+</root>
+
+@code
+{
+	/*
+	<SliderControl Value:bind="@(fovValue)" Step="@(1f)" Max="@(120f)" class="fov"></SliderControl>)
+	*/
+	[Property] public float fovValue { get; set; }
+	[Property] public float MouseSens { get; set; }
+	[Property] public float MasterVolume { get; set; }
+	[Property] public bool InMenu { get; set; }
+
+	protected override void OnUpdate()
+	{
+		if(Input.Pressed("Menu"))
+		{
+			ToggleMenu();
+		}
+		Scene.TimeScale = InMenu ? 0:1;
+		
+	}
+	public void ToggleMenu()
+	{
+		InMenu = !InMenu;
+	}
+	public void Save()
+	{
+		settings s = new settings();
+		s.fovValue = fovValue;
+		s.MouseSens = MouseSens;
+		s.MasterVolume = MasterVolume;
+
+		string dirName = $"saves/";
+		if(!FileSystem.Data.DirectoryExists(dirName))
+		{
+			FileSystem.Data.CreateDirectory(dirName);
+		}
+		FileSystem.Data.WriteAllText($"{dirName}settings.json", Json.Serialize(s));
+	}
+	public void Load()
+	{
+		string dirName = $"saves/";
+		if(FileSystem.Data.DirectoryExists(dirName) && FileSystem.Data.FileExists($"{dirName}settings.json"))
+		{
+			string shit = FileSystem.Data.ReadAllText( $"{dirName}settings.json");
+			settings s = Json.Deserialize<settings>(shit);
+			fovValue = s.fovValue;
+			MouseSens = s.MouseSens;
+			MasterVolume = s.MasterVolume;
+		}
+	}
+	class settings
+	{
+		public float fovValue { get; set; } 
+		public float MouseSens { get; set; } 
+		public float MasterVolume { get; set; } 
+	}
+	protected override int BuildHash() => System.HashCode.Combine( fovValue, MouseSens, MasterVolume, InMenu);
+}

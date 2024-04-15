@@ -1,0 +1,26 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="center">
+		<img src="Images/left-click-icon-2.png" style="width: @((int)size)px;height:@((int)size)px; opacity: @opacity">
+	</div>
+</root>
+
+@code
+{
+    [Property] public float size {get; set;}
+    [Property] public bool actv {get; set;}
+    [Property] public float fadeTime {get; set;}
+	float opacity;
+	protected override void OnUpdate()
+	{
+		opacity = MathX.Lerp(opacity,(actv ? 1 : 0),fadeTime*Time.Delta);
+	}
+    
+    protected override int BuildHash()
+	{
+		return System.HashCode.Combine(size, opacity);
+	}
+}

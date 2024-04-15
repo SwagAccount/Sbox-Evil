@@ -1,0 +1,31 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "testlevl",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "testlevl",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "apetavern.pavement_01a#46147",
+        "facepunch.roof_bitumen_panels#47040",
+        "tiled.brickwall#42137",
+        "sugmatextures.stonetilefloor6#36646",
+        "kvien.metalwall03_pixel#37211",
+        "fpopium.crackhead_03#48495"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "maps/testlevl.vmap"
+      }
+    }
+  }
+}

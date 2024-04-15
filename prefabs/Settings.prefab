@@ -1,0 +1,34 @@
+{
+  "RootObject": {
+    "__guid": "bc876599-427b-49b4-b2ea-e5cc9264ab02",
+    "Name": "Settings",
+    "Position": "44.88977,-61.7625,47.14706",
+    "Tags": "settings",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "ScreenPanel",
+        "__guid": "6ea547a0-9a0c-4846-84cf-46be46b0a15b",
+        "AutoScreenScale": true,
+        "Opacity": 1,
+        "Scale": 1,
+        "ZIndex": 100
+      },
+      {
+        "__type": "Settings",
+        "__guid": "235e73c8-044d-41f7-ae3c-97d2447bd2fb",
+        "fovValue": 90,
+        "InMenu": false,
+        "MasterVolume": 1,
+        "MouseSens": 1
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

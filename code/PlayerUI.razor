@@ -1,0 +1,53 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root style="background-color: @(bg.Hex);">
+
+	<div class="centered" style = "opacity: @(opacityBar);">
+		<table style="width: 200px; height:5px; top: 100px">
+			<tr>
+				<td style="width: @(staminaPercent*100)%; background-color: #ffffff"></td>
+				<td style="width: @(100-(staminaPercent*100))%; background-color: #000000; opacity:0.5"></td>
+			</tr>
+		</table>
+	</div>
+	@if(interactType != null)
+	{
+		<div class="centered">
+			<div style="color: white; font-size: 20px; font-family: 'Verdana'">•</div>
+		</div>
+		<div class="centered">
+			<div style="color: white; font-size: 40px; top: 40px">@interactType</div>
+		</div>
+	}
+
+</root>
+
+@code
+{
+	[Property] public float staminaPercent;
+	[Property] public float opacityTarget;
+	[Property] public float opacityBarTarget;
+	[Property] public float opacitySpeed;
+	[Property] public float opacityBarSpeed;
+	[Property] public float opacityBar;
+	[Property] public string interactType;
+	[Property] public Color bg;
+	float t;
+	protected override void OnUpdate()
+	{
+		t+=Time.Delta;
+		opacityBarTarget = (staminaPercent < 1) ? 1 : 0;
+		opacityBar = MathX.Lerp(opacityBar,opacityBarTarget,opacityBarSpeed*Time.Delta); 
+		if(t>1)
+		{
+			Color c = bg;
+			c.a = MathX.Lerp(c.a,opacityTarget,Time.Delta*opacitySpeed);
+			bg = c;
+		}
+
+		
+	}
+	protected override int BuildHash() => System.HashCode.Combine( staminaPercent , bg, opacityBar, interactType);
+}	

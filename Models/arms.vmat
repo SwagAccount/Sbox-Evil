@@ -1,0 +1,30 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/pixelated.shader"
+
+	//---- Texture Filtering ----
+	F_TEXTURE_FILTERING 3 // Point Sample
+
+	//---- Color ----
+	Color "Models/arms.png"
+	g_flModelTintAmount "0.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 1.000000]"
+	TintMask "materials/default/default_mask.tga"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Metalness ----
+	Metallic "materials/default/default_metal.tga"
+
+	//---- Normal ----
+	Normal "materials/default/default_normal.tga"
+
+	//---- Roughness ----
+	Roughness "materials/default/default_rough.tga"
+
+	//---- Texture Coordinates ----
+	g_vTiling "[1.000 1.000]"
+}

@@ -1,0 +1,29 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "materials/rustygren/alphachanneltransparency.shader"
+
+	//---- Texture Filtering ----
+	F_TEXTURE_FILTERING 3 // Point Sample
+
+	g_bAlphafromColour "1"
+
+	//---- Color ----
+	Color "materials/rustygren/rustygreengrate.png"
+
+	//---- ColorSettings ----
+	g_bSolidColor "0"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Texture Coordinates ----
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.065"
+	g_flAntiAliasedEdgeStrength "0.576"
+	Translucency "materials/default/default_trans.tga"
+}
