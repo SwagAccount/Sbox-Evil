@@ -1,0 +1,23 @@
+{
+  "RootObject": {
+    "__guid": "b798883a-347f-4650-824a-374a77400b7f",
+    "Name": "openDooe",
+    "Position": "-64.78557,-1662.348,36.16475",
+    "Rotation": "0,-0,-0.7071068,0.7071068",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "DoorOpener",
+        "__guid": "f40e3524-0f39-4a28-b9ab-93e22b90b4a4",
+        "dis": 500
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

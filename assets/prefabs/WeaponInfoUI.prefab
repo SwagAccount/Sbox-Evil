@@ -1,0 +1,114 @@
+{
+  "RootObject": {
+    "__guid": "13c63704-e40a-453f-bd77-95ca4391d529",
+    "Name": "weaponinfoui",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "WeaponInfoUI",
+        "__guid": "0a9fde90-49c7-4ea9-9c03-f7ff44374d40",
+        "ammo": {
+          "_type": "gameobject",
+          "go": "ec67a098-5453-43ff-a776-8452dcf5a2fa"
+        },
+        "AmmoChar": "p",
+        "ammoSpace": 5,
+        "chamberRound": {
+          "_type": "gameobject",
+          "go": "51ba53ae-4149-454a-a234-bfe0e7065929"
+        },
+        "fontSize": 85,
+        "Name": {
+          "_type": "component",
+          "component_id": "7f8a6441-626a-4516-8de6-01f564109aa1",
+          "go": "ce9475d8-cd32-4fff-bbca-ad83fd138e5e",
+          "component_type": "TextRenderer"
+        },
+        "scale": 0.3,
+        "Type": {
+          "_type": "component",
+          "component_id": "99c099a9-6f7d-45f0-a375-0a279ae920fc",
+          "go": "2249d92c-ba91-421f-bb56-50d07e967f64",
+          "component_type": "TextRenderer"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "51ba53ae-4149-454a-a234-bfe0e7065929",
+        "Name": "ChamberRound",
+        "Position": "-1.549623,0,2.382507",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Scale": "0.06,0.06,0.06",
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "b347a661-0573-4438-97f0-e833ae1cfc3f",
+            "Color": "1,1,1,1",
+            "FontFamily": "halflife2",
+            "FontSize": 85,
+            "Scale": 0.3,
+            "Text": "p"
+          }
+        ]
+      },
+      {
+        "__guid": "ec67a098-5453-43ff-a776-8452dcf5a2fa",
+        "Name": "Ammo",
+        "Position": "-2.1,0,2.382507",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Scale": "0.06,0.06,0.06",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "2249d92c-ba91-421f-bb56-50d07e967f64",
+        "Name": "Type",
+        "Position": "-0.7579215,0.000001374908,2.382504",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Scale": "0.1,0.1,0.1",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "99c099a9-6f7d-45f0-a375-0a279ae920fc",
+            "Color": "1,1,1,1",
+            "FontFamily": "diediedie",
+            "FontSize": 60.51,
+            "Scale": 0.17,
+            "Text": "ammo"
+          }
+        ]
+      },
+      {
+        "__guid": "ce9475d8-cd32-4fff-bbca-ad83fd138e5e",
+        "Name": "Name",
+        "Position": "0.5858647,0.000001455004,2.382505",
+        "Rotation": "0,0.7071067,0,0.7071067",
+        "Scale": "0.1,0.1,0.1",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "7f8a6441-626a-4516-8de6-01f564109aa1",
+            "Color": "1,1,1,1",
+            "FontFamily": "diediedie",
+            "FontSize": 64,
+            "Scale": 0.3,
+            "Text": "Gun"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

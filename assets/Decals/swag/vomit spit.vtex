@@ -1,0 +1,20 @@
+{
+  "Sequences": [
+    {
+      "Source": "decals/swag/bloody handprints 1.png",
+      "IsLooping": true,
+      "Frames": 64
+    },
+    {
+      "Source": "decals/swag/blood pool 4.png",
+      "IsLooping": true,
+      "Frames": 64
+    },
+    {
+      "Source": "decals/swag/blood pool 8.png",
+      "IsLooping": true,
+      "Frames": 64
+    }
+  ],
+  "OutputTypeString": "2D"
+}

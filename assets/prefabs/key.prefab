@@ -1,0 +1,231 @@
+{
+  "RootObject": {
+    "__guid": "2970c91b-ea54-4f32-ad76-07d01bef33cc",
+    "Name": "key",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "GunValues",
+        "__guid": "6539d085-e350-4bb0-bd61-ad3ef0951899",
+        "avoidAxis": "0,0,0",
+        "bulletStats": [
+          {
+            "ammoType": "9mm",
+            "shotsForce": 50000,
+            "shotsPer": 1,
+            "spreadX": 0.01,
+            "spreadY": 0.01,
+            "damage": 14.4,
+            "bleedDamage": 1.4,
+            "isProjectile": true,
+            "projectile": {
+              "_type": "gameobject",
+              "prefab": "opendooe.prefab"
+            },
+            "selfPropelled": true,
+            "projectileSpeed": 100
+          }
+        ],
+        "canShoot": true,
+        "cantOverReload": false,
+        "clipSize": 1,
+        "deployTime": 0.333,
+        "fireParam": "Fire",
+        "fovMult": 0.66,
+        "hasFakeProjectile": false,
+        "leftHand": {
+          "_type": "gameobject",
+          "go": "b0140774-c8f6-44c1-b281-4d68e5b6e4a0"
+        },
+        "letGoAtZeroAmmo": true,
+        "LoadedParam": "Loaded",
+        "minMaxRecoilPos": [
+          "1,0,0",
+          "1.5,0,0.3"
+        ],
+        "minMaxRecoilRot": [
+          "3,-1.5,-2.1",
+          "4.5,1.5,2.1"
+        ],
+        "Model": {
+          "_type": "component",
+          "component_id": "ffd6d82a-9d3e-4b02-8541-e73e1f7afa1d",
+          "go": "64c93c02-c9ee-4021-b7e1-7a8b3db57648",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "modes": [
+          {
+            "modeName": "Single",
+            "shotsPerShoot": 1
+          },
+          {},
+          {},
+          {}
+        ],
+        "notReloadable": true,
+        "posSpeed": 10,
+        "range": 50,
+        "recoilReset": 5,
+        "reloadCParam": "reloadC",
+        "reloadCTime": 1.1,
+        "reloadMount": 0,
+        "reloadNoCParam": "reloadNoC",
+        "reloadNoCTime": 1.5,
+        "reloadTillFull": false,
+        "reloadWarmTime": 0,
+        "rightHand": {
+          "_type": "gameobject",
+          "go": "31f09c16-fb87-4b64-bf44-ba3029c47932"
+        },
+        "rotSpeed": 10,
+        "runReload": false,
+        "sensMult": 1,
+        "shootFromCam": true,
+        "shootTime": 0.5,
+        "swayPitch": 8,
+        "swayYaw": 8,
+        "tAim": {
+          "_type": "gameobject",
+          "go": "a2376880-0806-4bf3-adbf-e9666056d516"
+        },
+        "tIdle": {
+          "_type": "gameobject",
+          "go": "c3a1f765-f0e5-44de-a3c4-2f588f7249fe"
+        },
+        "tip": {
+          "_type": "gameobject",
+          "go": "cf29dee1-0f5f-4a7d-9a96-ab4b7b711ff1"
+        },
+        "tRun": {
+          "_type": "gameobject",
+          "go": "d7118f2e-c623-4e04-882c-40417eaca50c"
+        },
+        "unDeployParam": "unDeploy"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "c3a1f765-f0e5-44de-a3c4-2f588f7249fe",
+        "Name": "GunTransformIdle",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "a2376880-0806-4bf3-adbf-e9666056d516",
+        "Name": "GunTransformAim",
+        "Position": "10.95794,0,-4.8",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "d7118f2e-c623-4e04-882c-40417eaca50c",
+        "Name": "GunTransformRun",
+        "Position": "10.95794,-4.672375,-6.899998",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "cf29dee1-0f5f-4a7d-9a96-ab4b7b711ff1",
+        "Name": "Tip",
+        "Position": "11.05383,-0.009423484,2.817571",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "64c93c02-c9ee-4021-b7e1-7a8b3db57648",
+        "Name": "key",
+        "Position": "6.640663,0.000001751474,2.82221",
+        "Rotation": "0.5,0.5,-0.5,0.5",
+        "Scale": "0.6999999,0.7,0.7",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "8288b676-8062-4d6f-9e22-abfa679745b0",
+            "IsTrigger": false,
+            "Model": "models/key/key.vmdl",
+            "Static": false
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "ffd6d82a-9d3e-4b02-8541-e73e1f7afa1d",
+            "AnimationGraph": "animgraphs/key.vanmgrph",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/key/key.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "KeyMaterialSetter",
+            "__guid": "2e4da0d8-d133-459c-b490-570d0a55133d",
+            "gunValues": {
+              "_type": "component",
+              "component_id": "6539d085-e350-4bb0-bd61-ad3ef0951899",
+              "go": "2970c91b-ea54-4f32-ad76-07d01bef33cc",
+              "component_type": "GunValues"
+            },
+            "materials": [
+              "models/key/quad_key_material_base.vmat",
+              "models/key/greenkey.vmat",
+              "models/key/redkey.vmat",
+              "models/key/whitekey.vmat"
+            ],
+            "modelRenderer": {
+              "_type": "component",
+              "component_id": "ffd6d82a-9d3e-4b02-8541-e73e1f7afa1d",
+              "go": "64c93c02-c9ee-4021-b7e1-7a8b3db57648",
+              "component_type": "SkinnedModelRenderer"
+            }
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "0ccfb179-8695-45b6-9527-ddfcab256022",
+            "Name": "Bone",
+            "Position": "0,0,0",
+            "Rotation": "0.4999999,0.4999998,0.4999998,0.5000005",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "1ee1f35a-3f09-42ec-a0c7-1702dfc080d7",
+                "Name": "Bone_end",
+                "Position": "0.000007170388,10.8819,0.000009113141",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "31f09c16-fb87-4b64-bf44-ba3029c47932",
+                "Name": "Object",
+                "Position": "-6.899237,1.16668,0.00003247601",
+                "Rotation": "0.0000002980232,-1,-0.0000004768374,-0.00000002980211",
+                "Scale": "1.428572,1.428571,1.428571",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "b0140774-c8f6-44c1-b281-4d68e5b6e4a0",
+                "Name": "Object (1)",
+                "Position": "-9.486315,-46.80486,49.50288",
+                "Rotation": "-0.4999986,0.499998,0.4999987,-0.4999987",
+                "Scale": "2.040817,2.040816,2.040816",
+                "Enabled": true,
+                "NetworkMode": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

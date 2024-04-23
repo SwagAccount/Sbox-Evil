@@ -1,0 +1,471 @@
+{
+  "RootObject": {
+    "__guid": "8daf0db6-a47a-4d3c-82fe-94a998370b93",
+    "Name": "cigarette",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "GunValues",
+        "__guid": "9ba2c517-db51-4145-8d02-cf01bd9b1970",
+        "avoidAxis": "1,0,0",
+        "bulletStats": [
+          {
+            "ammoType": ".45",
+            "shotsForce": 50000,
+            "shotsPer": 1,
+            "spreadX": 0.01,
+            "spreadY": 0.01,
+            "damage": 14.4,
+            "bleedDamage": 1.4,
+            "isProjectile": true,
+            "projectile": {
+              "_type": "gameobject",
+              "prefab": "prefabs/projectiles/cigprojectile.prefab"
+            },
+            "selfPropelled": true,
+            "projectileSpeed": 100
+          }
+        ],
+        "canShoot": true,
+        "cantOverReload": false,
+        "clipSize": 8,
+        "deployTime": 0.333,
+        "fireParam": "Fire",
+        "fovMult": 0.66,
+        "hasFakeProjectile": false,
+        "leftHand": {
+          "_type": "gameobject",
+          "go": "1b938d71-35e2-433f-83a7-6589f2cd88cd"
+        },
+        "letGoAtZeroAmmo": true,
+        "LoadedParam": "Loaded",
+        "minMaxRecoilPos": [
+          "-1,0,0",
+          "-1.5,0,0.3"
+        ],
+        "minMaxRecoilRot": [
+          "-3,-1.5,-2.1",
+          "-4.5,1.5,2.1"
+        ],
+        "Model": {
+          "_type": "component",
+          "component_id": "64c08d84-cd81-4c01-ab45-e2edc10ea0e0",
+          "go": "6a9f605c-259c-482c-a10f-c032d73dbcc1",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "modes": [
+          {
+            "modeName": "Single",
+            "ammoUse": 1,
+            "timeBeforeShooting": 1.15,
+            "shotsPerShoot": 1,
+            "ammoNeeded": 1
+          }
+        ],
+        "notReloadable": true,
+        "posSpeed": 10,
+        "range": 52493,
+        "recoilReset": 5,
+        "reloadCParam": "reloadC",
+        "reloadCTime": 1.1,
+        "reloadMount": 7,
+        "reloadNoCParam": "reloadNoC",
+        "reloadNoCTime": 1.5,
+        "reloadTillFull": false,
+        "reloadWarmTime": 0,
+        "rightHand": {
+          "_type": "gameobject",
+          "go": "40c8abbc-57ae-44fc-aaab-2ec5297860d1"
+        },
+        "rotSpeed": 10,
+        "runReload": false,
+        "sensMult": 1,
+        "shootFromCam": false,
+        "shootTime": 0.85,
+        "swayPitch": 8,
+        "swayYaw": 8,
+        "tAim": {
+          "_type": "gameobject",
+          "go": "051db982-956f-497f-a255-1ca9f7266619"
+        },
+        "tIdle": {
+          "_type": "gameobject",
+          "go": "da328014-5366-4275-9aaa-baabb6fdeb41"
+        },
+        "tip": {
+          "_type": "gameobject",
+          "go": "bb5b3fc8-32f7-49c5-bfae-23148868b621"
+        },
+        "tRun": {
+          "_type": "gameobject",
+          "go": "b70ef844-799a-4e80-baaa-d56ed9171157"
+        },
+        "unDeployParam": "unDeploy"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "da328014-5366-4275-9aaa-baabb6fdeb41",
+        "Name": "GunTransformIdle",
+        "Position": "12.3448,-8.227649,-8.277501",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "051db982-956f-497f-a255-1ca9f7266619",
+        "Name": "GunTransformAim",
+        "Position": "12.3448,-8.227649,-8.277501",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "b70ef844-799a-4e80-baaa-d56ed9171157",
+        "Name": "GunTransformRun",
+        "Position": "12.3448,-8.227649,-8.277501",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "bb5b3fc8-32f7-49c5-bfae-23148868b621",
+        "Name": "Tip",
+        "Position": "7.21249,-0.009423713,4.103758",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "1b938d71-35e2-433f-83a7-6589f2cd88cd",
+        "Name": "Object",
+        "Position": "-10.13415,9.524113,-4.763",
+        "Rotation": "-0.02223349,-0.2346515,-0.9706044,-0.04869346",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "6a9f605c-259c-482c-a10f-c032d73dbcc1",
+        "Name": "1911",
+        "Rotation": "0,0,1,-0.00000004371139",
+        "Scale": "0.02,0.02,0.02",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "64c08d84-cd81-4c01-ab45-e2edc10ea0e0",
+            "AnimationGraph": "animgraphs/pills.vanmgrph",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "MaterialOverride": "invisible.vmat",
+            "Model": "models/pill bottle/pills.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "3c6b70c6-47fb-453f-a723-7459fa9e9ab5",
+            "Name": "blender_implicit",
+            "Rotation": "0,0,0.7071067,0.7071068",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "f0949ea9-935b-479e-98e3-87cbf50db6df",
+            "Name": "Bone_001",
+            "Rotation": "-0.4999997,-0.4999999,-0.5000001,-0.5000003",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "c535e007-3fe0-4f49-b169-3bcad7a68d89",
+                "Name": "Bone_001_end",
+                "Position": "0.00002336512,199.9998,-0.00004005448",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "40c8abbc-57ae-44fc-aaab-2ec5297860d1",
+                "Name": "Object",
+                "Position": "65.22682,55.20836,-75.37096",
+                "Rotation": "-0.6355105,-0.4116663,-0.5320923,0.3788601",
+                "Scale": "75,75,75",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "b8501005-d78c-4721-a654-8d016f050a82",
+                "Name": "fag",
+                "Position": "-5.39948,34.96492,-171.5993",
+                "Rotation": "0.6336746,0.162111,0.1874758,0.7328228",
+                "Scale": "1.011336,1.011336,1.011336",
+                "Tags": "fag",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Components": [
+                  {
+                    "__type": "FagDealer",
+                    "__guid": "4dd04f43-4169-4a33-9b2c-b9040ff1392b",
+                    "lightCurve": [
+                      {
+                        "y": 0.7074468
+                      },
+                      {
+                        "x": 0.029761905,
+                        "y": 0.46405017
+                      },
+                      {
+                        "x": 0.05952381,
+                        "y": 0.6537905
+                      },
+                      {
+                        "x": 0.078869045,
+                        "y": 0.109773755
+                      },
+                      {
+                        "x": 0.108630955,
+                        "y": 0.8803902
+                      },
+                      {
+                        "x": 0.1279762,
+                        "y": 0.45961165,
+                        "in": -2.7093012,
+                        "out": 2.7093012
+                      },
+                      {
+                        "x": 0.15476191,
+                        "y": 0.7197903
+                      },
+                      {
+                        "x": 0.16964285,
+                        "y": 0.36304757
+                      },
+                      {
+                        "x": 0.20386904,
+                        "y": 0.95604867
+                      },
+                      {
+                        "x": 0.21577379,
+                        "y": 0.6712894
+                      },
+                      {
+                        "x": 0.23363096,
+                        "y": 0.7777811
+                      },
+                      {
+                        "x": 0.25744048,
+                        "y": 0.6359175
+                      },
+                      {
+                        "x": 0.2767857,
+                        "y": 0.6445821
+                      },
+                      {
+                        "x": 0.30059522,
+                        "y": 0.5309392
+                      },
+                      {
+                        "x": 0.33333334,
+                        "y": 0.7233985
+                      },
+                      {
+                        "x": 0.3482143,
+                        "y": 0.2565689
+                      },
+                      {
+                        "x": 0.36607143,
+                        "y": 0.3739787
+                      },
+                      {
+                        "x": 0.3928571,
+                        "y": 0.19418992
+                      },
+                      {
+                        "x": 0.43005952,
+                        "y": 0.6124435
+                      },
+                      {
+                        "x": 0.44791666,
+                        "y": 0.5340387,
+                        "in": -0.19097519,
+                        "out": 0.19097519
+                      },
+                      {
+                        "x": 0.45386904,
+                        "y": 0.5953937
+                      },
+                      {
+                        "x": 0.48214287,
+                        "y": 0.3453818
+                      },
+                      {
+                        "x": 0.4985119,
+                        "y": 0.73572266
+                      },
+                      {
+                        "x": 0.51636904,
+                        "y": 0.25611407
+                      },
+                      {
+                        "x": 0.5520833,
+                        "y": 0.96480983
+                      },
+                      {
+                        "x": 0.55654764,
+                        "y": 0.3377387
+                      },
+                      {
+                        "x": 0.59970236,
+                        "y": 0.80302674
+                      },
+                      {
+                        "x": 0.6056547,
+                        "y": 0.30409607
+                      },
+                      {
+                        "x": 0.6264881,
+                        "y": 0.77858883
+                      },
+                      {
+                        "x": 0.6443452,
+                        "y": 0.54257816
+                      },
+                      {
+                        "x": 0.6681548,
+                        "y": 0.59188515
+                      },
+                      {
+                        "x": 0.6860119,
+                        "y": 0.5415192
+                      },
+                      {
+                        "x": 0.70238096,
+                        "y": 0.6990134
+                      },
+                      {
+                        "x": 0.72023803,
+                        "y": 0.5412312
+                      },
+                      {
+                        "x": 0.7395833,
+                        "y": 0.7653697
+                      },
+                      {
+                        "x": 0.7797619,
+                        "y": 0.5489543
+                      },
+                      {
+                        "x": 0.7827381,
+                        "y": 0.82968384
+                      },
+                      {
+                        "x": 0.80505955,
+                        "y": 0.7627704
+                      },
+                      {
+                        "x": 0.8139881,
+                        "y": 0.8693176
+                      },
+                      {
+                        "x": 0.8407738,
+                        "y": 0.6096356
+                      },
+                      {
+                        "x": 0.8720238,
+                        "y": 0.9886062
+                      },
+                      {
+                        "x": 0.9032738,
+                        "y": 0.098874845
+                      },
+                      {
+                        "x": 0.91220236,
+                        "y": 0.9764146
+                      },
+                      {
+                        "x": 0.9389881,
+                        "y": 0.5222363
+                      },
+                      {
+                        "x": 0.9657738,
+                        "y": 0.8951524
+                      },
+                      {
+                        "x": 1,
+                        "y": 0.707
+                      }
+                    ],
+                    "model": {
+                      "_type": "component",
+                      "component_id": "03861df9-bb4d-45d7-a525-cdf3e2801809",
+                      "go": "b8501005-d78c-4721-a654-8d016f050a82",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "progress": 1,
+                    "t": 0,
+                    "light": 8,
+                    "pointLight": {
+                      "_type": "component",
+                      "component_id": "29a86ad0-6a42-4864-a593-47bb37145ab8",
+                      "go": "291724b1-6e6f-4818-bce4-6bc54d07bf13",
+                      "component_type": "PointLight"
+                    },
+                    "power": 0.05,
+                    "scale": 0.5,
+                    "smokePositions": "47,235"
+                  },
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "03861df9-bb4d-45d7-a525-cdf3e2801809",
+                    "AnimationGraph": "animgraphs/fag.vanmgrph",
+                    "BodyGroups": 18446744073709551615,
+                    "CreateBoneObjects": false,
+                    "Model": "models/fag/fag.vmdl",
+                    "RenderType": "On",
+                    "Tint": "1,1,1,1"
+                  }
+                ],
+                "Children": [
+                  {
+                    "__guid": "291724b1-6e6f-4818-bce4-6bc54d07bf13",
+                    "Name": "smoke",
+                    "Position": "0,0,4.485",
+                    "Tags": "light_point,light",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.PointLight",
+                        "__guid": "29a86ad0-6a42-4864-a593-47bb37145ab8",
+                        "Attenuation": 3.8,
+                        "FogMode": "Enabled",
+                        "FogStrength": 1,
+                        "LightColor": "1,0.65,0,1",
+                        "Radius": 400,
+                        "Shadows": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "942ce0ac-2c3d-40d0-b520-3efbbf7edae2",
+            "Name": "Bone",
+            "Position": "739.9999,-430,-0.00005819218",
+            "Rotation": "-0.1297691,0.2254937,0.481613,0.836876",
+            "Enabled": true,
+            "NetworkMode": 2
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

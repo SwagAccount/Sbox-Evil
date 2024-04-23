@@ -1,0 +1,26 @@
+{
+  "RootObject": {
+    "__guid": "0f22dbc1-8ce6-4a22-ae8c-00636d9f8730",
+    "Name": "insane",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "Skitzo",
+        "__guid": "cc28b5a2-e721-4a10-a16e-f03e21290ae8"
+      },
+      {
+        "__type": "DELETEAFTER",
+        "__guid": "b1275fa0-8eeb-4def-a2a4-82d3a99a94ab",
+        "time": 50
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

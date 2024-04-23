@@ -5,11 +5,7 @@
   "Ident": "sevil",
   "Tags": "horror psx",
   "Schema": 1,
-  "HasAssets": true,
-  "AssetsPath": "",
   "Resources": "",
-  "HasCode": true,
-  "CodePath": "/code/",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {

@@ -1,0 +1,47 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="centered">
+		<div style="top: 40%; font-size: @(25+(25*progress))px; opacity: @progress; color: white">
+			@MyStringValue
+		</div>
+	<div>
+</root>
+
+@code
+{
+
+	[Property] public string MyStringValue {get;set;}
+	public float progress {get;set;}
+	[Property] public float reduceTime {get;set;}
+	
+
+	[ConCmd( "playermessage" )]
+	public static void PlayerMessage( string input )
+	{
+		GameObject player = null;
+		if(Game.ActiveScene == null) return;
+		IEnumerable<GameObject> playerballs = Game.ActiveScene.GetAllObjects(true);
+		foreach(GameObject go in playerballs)
+		{
+			
+			if(go.Tags.Has("player"))
+			{
+				player = go;
+				break;
+			}
+		}
+		if(player == null) return;
+		PlayerMessagesRazor pmr = player.Components.Get<PlayerMessagesRazor>();
+		pmr.MyStringValue = input;
+		pmr.progress = 1;
+	}
+	protected override void OnUpdate()
+	{
+		progress = MathX.Clamp(progress - reduceTime*Time.Delta, 0, 1);
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue, progress );
+}

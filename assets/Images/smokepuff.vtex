@@ -1,0 +1,13 @@
+{
+  "Sequences": [
+    {
+      "Source": "images/smokepuff.png",
+      "IsLooping": true,
+      "FlipBook": true,
+      "Columns": 5,
+      "Rows": 5,
+      "Frames": 64
+    }
+  ],
+  "OutputTypeString": "2D"
+}

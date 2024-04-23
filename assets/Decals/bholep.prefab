@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "a44444f7-3dcd-4e84-9c25-d7c873e02fb9",
+    "Name": "bholep",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "7193506b-1632-4bdf-8848-a3026864237d",
+        "Name": "Projector",
+        "Position": "-2.165,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "DecalRenderer",
+            "CutoffAngle": 47.92,
+            "CutoffAngleSoftness": 5.21,
+            "Material": "decals/conc hit.vmat",
+            "Mod2XBlending": true,
+            "Size": "3.75,3.75,6.2",
+            "TintColor": "1,1,1,1",
+            "TriPlanar": false
+          }
+        ]
+      },
+      {
+        "Id": "ed9aaf04-b0d1-400e-b255-9ee67afb86a5",
+        "Name": "SoundPlayer",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SoundPointComponent",
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Pitch": 1,
+            "PlayOnStart": true,
+            "Repeat": false,
+            "SoundEvent": "sounds/physics/physics.default.impact.sound",
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "Volume": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

@@ -1,0 +1,91 @@
+{
+  "__guid": "976db40f-8556-4cf2-97f9-81df692838c9",
+  "GameObjects": [
+    {
+      "__guid": "d38c20b5-7b56-4d34-a2b0-b4d90a6b47fc",
+      "Name": "Settings",
+      "Tags": "settings",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/settings.prefab"
+    },
+    {
+      "__guid": "cab3e369-2d43-4aa9-9e6d-79fd1cb5ac85",
+      "Name": "Main",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "473a45cb-7c6a-43ec-8f0e-53c98d47c6e4",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 101
+        },
+        {
+          "__type": "MainMenuRazor",
+          "__guid": "5778ff0b-cdee-469b-8d77-89d7f13b6e3a",
+          "MyStringValue": "Hello World!",
+          "SaveName": "defaultSave",
+          "Settings": {
+            "_type": "component",
+            "component_id": "58577df6-b64a-4114-916b-097022b4e2da",
+            "go": "d38c20b5-7b56-4d34-a2b0-b4d90a6b47fc",
+            "component_type": "Settings"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "5d3888b6-9d01-47e4-852e-a8cbe5bb55e6",
+      "Name": "Background",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "4331a81e-7903-44ef-9f88-1fb0b2d0d5fe",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 1000
+        },
+        {
+          "__type": "MenuBackground",
+          "__guid": "8b6e9736-97ea-4598-9cde-6aaf597d1216",
+          "MyStringValue": ""
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "menu",
+  "Description": "",
+  "LastSaved": "2024-04-12T00:28:38.9796103\u002B07:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

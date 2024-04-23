@@ -1,0 +1,52 @@
+{
+  "RootObject": {
+    "Id": "fabda385-4324-4a5d-b3c2-a050ad4a5f96",
+    "Name": "extingish",
+    "Tags": "particles,fireex",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LegacyParticleSystem",
+        "ControlPoints": [],
+        "Looped": true,
+        "Particles": "particles/fire_extinguisher/extinguisher_destroy_fx_smoke.vpcf",
+        "PlaybackSpeed": 1
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Radius": 1,
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Rigidbody",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "RigidbodyFlags": "DisableCollisionSounds",
+        "StartAsleep": false
+      },
+      {
+        "__type": "DELETEAFTER",
+        "time": 5
+      },
+      {
+        "__type": "FireExScript",
+        "cl": {
+          "_type": "component",
+          "go": "fabda385-4324-4a5d-b3c2-a050ad4a5f96",
+          "component_type": "SphereCollider"
+        }
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

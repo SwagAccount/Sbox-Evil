@@ -53,14 +53,11 @@ public sealed class SwankDoor : Component
 	}
 	protected override void OnUpdate()
 	{
-		foreach(Interactable interactable in interactables)
-		{
-			interactable.interactType = progress.progress[1] == 1 ? "Use":"Locked";
-		}
 		if(Interacted())
 		{
 			SetInteracted(false);
 			if (progress.progress[1] == 1) Using = true;
+			else ConsoleSystem.Run( "playermessage", "Locked." );
 		}
 		if(!animated)
 		{

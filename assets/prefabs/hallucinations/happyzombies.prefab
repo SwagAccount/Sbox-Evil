@@ -1,0 +1,22 @@
+{
+  "RootObject": {
+    "__guid": "73f5b47b-dec7-4d61-a360-54b390c19674",
+    "Name": "happyzombies",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "HappyZombies",
+        "__guid": "343e9a4c-560c-4419-9080-6cc90cccdce3",
+        "time": 30
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

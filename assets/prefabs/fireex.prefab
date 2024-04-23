@@ -1,0 +1,245 @@
+{
+  "RootObject": {
+    "__guid": "347c7d90-d9c3-4375-86c4-81232f58c722",
+    "Name": "fireex",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "GunValues",
+        "__guid": "04dfa3f3-76d2-4820-91db-77702af52176",
+        "avoidAxis": "1,0,0",
+        "bulletStats": [
+          {
+            "ammoType": "fireex",
+            "shotsPer": 1,
+            "isProjectile": true,
+            "projectile": {
+              "_type": "gameobject",
+              "prefab": "prefabs/extingish.prefab"
+            },
+            "projectileSpeed": 10000
+          }
+        ],
+        "canShoot": true,
+        "cantOverReload": false,
+        "clipSize": 150,
+        "deployTime": 0,
+        "fireParam": "fire",
+        "flash": {
+          "_type": "gameobject",
+          "prefab": "prefabs/flash.prefab"
+        },
+        "fovMult": 0.66,
+        "hasFakeProjectile": false,
+        "leftHand": {
+          "_type": "gameobject",
+          "go": "9fb7d647-996c-4d9e-bad0-335b6e03d9f9"
+        },
+        "letGoAtZeroAmmo": false,
+        "LoadedParam": "loaded",
+        "minMaxRecoilPos": [
+          "0,0,0",
+          "0,-0.2,0"
+        ],
+        "minMaxRecoilRot": [
+          "0,0,0",
+          "0,0,1"
+        ],
+        "Model": {
+          "_type": "component",
+          "component_id": "f7010746-4e81-4890-92f1-f364eedc34d2",
+          "go": "fcf9b1fc-913b-4925-998a-ca634fb41cc2",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "modes": [
+          {
+            "ammoUse": 1,
+            "timeBetweenEachShot": 0.1,
+            "buttonHold": true,
+            "ammoNeeded": 1
+          }
+        ],
+        "notReloadable": true,
+        "posSpeed": 10,
+        "range": 52493,
+        "recoilReset": 20,
+        "reloadCParam": "reloadC",
+        "reloadCTime": 0,
+        "reloadMount": 0,
+        "reloadNoCParam": "reloadNoC",
+        "reloadNoCTime": 0,
+        "reloadTillFull": false,
+        "reloadWarmTime": 0,
+        "rightHand": {
+          "_type": "gameobject",
+          "go": "4fbd716f-129c-448f-8f8a-9e45b350cc56"
+        },
+        "rotSpeed": 10,
+        "runReload": false,
+        "sensMult": 1,
+        "shootFromCam": false,
+        "shootTime": 0.1,
+        "swayPitch": 1,
+        "swayYaw": 1,
+        "tAim": {
+          "_type": "gameobject",
+          "go": "20d5cf8a-9cfb-4664-ae3e-1426b6d4d4c6"
+        },
+        "tIdle": {
+          "_type": "gameobject",
+          "go": "20d5cf8a-9cfb-4664-ae3e-1426b6d4d4c6"
+        },
+        "tip": {
+          "_type": "gameobject",
+          "go": "fdcb5936-8c0f-4826-8b95-28b52459e4f5"
+        },
+        "tRun": {
+          "_type": "gameobject",
+          "go": "9f9b6e7f-79d7-4706-b171-53394aaffa56"
+        },
+        "unDeployParam": "unDeploy"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "20d5cf8a-9cfb-4664-ae3e-1426b6d4d4c6",
+        "Name": "GunTransformIdle",
+        "Position": "16.86704,-6.772397,-16.01031",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "64a685d0-0409-400e-8161-bbb8ea00a458",
+        "Name": "GunTransformAim",
+        "Position": "16.86704,-6.772397,-16.01031",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "9f9b6e7f-79d7-4706-b171-53394aaffa56",
+        "Name": "GunTransformRun",
+        "Position": "16.86704,-6.772397,-16.01031",
+        "Enabled": true,
+        "NetworkMode": 2
+      },
+      {
+        "__guid": "fcf9b1fc-913b-4925-998a-ca634fb41cc2",
+        "Name": "fireex",
+        "Position": "0,0,-4.838108",
+        "Rotation": "0,-0,-0.7071068,0.7071068",
+        "Scale": "0.02,0.02,0.02",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__guid": "f7010746-4e81-4890-92f1-f364eedc34d2",
+            "AnimationGraph": "animgraphs/fireex.vanmgrph",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": true,
+            "Model": "models/fireex.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "fdcb5936-8c0f-4826-8b95-28b52459e4f5",
+            "Name": "Object",
+            "Position": "-0.0001576354,1273.808,966.9563",
+            "Rotation": "0,0,0.7071068,0.7071068",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "cbb39ae6-99e2-4f23-b5d3-e27a52fdade5",
+            "Name": "Bone",
+            "Position": "0,0,0",
+            "Rotation": "0.4999999,0.4999997,0.4999998,0.5000006",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "7f2b1c25-1416-4be4-9082-967224927a34",
+                "Name": "Bone_002",
+                "Position": "-50.99663,1054.882,0.0008705019",
+                "Rotation": "0.0000001793895,-0.00000005960464,0.9849885,0.17262",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "4fbd716f-129c-448f-8f8a-9e45b350cc56",
+                    "Name": "Bone_003",
+                    "Position": "-0.0007688999,138.039,0.0002114027",
+                    "Rotation": "0.06377834,-0.06056872,-0.665265,0.7414083",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "baf05737-b860-4985-8d63-674140317a5b",
+                        "Name": "Bone_003_end",
+                        "Position": "-0.0007785857,46.64933,0.0003824476",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "__guid": "9953d493-c90a-4e54-827d-5f0f4d83fad5",
+                "Name": "Bone_001",
+                "Position": "0.0006718579,1039.814,0.000807595",
+                "Rotation": "-0.00000009729342,-0.00000008940697,0.5986044,0.8010448",
+                "Enabled": true,
+                "NetworkMode": 2
+              },
+              {
+                "__guid": "7f09144d-291b-4fd4-9bb9-d4d63ffd5b20",
+                "Name": "Bone_004",
+                "Position": "0,0,0",
+                "Rotation": "-0.09656769,0.000000132945,0.000000005852527,0.9953264",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "Children": [
+                  {
+                    "__guid": "1d75acfe-632a-43df-ab88-29e56e3aebc1",
+                    "Name": "Bone_005",
+                    "Position": "0.0003704518,716.0076,0.0002384186",
+                    "Rotation": "0.00000006802115,0.0000001192093,-0.7071065,0.7071069",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "Children": [
+                      {
+                        "__guid": "292193cf-783b-4a6b-bb67-12a6ae9bf46c",
+                        "Name": "Bone_005_end",
+                        "Position": "0.0006150536,104.9187,0.0002696953",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      },
+                      {
+                        "__guid": "9fb7d647-996c-4d9e-bad0-335b6e03d9f9",
+                        "Name": "Object",
+                        "Position": "0,0,0",
+                        "Rotation": "0.5,-0.5,-0.5,0.5",
+                        "Enabled": true,
+                        "NetworkMode": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

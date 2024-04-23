@@ -22,6 +22,12 @@ public sealed class CameraController : Component
         }
         yRotation = playerBody.Transform.Rotation.Angles().yaw;
     }
+    protected override void OnEnabled()
+	{
+        Log.Info("fuck");
+		xRotation = Transform.LocalRotation.Angles().pitch;
+		yRotation = playerBody.Transform.LocalRotation.Angles().yaw;
+	}
     protected override void OnUpdate()
     {
         float mouseX = Input.AnalogLook.yaw * mouseSensitivity * settings.MouseSens * Time.Delta;

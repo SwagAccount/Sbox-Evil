@@ -1,0 +1,223 @@
+{
+  "RootObject": {
+    "__guid": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
+    "Name": "inventory",
+    "Tags": "inventory",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "ManualItemAdder",
+        "__guid": "1be73573-b925-4479-87b3-cdb95eaeda31",
+        "add": false,
+        "gunSaveData": {
+          "clipContent": []
+        },
+        "name": "m16",
+        "threeDinv": {
+          "_type": "component",
+          "component_id": "c61d43a6-ac6a-4678-ab94-ab1ee53eb525",
+          "go": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
+          "component_type": "ThreeDinv"
+        }
+      },
+      {
+        "__type": "ThreeDinv",
+        "__guid": "c61d43a6-ac6a-4678-ab94-ab1ee53eb525",
+        "handPos": "0,0",
+        "offsetPos": "0,0",
+        "cam": {
+          "_type": "gameobject",
+          "go": "a3d5be12-2e86-4947-a7f3-2651949446de"
+        },
+        "camd": {
+          "_type": "gameobject",
+          "go": "cb086d87-2c01-45af-9173-10ade32df6ae"
+        },
+        "dropPos": {
+          "_type": "gameobject",
+          "go": "94553509-0b15-4aef-9370-49a2fde49c6e"
+        },
+        "hand": {
+          "_type": "gameobject",
+          "go": "fccacd87-f940-4392-9a7f-e4d6c5d6cdbc"
+        },
+        "handP": {
+          "_type": "gameobject",
+          "go": "7570adc4-afa8-4ea1-b075-065ffe0c5fe9"
+        },
+        "handPosXClamp": "-18,18",
+        "handPosYClamp": "-18,18",
+        "invParent": {
+          "_type": "gameobject",
+          "go": "87c9b725-4d80-4b52-970a-8ae5d30a4ce7"
+        },
+        "itemdoc": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/1911item.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/m16item.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "materials/fireexitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/keyitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/double barrelitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/pillsitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/crowbaritem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/cigaretteitem.prefab"
+          }
+        ],
+        "items": [],
+        "PlayerpS": {
+          "_type": "gameobject",
+          "go": "352644db-aba5-4aa2-bc95-fdaa40389604"
+        },
+        "sens": 80,
+        "worlditemdoc": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/1911witem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/m16witem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/fireexwitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/keywitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/double barrelwitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/pillswitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/crowbarwitem.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/cigarettewitem.prefab"
+          }
+        ]
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "87c9b725-4d80-4b52-970a-8ae5d30a4ce7",
+        "Name": "InvParent",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "a3d5be12-2e86-4947-a7f3-2651949446de",
+            "Name": "Camp",
+            "Position": "-2.645168,0.06192388,0.000006560236",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Children": [
+              {
+                "__guid": "cb086d87-2c01-45af-9173-10ade32df6ae",
+                "Name": "Cam",
+                "Position": "-17.618,0,20.1047",
+                "Rotation": "-0.0000000008470715,0.4547681,-0.00000007284692,0.8906099",
+                "Enabled": true,
+                "NetworkMode": 2
+              }
+            ]
+          },
+          {
+            "__guid": "352644db-aba5-4aa2-bc95-fdaa40389604",
+            "Name": "Playerp",
+            "Position": "-17.00951,0,0",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "9120bea9-39d4-4c56-a997-68135aac74fe",
+            "Name": "backpack",
+            "Position": "24.20001,32.50001,1.899998",
+            "Rotation": "0.6442053,0.2915467,-0.6442053,0.2915467",
+            "Scale": "0.2,0.2,0.2",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "a8541c20-968d-47d1-93ff-fb04d0cb13f1",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/door again fuck blender/backpack.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "fccacd87-f940-4392-9a7f-e4d6c5d6cdbc",
+        "Name": "Hand T",
+        "Position": "-18.61302,-0.000007629395,0.000006560615",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "7570adc4-afa8-4ea1-b075-065ffe0c5fe9",
+            "Name": "Handp",
+            "Position": "-0.000007629395,-0.000007629395,1.777083",
+            "Rotation": "-0.00000003090862,0.7071068,0.7071068,-0.00000003090862",
+            "Enabled": true,
+            "NetworkMode": 2
+          },
+          {
+            "__guid": "8d1d79ad-61f1-4c90-97ec-105ca2ec5687",
+            "Name": "Handpl",
+            "Position": "26.8285,33.65966,1.777085",
+            "Rotation": "-0.00000003090862,0.7071068,0.7071068,-0.00000003090862",
+            "Enabled": true,
+            "NetworkMode": 2
+          }
+        ]
+      },
+      {
+        "__guid": "94553509-0b15-4aef-9370-49a2fde49c6e",
+        "Name": "DropP",
+        "Position": "21.52767,0,40.18076",
+        "Enabled": true,
+        "NetworkMode": 2
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

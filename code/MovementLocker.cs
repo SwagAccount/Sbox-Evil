@@ -28,7 +28,7 @@ public sealed class MovementLocker : Component
 	Angles cameraReturnAngles;
 	GameObject lHandReturn;
 	GameObject rHandReturn;
-	[Property] bool Fixed {get; set;}
+	[Property] public bool Fixed {get; set;}
 	Vector3 targetPlayerPos;
 	Vector3 targetCamPos;
 	Angles targetPlayerRot;
@@ -50,6 +50,7 @@ public sealed class MovementLocker : Component
 		}
 
     }
+	
 	protected override void OnAwake()
 	{
 		targetPlayerPos = Transform.Position;
@@ -147,6 +148,7 @@ public sealed class MovementLocker : Component
 		}
 		else
 		{
+			cameraController.GameObject.SetParent(this.GameObject);
 			if(lastFixed)
 			{
 				Transform.Position = targetPlayerPos;
@@ -157,7 +159,7 @@ public sealed class MovementLocker : Component
 			}
 			movement.Enabled = true;
 			cameraController.Enabled = true;
-			cameraController.GameObject.SetParent(this.GameObject);
+			
 			weaponDealer.forceUnqequip = false;
 		}
 		lastLocked = locked;

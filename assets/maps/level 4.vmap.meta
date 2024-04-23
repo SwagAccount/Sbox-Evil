@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "level 4",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "level4",
+      "Tags": null,
+      "Schema": 0,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "fpopium.crackhead_03#48495"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "maps/level 4.vmap"
+      }
+    }
+  }
+}

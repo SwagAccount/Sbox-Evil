@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "91e11cf5-a2d1-4369-8ffb-8b02e4fc0bcf",
+    "Name": "bholed",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "596cc7d4-18bd-4257-97a1-c053f5de05f0",
+        "Name": "Projector",
+        "Position": "-2.165,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "DecalRenderer",
+            "CutoffAngle": 47.92,
+            "CutoffAngleSoftness": 5.21,
+            "Material": "decals/conc hit.vmat",
+            "Mod2XBlending": true,
+            "Size": "3.75,3.75,6.2",
+            "TintColor": "1,1,1,1",
+            "TriPlanar": false
+          }
+        ]
+      },
+      {
+        "Id": "40b77b63-6f8e-4303-b2e7-ce8edecf91de",
+        "Name": "SoundPlayer",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SoundPointComponent",
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Pitch": 1,
+            "PlayOnStart": true,
+            "Repeat": false,
+            "SoundEvent": "sounds/physics/physics.default.impact.sound",
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "Volume": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
