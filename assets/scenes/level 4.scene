@@ -1,0 +1,4129 @@
+{
+  "__guid": "50a15049-efb3-4ee6-9023-62d0db5e1fb4",
+  "GameObjects": [
+    {
+      "__guid": "13785ba8-15ba-4ab4-8c61-874f26c63dd4",
+      "Name": "Map",
+      "Position": "0,0,16.0002",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "37ddf5cf-7d82-490c-afa2-25ec239d27db",
+          "MapName": "maps/level 4.vmap",
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "3af1a8f3-651e-4ae7-9577-da7b475c8b21",
+      "Name": "Ladder",
+      "Position": "-708.2094,207.5883,15.99999",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "LadderScript",
+          "__guid": "92520f06-650c-461c-b7cc-2a144de444c9",
+          "bars": {
+            "_type": "gameobject",
+            "go": "28f74b45-81f2-4417-b8bd-5056e4e1fcd4"
+          },
+          "Body": {
+            "_type": "gameobject",
+            "go": "d0c70d3a-17b3-401f-bb91-76c154404ff1"
+          },
+          "Bottom": {
+            "_type": "gameobject",
+            "go": "fd07f324-ab1d-4590-a162-a93a1f694978"
+          },
+          "Camera": {
+            "_type": "gameobject",
+            "go": "1f52bb94-d1da-412f-b2d4-dd2ede8c9b01"
+          },
+          "climbing": false,
+          "currentBar": 0,
+          "exitDis": 1,
+          "exiting": false,
+          "exitSpeed": 0.05,
+          "handSpeed": 0.1,
+          "interactable": {
+            "_type": "component",
+            "component_id": "5276023c-deca-4124-bc0d-a38373976a9c",
+            "go": "dcc2a49d-897f-4cc3-9d86-6e3219fe4e02",
+            "component_type": "Interactable"
+          },
+          "LeftHand": {
+            "_type": "gameobject",
+            "go": "bb9b7cfa-035c-4e38-ba25-89c833c39f31"
+          },
+          "lerp": 0,
+          "nextBar": 0,
+          "progress": 0,
+          "RightHand": {
+            "_type": "gameobject",
+            "go": "c7d590c2-6dc2-4308-ac47-d1a34e167025"
+          },
+          "Speed": 0.005,
+          "Top": {
+            "_type": "gameobject",
+            "go": "a3705b7e-cf40-44ef-b078-aa616081cc46"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "dcc2a49d-897f-4cc3-9d86-6e3219fe4e02",
+          "Name": "Model",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c8f477d9-c8c4-4a8d-bfd4-aef5ecbd9ce7",
+              "Center": "0,0,64",
+              "IsTrigger": false,
+              "Scale": "2.85,27.1,128",
+              "Static": false
+            },
+            {
+              "__type": "Interactable",
+              "__guid": "5276023c-deca-4124-bc0d-a38373976a9c",
+              "Interacted": false,
+              "interactType": "Climb",
+              "ItemGrabber": false
+            }
+          ]
+        },
+        {
+          "__guid": "fd07f324-ab1d-4590-a162-a93a1f694978",
+          "Name": "BottomExit",
+          "Position": "-15,0,0",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "a3705b7e-cf40-44ef-b078-aa616081cc46",
+          "Name": "TopExit",
+          "Position": "15.70704,-0.0000006680597,129.258",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "c7d590c2-6dc2-4308-ac47-d1a34e167025",
+          "Name": "rh",
+          "Position": "-8.308228,0.000004868729,0",
+          "Rotation": "0.5,0.5,-0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "bb9b7cfa-035c-4e38-ba25-89c833c39f31",
+          "Name": "lh",
+          "Position": "-8.308228,-0.0000006680597,0",
+          "Rotation": "0.5,0.5,-0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "d0c70d3a-17b3-401f-bb91-76c154404ff1",
+          "Name": "Climbing",
+          "Position": "-8.308228,-0.0000006680597,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "1f52bb94-d1da-412f-b2d4-dd2ede8c9b01",
+              "Name": "Cam",
+              "Position": "0,0,55",
+              "Enabled": true,
+              "NetworkMode": 2
+            }
+          ]
+        },
+        {
+          "__guid": "28f74b45-81f2-4417-b8bd-5056e4e1fcd4",
+          "Name": "Bars",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "6f45afb3-6bc5-4f02-bf1f-4360332adad4",
+              "Name": "Bar",
+              "Position": "0,0,60",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "62293ce2-ca3c-47c6-9e41-b9342268868a",
+                  "Name": "PlayerPos",
+                  "Position": "-15,0.0000006134888,-60",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "b3fd8a4f-d37c-4d5f-b68e-70a18bcbad7c",
+                  "Name": "l",
+                  "Position": "-2.227455,6.000005,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "de75e8f5-e938-43bf-979d-0d6e6f9af90a",
+                  "Name": "r",
+                  "Position": "-2.227456,-6,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "b1c7ed79-9f75-497c-81b3-66f5d724361a",
+              "Name": "Bar (1)",
+              "Position": "0,0.000004868729,76",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "d80353fa-2035-4b3d-88d2-1489829d3f20",
+                  "Name": "PlayerPos",
+                  "Position": "-15,0.0000006134887,-60",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "8069f278-2dd8-418c-8206-8a78cc3e0531",
+                  "Name": "l",
+                  "Position": "-2.227455,6.000005,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "a2b58048-3d1a-42b2-a166-96b3a9b6902e",
+                  "Name": "r",
+                  "Position": "-2.227456,-6,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "e710cbae-425a-4157-9706-1aa162b8071d",
+              "Name": "Bar (2)",
+              "Position": "0,0.0000000000004547474,92",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "7d7a320c-3388-4a48-880d-ff2e647ddda6",
+                  "Name": "PlayerPos",
+                  "Position": "-15,0.0000006134888,-60",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "9548eaaf-4671-424d-a654-8aacc5fe902c",
+                  "Name": "l",
+                  "Position": "-2.227455,6.000005,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "13a6e821-6938-499e-9a11-afb6d4473f7a",
+                  "Name": "r",
+                  "Position": "-2.227456,-6,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "c5a5c945-2418-4e89-a311-6929db20d905",
+              "Name": "Bar (3)",
+              "Position": "0,0.000004868729,108",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "625775dc-b1d5-421d-a05a-cf7cb6b8ef21",
+                  "Name": "PlayerPos",
+                  "Position": "-15,0.0000006134887,-60",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "f55c47a6-196c-4fc4-acb4-26f1443cef08",
+                  "Name": "l",
+                  "Position": "-2.227455,6.000005,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "4b02b8f3-af3c-4141-92b1-6e8e8506e1bd",
+                  "Name": "r",
+                  "Position": "-2.227456,-6,0",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "5a0925b7-5f64-4aa5-8c41-151b73650e1c",
+      "Name": "player",
+      "Position": "32,-432,0.0000003756192",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Tags": "player",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/player.prefab"
+    },
+    {
+      "__guid": "351f103b-dfb9-44a8-8268-b1983c152f5d",
+      "Name": "door (3)",
+      "Position": "-962.7271,-416,168",
+      "Rotation": "1,0,0,-0.00000004371139",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "24838f6a-63d2-4fb6-9707-ed830123e3ad",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/doors/staffdoor.vmat",
+          "Model": "models/door.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "143da22c-4af4-4aed-8869-42990296fc31",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "8,64,160.0001",
+          "Static": false,
+          "Surface": "surfaces/metal.surface"
+        },
+        {
+          "__type": "Interactable",
+          "__guid": "7dde0058-7931-4e0e-949d-df6967000d5f",
+          "Interacted": false,
+          "interactType": "Open",
+          "ItemGrabber": false
+        },
+        {
+          "__type": "DoorSystem",
+          "__guid": "5f99981e-e298-4624-b27c-28ad6b5d7a6d",
+          "doorCode": 0,
+          "interactable": {
+            "_type": "component",
+            "component_id": "7dde0058-7931-4e0e-949d-df6967000d5f",
+            "go": "351f103b-dfb9-44a8-8268-b1983c152f5d",
+            "component_type": "Interactable"
+          },
+          "pAng": "0,0,0",
+          "pPos": "-1004.177,-1632.407,128.5",
+          "sceneLoad": "scenes/level 3.scene|staff"
+        }
+      ]
+    },
+    {
+      "__guid": "ccae7d84-140e-4b53-b9b8-2e85cf2a5088",
+      "Name": "door (1)",
+      "Position": "32,-447.0967,40.00001",
+      "Rotation": "-0.7071068,0.7071068,0.00000003090862,-0.00000003090862",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "d47c2b1b-b1aa-4d87-92f4-6fff3b4bef15",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/doors/staffdoor.vmat",
+          "Model": "models/door.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "2a6ab872-e15a-49a5-86ed-2d6246a6d48a",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "8,64,160.0001",
+          "Static": false,
+          "Surface": "surfaces/metal.surface"
+        },
+        {
+          "__type": "Interactable",
+          "__guid": "7598eaf3-1616-4234-9bb5-c8d94b527656",
+          "Interacted": false,
+          "interactType": "Open",
+          "ItemGrabber": false
+        },
+        {
+          "__type": "DoorSystem",
+          "__guid": "f853f4eb-a329-4323-87c2-e3c21d4d8c65",
+          "doorCode": 0,
+          "interactable": {
+            "_type": "component",
+            "component_id": "7598eaf3-1616-4234-9bb5-c8d94b527656",
+            "go": "ccae7d84-140e-4b53-b9b8-2e85cf2a5088",
+            "component_type": "Interactable"
+          },
+          "pAng": "0,0,0",
+          "pPos": "-1004.177,-1632.407,128.5",
+          "sceneLoad": "scenes/level 2.scene|staff"
+        }
+      ]
+    },
+    {
+      "__guid": "17e33cbd-4b0d-4644-8988-3f4d56864499",
+      "Name": "DeletedObjects",
+      "Position": "0,0,16.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "DeletedObjectsSaveSystem",
+          "__guid": "f8990ae1-1888-4356-9abe-be8e670c7bf8",
+          "fart": [],
+          "normal": [],
+          "saveName": "radioman",
+          "sceneName": "level 4"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "8c51ba08-8770-4491-abbd-b0f89ff4f96d",
+          "Name": "World",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "0bd9931e-c873-44b7-b127-a1a381fd2960",
+              "Name": "buckshot",
+              "Position": "-683.7488,-2.267534,124.9426",
+              "Scale": "0.005,0.005,0.005",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/buckshot.prefab"
+            },
+            {
+              "__guid": "65713b7d-f883-4a66-a3d9-94fcaaa858b0",
+              "Name": "buckshot (1)",
+              "Position": "-682.725,-0.2408314,124.9426",
+              "Scale": "0.005,0.005,0.005",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/buckshot.prefab"
+            },
+            {
+              "__guid": "09c96ddd-6e15-4dae-8355-23132d319120",
+              "Name": "buckshot (2)",
+              "Position": "-680.1744,-2.263033,124.9426",
+              "Rotation": "-0.00000001823912,-0.000001156552,0.0000003447849,1",
+              "Scale": "0.005,0.005,0.005",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/buckshot.prefab"
+            },
+            {
+              "__guid": "3a5466d9-844a-4454-9eb9-a55b516ee8e5",
+              "Name": "buckshot (3)",
+              "Position": "-679.0164,0.4662685,124.9426",
+              "Rotation": "-0.00000000140711,-0.000002066354,0.0000003448763,1",
+              "Scale": "0.005,0.005,0.005",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/buckshot.prefab"
+            },
+            {
+              "__guid": "da640629-c483-4eed-8772-eb8f523aa4f6",
+              "Name": "buckshot (4)",
+              "Position": "-681.0765,1.509665,124.9426",
+              "Rotation": "-0.000000008919032,-0.000001130756,0.0000003448192,1",
+              "Scale": "0.005,0.005,0.005",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/buckshot.prefab"
+            },
+            {
+              "__guid": "c7118eab-72df-43e4-85bd-ae3e756ac9ba",
+              "Name": "45bullet",
+              "Position": "-679.4557,-2.661234,171.6971",
+              "Rotation": "-0.01763088,-0.01096081,0.001412775,0.9997836",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "8cc19c6d-88a6-433e-b484-dab2267c4e6d",
+              "Name": "45bullet (1)",
+              "Position": "-679.8983,0.8461666,171.6713",
+              "Rotation": "0.0000006608872,0.0000002245909,-0.00004741054,1",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "ba103042-96b4-437a-a4a1-b23f2241f546",
+              "Name": "45bullet (2)",
+              "Position": "-681.8558,3.874266,171.6869",
+              "Rotation": "-0.006915924,-0.0231402,-0.1909922,0.9812945",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "049e2629-4df7-47ed-a33e-28cb8bdc2cd7",
+              "Name": "45bullet (3)",
+              "Position": "-678.9219,1.268866,171.6713",
+              "Rotation": "-0.000001346627,-0.000001606068,-0.00001100198,1",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "b305e541-3f58-4c06-9ed8-9dd8f5ec2119",
+              "Name": "45bullet (4)",
+              "Position": "-682.3895,-1.836435,171.935",
+              "Rotation": "-0.7049053,-0.07314305,0.06885406,0.7021521",
+              "Scale": "0.05000001,0.05000001,0.05000001",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "c8ea7752-bf45-4160-a99c-fb770d188d73",
+              "Name": "45bullet (5)",
+              "Position": "-683.8542,0.717268,171.6802",
+              "Rotation": "0.0002879921,0.01437553,0.002921662,0.9998924",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "ef19325c-5248-4254-9e00-d89a893bce3c",
+              "Name": "45bullet (6)",
+              "Position": "-680.9304,1.748465,171.6742",
+              "Rotation": "0.005719719,0.0001058467,0.01859984,0.9998107",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bullet.prefab"
+            },
+            {
+              "__guid": "82bf64c5-f0bc-4c55-81b2-58b7ee5137a9",
+              "Name": "45bulletmag",
+              "Position": "-680.4858,7.643766,174.9633",
+              "Rotation": "0.000148354,0.004433491,-0.06743386,0.9977139",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bulletmag.prefab"
+            },
+            {
+              "__guid": "9314693f-e761-4dab-84f4-3d484eaf4c65",
+              "Name": "45bulletmag (1)",
+              "Position": "-681.5481,12.01227,174.9638",
+              "Rotation": "-0.001216465,-0.00009444928,-0.000003283486,0.9999993",
+              "Scale": "0.05,0.05,0.05",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "__Prefab": "prefabs/pickups/45bulletmag.prefab"
+            },
+            {
+              "__guid": "c3672b0e-9a63-4eac-8ed3-0b0ae8b8b4a5",
+              "Name": "Breakable Bars",
+              "Position": "-640,-143.5971,131.1889",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "BreakablebarScript",
+                  "__guid": "631ea7ac-c337-48e2-b8de-c9b1a7386ce8",
+                  "breakForce": 2000,
+                  "forcePoint": {
+                    "_type": "gameobject",
+                    "go": "07b26076-59e9-4966-81aa-5512b21ccc37"
+                  },
+                  "hd": {
+                    "_type": "component",
+                    "component_id": "1e467c46-24c0-42ec-a146-57929e00af13",
+                    "go": "c3672b0e-9a63-4eac-8ed3-0b0ae8b8b4a5",
+                    "component_type": "HEALTHDETECTOR"
+                  },
+                  "health": 50,
+                  "rigidbodies": [
+                    {
+                      "_type": "component",
+                      "component_id": "89a771f8-249c-49c8-827a-c1d650d0cc0d",
+                      "go": "b71065c4-02c6-429d-a52b-d04e63a78cec",
+                      "component_type": "Rigidbody"
+                    },
+                    {
+                      "_type": "component",
+                      "component_id": "b9dc9143-be89-4119-be2f-ca555a2b8c6b",
+                      "go": "1b327960-457b-4509-a7c6-059421c502c7",
+                      "component_type": "Rigidbody"
+                    },
+                    {
+                      "_type": "component",
+                      "component_id": "732f6bdf-c9d2-4aaa-964f-63183fe47d51",
+                      "go": "a649486e-b8c0-4338-8d29-1c293547a91a",
+                      "component_type": "Rigidbody"
+                    },
+                    {
+                      "_type": "component",
+                      "component_id": "b30746f2-eb70-4f6f-8f15-6d369d23ef55",
+                      "go": "8c8930e6-b41a-48dd-b9ea-1c668c4c82b2",
+                      "component_type": "Rigidbody"
+                    },
+                    {
+                      "_type": "component",
+                      "component_id": "487969ff-7a88-4c5b-a15d-55453745aad7",
+                      "go": "b6d66661-a043-48e3-9a0a-2be38ba55348",
+                      "component_type": "Rigidbody"
+                    },
+                    {
+                      "_type": "component",
+                      "component_id": "3eddef90-09d5-4eea-a179-6de8e5c3d838",
+                      "go": "e3300685-e3cb-4697-9743-4eb2e23dc283",
+                      "component_type": "Rigidbody"
+                    }
+                  ],
+                  "soundPointComponent": {
+                    "_type": "component",
+                    "component_id": "639fb786-a095-4e4b-9ed6-1f81a5d2528a",
+                    "go": "b71065c4-02c6-429d-a52b-d04e63a78cec",
+                    "component_type": "SoundPointComponent"
+                  },
+                  "unlocked": {}
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "985512bc-a065-4329-a95f-9b8e3717be9e",
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "37.2,4.60001,37.20002",
+                  "Static": false,
+                  "Surface": "surfaces/metal.surface"
+                },
+                {
+                  "__type": "HEALTHDETECTOR",
+                  "__guid": "1e467c46-24c0-42ec-a146-57929e00af13",
+                  "bleedAmount": 0,
+                  "bleedMult": 0,
+                  "eSSIndex": 0,
+                  "healthResist": 0,
+                  "hp": 0,
+                  "regenAmount": 0
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "07b26076-59e9-4966-81aa-5512b21ccc37",
+                  "Name": "ForcePoint",
+                  "Position": "-0.00006866455,-3.519142,-0.5506973",
+                  "Rotation": "0,0,0.7071068,0.7071068",
+                  "Scale": "0.014,0.014,0.0127",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "b71065c4-02c6-429d-a52b-d04e63a78cec",
+                  "Name": "bar (4)",
+                  "Position": "-19.76099,1.513657,-10.02524",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Scale": "1,1,0.948",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "e79dee5a-22b2-4c26-9edc-7c7bac07c54c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "3e4f75da-963e-437b-a4b0-643f750f4de7",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "89a771f8-249c-49c8-827a-c1d650d0cc0d",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "9b0f62ec-ce44-42b1-92f6-7cd0e3b17804",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Sandbox.SoundPointComponent",
+                      "__guid": "639fb786-a095-4e4b-9ed6-1f81a5d2528a",
+                      "DistanceAttenuation": false,
+                      "DistanceAttenuationOverride": false,
+                      "Force2d": false,
+                      "MaxRepeatTime": 1,
+                      "MinRepeatTime": 1,
+                      "Occlusion": false,
+                      "OcclusionOverride": false,
+                      "OcclusionRadius": 32,
+                      "Pitch": 1,
+                      "PlayOnStart": false,
+                      "ReflectionOverride": false,
+                      "Reflections": false,
+                      "Repeat": false,
+                      "SoundEvent": "sounds/heavy metal impact.sound",
+                      "SoundOverride": false,
+                      "StopOnNew": false,
+                      "Volume": 1
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1b327960-457b-4509-a7c6-059421c502c7",
+                  "Name": "bar (3)",
+                  "Position": "-19.76099,1.513657,9.974762",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Scale": "1,1,0.948",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "e24334ae-31df-4c43-8dc0-fe3c8133c3f6",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "0f7e749a-a19a-4620-80dd-30478ea040c5",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "b9dc9143-be89-4119-be2f-ca555a2b8c6b",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "94a2ce05-522a-4e72-aaf8-a41264e7a73a",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "a649486e-b8c0-4338-8d29-1c293547a91a",
+                  "Name": "bar (1)",
+                  "Position": "-19.76099,1.513657,-0.02523804",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Scale": "1,1,0.948",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9522046f-e60e-42df-9a60-91729d15c2eb",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "a82fee3d-12c9-41d4-8a0c-56632849accb",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "732f6bdf-c9d2-4aaa-964f-63183fe47d51",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "b7a06e62-023f-45ad-be77-9b979217f885",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8c8930e6-b41a-48dd-b9ea-1c668c4c82b2",
+                  "Name": "bar (4)",
+                  "Position": "10,0,-19.14117",
+                  "Scale": "1,1,0.905",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "e46f2804-1efa-4e69-b879-e0db34ca0ba3",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "0bb5c1ed-f006-4b68-ac52-7ea84af7c68b",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "b30746f2-eb70-4f6f-8f15-6d369d23ef55",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "55cc37c7-7481-4687-a9ff-89d66a52c605",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "b6d66661-a043-48e3-9a0a-2be38ba55348",
+                  "Name": "bar (3)",
+                  "Position": "-10,0,-19.14117",
+                  "Scale": "1,1,0.905",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "adbc566a-3376-4846-8f51-6f48342761cb",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "bcd9e855-a68c-4d6e-8259-df3bb8e15d69",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "487969ff-7a88-4c5b-a15d-55453745aad7",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "79faf96e-f800-4ad6-a876-6dc8c308054a",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "e3300685-e3cb-4697-9743-4eb2e23dc283",
+                  "Name": "bar (1)",
+                  "Position": "0,0,-19.14117",
+                  "Scale": "1,1,0.905",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "0fbf737d-24e4-4e6c-96cc-756aaaa1307c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "59c233ee-ad57-4cac-9beb-bd47abd31658",
+                      "__enabled": false,
+                      "IsTrigger": false,
+                      "Model": "models/trailer park props/bar.vmdl",
+                      "Static": false,
+                      "Surface": "surfaces/metal.surface"
+                    },
+                    {
+                      "__type": "Sandbox.Rigidbody",
+                      "__guid": "3eddef90-09d5-4eea-a179-6de8e5c3d838",
+                      "AngularDamping": 0,
+                      "Gravity": true,
+                      "LinearDamping": 0,
+                      "Locking": {
+                        "X": true,
+                        "Y": true,
+                        "Z": true,
+                        "Pitch": true,
+                        "Yaw": true,
+                        "Roll": true
+                      },
+                      "MassOverride": 0,
+                      "MotionEnabled": true,
+                      "RigidbodyFlags": 0,
+                      "StartAsleep": false
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "24f5ca01-8bf1-42d8-bd58-8cfc568a086b",
+                      "Center": "0,0,21.00001",
+                      "IsTrigger": false,
+                      "Scale": "1.4,1.4,38",
+                      "Static": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "e37295a7-93cb-4e7e-a507-e1b701c9f74d",
+      "Name": "Interacted",
+      "Position": "0,0,16.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "ProgressSave",
+          "__guid": "fbf9ad68-464f-4ad8-adce-29303181e884",
+          "rogress": [],
+          "saveName": "radioman",
+          "sceneName": "level 4"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "59a9414b-810e-4fbf-a61f-9d050c856fc4",
+          "Name": "DOORE (2)",
+          "Position": "0,196,24.00001",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SwankDoor",
+              "__guid": "e21f91ef-3548-424d-ba13-4e86d47579fe",
+              "animated": false,
+              "CameraT": {
+                "_type": "gameobject",
+                "go": "ff5d1870-cd89-45c4-9a18-8615266ce5cf"
+              },
+              "doorCode": 0,
+              "doorPositions": [],
+              "doorRotations": [
+                "0,90,-180",
+                "0,0,-180"
+              ],
+              "HandT": {
+                "_type": "gameobject",
+                "go": "f34b4d26-ccea-48d7-b530-3fc6bbea3747"
+              },
+              "interactables": [
+                {
+                  "_type": "component",
+                  "component_id": "484ba4cd-9e0f-46c8-af51-b39d29a1961d",
+                  "go": "827b9f39-7669-4ec4-9de5-ba37161aca5d",
+                  "component_type": "Interactable"
+                }
+              ],
+              "playerPositions": [
+                "-16.447,-14.603,-40",
+                "-16.447,-6.595,-40"
+              ],
+              "PlayerT": {
+                "_type": "gameobject",
+                "go": "b23f8ee8-3844-4608-8d04-a5f6ecad9334"
+              },
+              "progress": {
+                "_type": "component",
+                "component_id": "04d18783-765d-4bc2-b89b-79b6e84124f0",
+                "go": "59a9414b-810e-4fbf-a61f-9d050c856fc4",
+                "component_type": "Progress"
+              },
+              "rotatedDoor": {
+                "_type": "gameobject",
+                "go": "0b7079f4-4648-45ec-9331-551eaa7425ce"
+              },
+              "sens": 1
+            },
+            {
+              "__type": "Progress",
+              "__guid": "04d18783-765d-4bc2-b89b-79b6e84124f0",
+              "progress": [
+                0,
+                1
+              ]
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "0b7079f4-4648-45ec-9331-551eaa7425ce",
+              "Name": "DOOR",
+              "Position": "0,0,0",
+              "Rotation": "0.7071068,0.7071068,-0.00000003090862,-0.00000003090862",
+              "Scale": "0.5,0.5,0.5",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "827b9f39-7669-4ec4-9de5-ba37161aca5d",
+                  "Name": "door",
+                  "Position": "-4.000002,-32,0.00001805632",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "8f8200a8-fe4e-4ed9-bcfa-6e48e1a4526e",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/door.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "ece1e70a-6eb3-4646-b35c-d8dc638beaf5",
+                      "Center": "0,0,0",
+                      "IsTrigger": false,
+                      "Scale": "8,64,160.0001",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Interactable",
+                      "__guid": "484ba4cd-9e0f-46c8-af51-b39d29a1961d",
+                      "Interacted": false,
+                      "interactType": "Use",
+                      "ItemGrabber": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f34b4d26-ccea-48d7-b530-3fc6bbea3747",
+                  "Name": "rhand",
+                  "Position": "-8.000003,-55.41122,-8.947506",
+                  "Rotation": "0,0,0.7071068,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "b23f8ee8-3844-4608-8d04-a5f6ecad9334",
+              "Name": "Object",
+              "Position": "-16.447,-9.603,-40",
+              "Rotation": "0,0,0.7071068,0.7071068",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "ff5d1870-cd89-45c4-9a18-8615266ce5cf",
+                  "Name": "Object",
+                  "Position": "0,0,55",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "43ec7bf4-0483-4354-aedb-3bed3d4eb33d",
+          "Name": "DOORE (2)",
+          "Position": "-654,315.0899,24.00007",
+          "Rotation": "0,0,1,-0.00000004371139",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SwankDoor",
+              "__guid": "a9ef87cc-41ac-4789-8ac7-78b03f6d68b5",
+              "animated": false,
+              "CameraT": {
+                "_type": "gameobject",
+                "go": "664b98dc-419b-439f-ac80-74c210dff0c1"
+              },
+              "doorCode": 0,
+              "doorPositions": [],
+              "doorRotations": [
+                "0,90,-180",
+                "0,0,-180"
+              ],
+              "HandT": {
+                "_type": "gameobject",
+                "go": "80ecf006-9b76-42e9-abf2-d58c230b17f6"
+              },
+              "interactables": [
+                {
+                  "_type": "component",
+                  "component_id": "5330cb07-428b-4156-9b5a-d34a66a48d99",
+                  "go": "669cb809-b59f-4aa8-97b2-d21328f62ac7",
+                  "component_type": "Interactable"
+                }
+              ],
+              "playerPositions": [
+                "-16.447,-14.603,-40",
+                "-16.447,-6.595,-40"
+              ],
+              "PlayerT": {
+                "_type": "gameobject",
+                "go": "176aaafd-b9f0-4515-b48d-873fa61ea0e2"
+              },
+              "progress": {
+                "_type": "component",
+                "component_id": "92b93587-4428-4d5c-8ce4-44b5c9da9bd4",
+                "go": "43ec7bf4-0483-4354-aedb-3bed3d4eb33d",
+                "component_type": "Progress"
+              },
+              "rotatedDoor": {
+                "_type": "gameobject",
+                "go": "912a20f3-6ded-4713-af5b-18e4ceabce4b"
+              },
+              "sens": 1
+            },
+            {
+              "__type": "Progress",
+              "__guid": "92b93587-4428-4d5c-8ce4-44b5c9da9bd4",
+              "progress": [
+                0,
+                0
+              ]
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "912a20f3-6ded-4713-af5b-18e4ceabce4b",
+              "Name": "DOOR",
+              "Position": "0,0,0",
+              "Rotation": "0.7071068,0.7071068,-0.00000003090862,-0.00000003090862",
+              "Scale": "0.5,0.5,0.5",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "669cb809-b59f-4aa8-97b2-d21328f62ac7",
+                  "Name": "door",
+                  "Position": "-4.000002,-32,0.00001805632",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "83e121df-1bac-4f37-9705-8ae1261a94f7",
+                      "BodyGroups": 18446744073709551615,
+                      "MaterialOverride": "materials/door.vmat",
+                      "Model": "models/door.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "968660f0-5b23-4e19-9554-e51bcf81d8bb",
+                      "Center": "0,0,0",
+                      "IsTrigger": false,
+                      "Scale": "8,64,160.0001",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Interactable",
+                      "__guid": "5330cb07-428b-4156-9b5a-d34a66a48d99",
+                      "Interacted": false,
+                      "interactType": "Use",
+                      "ItemGrabber": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "80ecf006-9b76-42e9-abf2-d58c230b17f6",
+                  "Name": "rhand",
+                  "Position": "-8.000003,-55.41122,-8.947506",
+                  "Rotation": "0,0,0.7071068,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "176aaafd-b9f0-4515-b48d-873fa61ea0e2",
+              "Name": "Object",
+              "Position": "-16.447,-9.603,-40",
+              "Rotation": "0,0,0.7071068,0.7071068",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "664b98dc-419b-439f-ac80-74c210dff0c1",
+                  "Name": "Object",
+                  "Position": "0,0,55",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "e44f642f-876c-40ab-9d2f-c29332646355",
+          "Name": "DOORE (3)",
+          "Position": "48,-206,24.00001",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SwankDoor",
+              "__guid": "d04036e2-4644-455c-852a-230fa4eabf42",
+              "animated": false,
+              "CameraT": {
+                "_type": "gameobject",
+                "go": "010855f2-bb05-42e6-be20-fa45dce0a532"
+              },
+              "doorCode": 0,
+              "doorPositions": [],
+              "doorRotations": [
+                "0,90,-180",
+                "0,0,-180"
+              ],
+              "HandT": {
+                "_type": "gameobject",
+                "go": "d7caf853-d340-4479-bcf6-fed26dd0d2bc"
+              },
+              "interactables": [
+                {
+                  "_type": "component",
+                  "component_id": "9bfcd3ab-ec7e-4e9c-813b-793dd18242bd",
+                  "go": "91316541-a5f7-488f-a5ca-9a7f18ebc3dc",
+                  "component_type": "Interactable"
+                }
+              ],
+              "playerPositions": [
+                "-16.447,-14.603,-40",
+                "-16.447,-6.595,-40"
+              ],
+              "PlayerT": {
+                "_type": "gameobject",
+                "go": "ae9bf1e5-2af6-4089-8b54-4b24a2de9d8b"
+              },
+              "progress": {
+                "_type": "component",
+                "component_id": "e409e462-9c33-4b20-9457-cf7933ba6eb0",
+                "go": "e44f642f-876c-40ab-9d2f-c29332646355",
+                "component_type": "Progress"
+              },
+              "rotatedDoor": {
+                "_type": "gameobject",
+                "go": "2d9b77fc-1b85-4cc8-8266-1c3e4f60ad4c"
+              },
+              "sens": 1
+            },
+            {
+              "__type": "Progress",
+              "__guid": "e409e462-9c33-4b20-9457-cf7933ba6eb0",
+              "progress": [
+                0,
+                1
+              ]
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "2d9b77fc-1b85-4cc8-8266-1c3e4f60ad4c",
+              "Name": "DOOR",
+              "Position": "0,0,0",
+              "Rotation": "0.7071068,0.7071068,-0.00000003090862,-0.00000003090862",
+              "Scale": "0.5,0.5,0.5",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "91316541-a5f7-488f-a5ca-9a7f18ebc3dc",
+                  "Name": "door",
+                  "Position": "-4.000002,-32,0.00001805632",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "97646be3-3384-4824-a5d6-5568540daca0",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/door.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "796864ff-ded4-48d8-9b24-f418074ff1ee",
+                      "Center": "0,0,0",
+                      "IsTrigger": false,
+                      "Scale": "8,64,160.0001",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Interactable",
+                      "__guid": "9bfcd3ab-ec7e-4e9c-813b-793dd18242bd",
+                      "Interacted": false,
+                      "interactType": "Use",
+                      "ItemGrabber": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "d7caf853-d340-4479-bcf6-fed26dd0d2bc",
+                  "Name": "rhand",
+                  "Position": "-8.000003,-55.41122,-8.947506",
+                  "Rotation": "0,0,0.7071068,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "ae9bf1e5-2af6-4089-8b54-4b24a2de9d8b",
+              "Name": "Object",
+              "Position": "-16.447,-9.603,-40",
+              "Rotation": "0,0,0.7071068,0.7071068",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "010855f2-bb05-42e6-be20-fa45dce0a532",
+                  "Name": "Object",
+                  "Position": "0,0,55",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "9eed0ef8-5993-4927-83b1-57c87249376d",
+          "Name": "DOORE (1)",
+          "Position": "-496,195.9124,152",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SwankDoor",
+              "__guid": "51d8d506-f3ec-41bc-85ee-c6de67e08b6e",
+              "animated": false,
+              "CameraT": {
+                "_type": "gameobject",
+                "go": "c4940724-0ee7-4223-8e69-6a30974c0975"
+              },
+              "doorCode": 4,
+              "doorPositions": [],
+              "doorRotations": [
+                "0,90,-180",
+                "0,0,-180"
+              ],
+              "HandT": {
+                "_type": "gameobject",
+                "go": "8a6f503e-b395-449e-8dfb-40ad5a774a2c"
+              },
+              "interactables": [
+                {
+                  "_type": "component",
+                  "component_id": "e34e8d20-fc7c-440c-8019-e5c312e3228d",
+                  "go": "8f7963a0-a87b-4dce-b7e9-236feb3bb1fb",
+                  "component_type": "Interactable"
+                }
+              ],
+              "playerPositions": [
+                "-16.447,-14.603,-40",
+                "-16.447,-6.595,-40"
+              ],
+              "PlayerT": {
+                "_type": "gameobject",
+                "go": "9491923d-2979-46b8-9244-a34f3dfd8608"
+              },
+              "progress": {
+                "_type": "component",
+                "component_id": "9a3b49d2-1daf-4ce2-b2b4-a6fa1d5f5971",
+                "go": "9eed0ef8-5993-4927-83b1-57c87249376d",
+                "component_type": "Progress"
+              },
+              "rotatedDoor": {
+                "_type": "gameobject",
+                "go": "f1d7637e-9ff3-4c13-b466-9288ceaf2bd1"
+              },
+              "sens": 1
+            },
+            {
+              "__type": "Progress",
+              "__guid": "9a3b49d2-1daf-4ce2-b2b4-a6fa1d5f5971",
+              "progress": [
+                0,
+                0
+              ]
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "f1d7637e-9ff3-4c13-b466-9288ceaf2bd1",
+              "Name": "DOOR",
+              "Position": "0,0,0",
+              "Rotation": "0.7071068,0.7071068,-0.00000003090862,-0.00000003090862",
+              "Scale": "0.5,0.5,0.5",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "8f7963a0-a87b-4dce-b7e9-236feb3bb1fb",
+                  "Name": "door",
+                  "Position": "-4.000002,-32,0.00001805632",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "35b2674a-7ee3-4571-bfbd-819f11791465",
+                      "BodyGroups": 18446744073709551615,
+                      "MaterialOverride": "materials/doors/outdoors door.vmat",
+                      "Model": "models/door.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "94833103-07ff-4d8d-88a4-c58149d31731",
+                      "Center": "0,0,0",
+                      "IsTrigger": false,
+                      "Scale": "8,64,160.0001",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Interactable",
+                      "__guid": "e34e8d20-fc7c-440c-8019-e5c312e3228d",
+                      "Interacted": false,
+                      "interactType": "Use",
+                      "ItemGrabber": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8a6f503e-b395-449e-8dfb-40ad5a774a2c",
+                  "Name": "rhand",
+                  "Position": "-8.000003,-55.41122,-8.947506",
+                  "Rotation": "0,0,0.7071068,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "9491923d-2979-46b8-9244-a34f3dfd8608",
+              "Name": "Object",
+              "Position": "-16.447,-9.603,-40",
+              "Rotation": "0,0,0.7071068,0.7071068",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "c4940724-0ee7-4223-8e69-6a30974c0975",
+                  "Name": "Object",
+                  "Position": "0,0,55",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "99326a2e-7e0d-40bf-ab95-5b08ae95d02d",
+          "Name": "weapons cabinet",
+          "Position": "-688.2775,15.70247,112",
+          "Rotation": "0,0,-0.7071068,0.7071068",
+          "Scale": "0.1168092,0.1168092,0.1168092",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "__Prefab": "prefabs/weapons cabinet.prefab"
+        },
+        {
+          "__guid": "87b2d9e0-8d84-4b1e-8060-479b2640830b",
+          "Name": "switch",
+          "Position": "-702.566,290.3183,28.72703",
+          "Rotation": "0,-0.7071068,0,0.7071068",
+          "Scale": "0.01430306,0.01430306,0.01430306",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "093ceef3-f139-47bf-8c50-0cc89a9b3620",
+              "AnimationGraph": "animgraphs/switch.vanmgrph",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": true,
+              "Model": "models/switch/untitled_10.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Switch",
+              "__guid": "291f67c8-99a5-49f5-92b3-f71fffb1f0dc",
+              "cameraPos": {
+                "_type": "gameobject",
+                "go": "abf26dc0-5c6a-4062-97ea-c6921b4d37b4"
+              },
+              "delay": 0,
+              "interactable": {
+                "_type": "component",
+                "component_id": "596e3795-593a-43b1-9719-bfcf0e98ac53",
+                "go": "87b2d9e0-8d84-4b1e-8060-479b2640830b",
+                "component_type": "Interactable"
+              },
+              "leftHandPos": {
+                "_type": "gameobject",
+                "go": "2b4a8723-f5b3-447e-b4e7-02da9bb00cf9"
+              },
+              "model": {
+                "_type": "component",
+                "component_id": "093ceef3-f139-47bf-8c50-0cc89a9b3620",
+                "go": "87b2d9e0-8d84-4b1e-8060-479b2640830b",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "on": false,
+              "playerPos": {
+                "_type": "gameobject",
+                "go": "f8665533-85f5-4e16-aec5-bf34314c93f0"
+              },
+              "progress": {
+                "_type": "component",
+                "component_id": "7a7fe94c-9705-4791-99a9-0ad62da2189c",
+                "go": "87b2d9e0-8d84-4b1e-8060-479b2640830b",
+                "component_type": "Progress"
+              },
+              "sens": 1,
+              "swankDoor": {
+                "_type": "component",
+                "component_id": "a9ef87cc-41ac-4789-8ac7-78b03f6d68b5",
+                "go": "43ec7bf4-0483-4354-aedb-3bed3d4eb33d",
+                "component_type": "SwankDoor"
+              },
+              "Using": false
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "df1ca0df-fd4a-4bd0-b5bb-9d8a4dff4bb5",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "1187,783.3999,385",
+              "Static": false
+            },
+            {
+              "__type": "Interactable",
+              "__guid": "596e3795-593a-43b1-9719-bfcf0e98ac53",
+              "Interacted": false,
+              "interactType": "Pull",
+              "ItemGrabber": false
+            },
+            {
+              "__type": "Progress",
+              "__guid": "7a7fe94c-9705-4791-99a9-0ad62da2189c",
+              "progress": [
+                0
+              ]
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "f8665533-85f5-4e16-aec5-bf34314c93f0",
+              "Name": "Object",
+              "Position": "-3845.331,0.001226947,1831.646",
+              "Rotation": "0.000000000000003552714,0.7071068,0.000000000000003552714,0.7071068",
+              "Scale": "71.4291,71.429,71.429",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "abf26dc0-5c6a-4062-97ea-c6921b4d37b4",
+                  "Name": "Object",
+                  "Position": "0,0,55",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "9f26620a-f8df-4a26-8f00-6e4b3058af8f",
+              "Name": "Bone",
+              "Position": "0.00000596043,0,-99.99942",
+              "Rotation": "0.4999998,0.4999997,0.4999999,0.5000006",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "3d847dc2-f676-45ad-8bd9-af3c270d8b6b",
+                  "Name": "Bone_001",
+                  "Position": "-0.00005364387,99.99944,0.00009693723",
+                  "Rotation": "0.4999999,-0.00000008940697,0.00000009782561,0.8660255",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "4dbeb6e4-4075-4864-ad09-1cac1f25b6aa",
+                      "Name": "Bone_001_end",
+                      "Position": "0.00007205268,99.99966,0.0002375341",
+                      "Enabled": true,
+                      "NetworkMode": 2
+                    },
+                    {
+                      "__guid": "2b4a8723-f5b3-447e-b4e7-02da9bb00cf9",
+                      "Name": "Object",
+                      "Position": "-0.003194858,1021.086,-0.002233653",
+                      "Rotation": "-0.6997892,0.1014645,0.6997892,-0.1014645",
+                      "Enabled": true,
+                      "NetworkMode": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "53ec0723-b041-4799-a597-927e38812893",
+      "Name": "EnemySave",
+      "Position": "0,0,16.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "EnemySaveSystem",
+          "__guid": "5ce25952-056e-4a83-bbc2-665d526bb9ce",
+          "enemyDoc": [
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/zombie.prefab"
+            }
+          ],
+          "getJson": false,
+          "happyZombieMaterial": "models/zombies/happydude.vmat",
+          "loadJson": false,
+          "sceneName": "level 4"
+        }
+      ]
+    },
+    {
+      "__guid": "133f010a-6490-4d37-a130-e362389c5b1f",
+      "Name": "inventory",
+      "Position": "0,0,16.00001",
+      "Tags": "inventory",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/inventory.prefab"
+    },
+    {
+      "__guid": "c37e2a2e-4cde-4a0f-99a9-e5f316419fd6",
+      "Name": "WorldItemSaveSystem",
+      "Position": "0,0,16.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "WorldItemSaveSystem",
+          "__guid": "7a06ccf9-d8bb-4b8f-b93d-3a6b75952404",
+          "getJson": false,
+          "loadtest": false,
+          "sceneName": "level 4"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "48bc782b-79dd-4f68-bd50-4c3ba61c80db",
+          "Name": "world",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "550e4b31-4bab-4209-bfd6-4220a7e65004",
+              "Name": "keywitem",
+              "Position": "-662.7054,-282.8959,120",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ItemDetails",
+                  "__guid": "f49f2c29-45e7-4cb5-bde7-6471239fe5bc",
+                  "collisionCount": 0,
+                  "ammoMax": 0,
+                  "gunSaveData": {
+                    "clipContent": []
+                  },
+                  "hovered": false,
+                  "name": "key",
+                  "weight": 0
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "1204ca8e-9fde-496d-be2e-688ad4b08a73",
+                  "Center": "0,-0.00000001490116,0.09999999",
+                  "IsTrigger": true,
+                  "Scale": "8.700001,4.7,0.6",
+                  "Static": false
+                },
+                {
+                  "__type": "WorldItemScript",
+                  "__guid": "bd4f626f-8c07-48b0-9980-d729bbb692b7",
+                  "gunSaveData": {
+                    "clipContent": [
+                      0
+                    ],
+                    "currentMode": 4
+                  },
+                  "interactable": {
+                    "_type": "component",
+                    "component_id": "e500aa55-ddc4-4b99-a660-f9fec3796a85",
+                    "go": "550e4b31-4bab-4209-bfd6-4220a7e65004",
+                    "component_type": "Interactable"
+                  },
+                  "name": "key",
+                  "rb": {
+                    "_type": "component",
+                    "component_id": "074aa901-b3df-4d15-8fd8-dd4b33d3a952",
+                    "go": "550e4b31-4bab-4209-bfd6-4220a7e65004",
+                    "component_type": "Rigidbody"
+                  },
+                  "stat": false
+                },
+                {
+                  "__type": "Interactable",
+                  "__guid": "e500aa55-ddc4-4b99-a660-f9fec3796a85",
+                  "Interacted": false,
+                  "interactType": "Pickup",
+                  "ItemGrabber": false
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "074aa901-b3df-4d15-8fd8-dd4b33d3a952",
+                  "AngularDamping": 0,
+                  "Gravity": true,
+                  "LinearDamping": 0,
+                  "Locking": {},
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                },
+                {
+                  "__type": "KeyMaterialSetter",
+                  "__guid": "c1ffa30a-cfa8-4251-9538-88462ae70e26",
+                  "materials": [
+                    "models/key/quad_key_material_base.vmat",
+                    "models/key/greenkey.vmat",
+                    "models/key/redkey.vmat",
+                    "models/key/whitekey.vmat",
+                    "models/key/outsidekey.vmat"
+                  ],
+                  "modelRenderer": {
+                    "_type": "component",
+                    "component_id": "091a1507-0634-4531-96cb-84678aec39dd",
+                    "go": "d7713b8c-231d-4ab8-8453-026a6acfc0d4",
+                    "component_type": "SkinnedModelRenderer"
+                  },
+                  "worldItemDetails": {
+                    "_type": "component",
+                    "component_id": "bd4f626f-8c07-48b0-9980-d729bbb692b7",
+                    "go": "550e4b31-4bab-4209-bfd6-4220a7e65004",
+                    "component_type": "WorldItemScript"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d7713b8c-231d-4ab8-8453-026a6acfc0d4",
+                  "Name": "key",
+                  "Position": "1.052851,-0.0000004788919,0",
+                  "Rotation": "0,0,-0.7071068,0.7071068",
+                  "Scale": "0.6999999,0.7,0.7",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelCollider",
+                      "__guid": "b8a65039-9f30-49f3-a9cc-0233cbef05de",
+                      "IsTrigger": false,
+                      "Model": "models/key/key.vmdl",
+                      "Static": false
+                    },
+                    {
+                      "__type": "Sandbox.SkinnedModelRenderer",
+                      "__guid": "091a1507-0634-4531-96cb-84678aec39dd",
+                      "BodyGroups": 18446744073709551615,
+                      "CreateBoneObjects": false,
+                      "Model": "models/key/key.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "a1cb581d-27fb-41cc-8b20-863defc7e25a",
+                      "Name": "Object",
+                      "Position": "0.000001362392,-6.899239,1.819838",
+                      "Rotation": "-0.4999985,-0.4999985,0.4999985,0.4999985",
+                      "Scale": "1.428572,1.428571,1.428571",
+                      "Enabled": true,
+                      "NetworkMode": 2
+                    },
+                    {
+                      "__guid": "c46eba60-2f82-4def-b3b4-6cef8f8983bc",
+                      "Name": "Object (1)",
+                      "Position": "49.50291,-9.486383,-46.80482",
+                      "Rotation": "-0.4999985,-0.4999985,0.4999985,-0.4999985",
+                      "Scale": "2.040817,2.040816,2.040816",
+                      "Enabled": true,
+                      "NetworkMode": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "591f01bf-92ba-45f1-871c-29b0f00954b6",
+      "Name": "InvSaveSystem",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "InventorySafeSystem",
+          "__guid": "5b01561a-3fb3-4a6a-b4a8-7ee5294969dd",
+          "getJson": false,
+          "loadJson": false,
+          "sceneName": "level 4"
+        }
+      ]
+    },
+    {
+      "__guid": "737f0a7e-4345-49c8-b95a-a83d3ce0aac1",
+      "Name": "Lights",
+      "Position": "0,0,16.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "LightsScript",
+          "__guid": "da9f932d-edf2-4102-bceb-aa12e22d4cc9",
+          "checkLights": false,
+          "levelLight": [
+            "level 3"
+          ],
+          "pointLights": [],
+          "pointLightsRad": [],
+          "SceneNames": [
+            "level 4"
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "60fd0f2d-2d3a-4e4f-8b62-9c6da4f4f331",
+      "Name": "SaveLoadSystem",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "SaveSystem",
+          "__guid": "69493836-b7bb-40fa-9f86-97a2ddf7bc72",
+          "sceneName": "level 4",
+          "Settings": {
+            "_type": "component",
+            "component_id": "7e8ee65b-b563-4ee4-8eb2-51226a2e8a91",
+            "go": "2310c09a-1b8e-44df-8fe2-2343d2acd59f",
+            "component_type": "Settings"
+          },
+          "vistedMaps": [
+            "level 1",
+            "level 2",
+            "level 3"
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "d538d622-6314-4f3f-966a-87275c830e31",
+      "Name": "FootStepBase",
+      "Tags": "footstepbase",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "BulletHoleDB",
+          "__guid": "f0b24501-b4f4-4122-ba95-349e30dd9635",
+          "bulletHoles": [
+            {
+              "bulletholeNames": [
+                "brick",
+                "concrete",
+                "plaster",
+                "sand"
+              ],
+              "bulletHoles": [
+                {
+                  "_type": "gameobject",
+                  "prefab": "footseps/concf.prefab"
+                }
+              ]
+            },
+            {
+              "bulletholeNames": [
+                "default"
+              ],
+              "bulletHoles": [
+                {
+                  "_type": "gameobject",
+                  "prefab": "footseps/concf.prefab"
+                }
+              ]
+            },
+            {
+              "bulletholeNames": [
+                "metal",
+                "metal.sheet",
+                "metal.weapon"
+              ],
+              "bulletHoles": [
+                {
+                  "_type": "gameobject",
+                  "prefab": "footseps/metalf.prefab"
+                }
+              ]
+            },
+            {
+              "bulletholeNames": [
+                "wood",
+                "wood.sheet"
+              ],
+              "bulletHoles": [
+                {
+                  "_type": "gameobject",
+                  "prefab": "footseps/woodf.prefab"
+                }
+              ]
+            },
+            {
+              "bulletholeNames": [
+                "dirt",
+                "grass"
+              ],
+              "bulletHoles": [
+                {
+                  "_type": "gameobject",
+                  "prefab": "footseps/mud.prefab"
+                }
+              ]
+            }
+          ],
+          "defaultHole": 1
+        }
+      ]
+    },
+    {
+      "__guid": "2310c09a-1b8e-44df-8fe2-2343d2acd59f",
+      "Name": "Settings",
+      "Tags": "settings",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/settings.prefab"
+    },
+    {
+      "__guid": "3a7351bd-57c8-4ad7-b274-89badcc369c9",
+      "Name": "2D Skybox",
+      "Position": "-1204.162,598.8222,583.3024",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2
+    },
+    {
+      "__guid": "5df4399b-e5f9-4996-a4f0-b58301efc8f2",
+      "Name": "World Objects",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "15fc0d39-7a29-45e8-90a7-518425e66225",
+          "Name": "walllamp",
+          "Position": "-511.9999,-255.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "586ff06f-13f0-44eb-9ab3-bc3e3c1f2a71",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "02f917df-4f91-4a71-ac5c-8bf8f00c5b10",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "a4b786a7-9728-4821-b231-a224c6ba834c",
+          "Name": "walllamp",
+          "Position": "-239.9999,-255.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9e057a75-1f1b-4e83-b7d7-efb49a0e9b3a",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "5c3583c5-5efe-4701-9fcb-d9e2d08ac201",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "f5409465-17d4-4df0-bd88-ad86238badb7",
+          "Name": "walllamp",
+          "Position": "-127.9999,-127.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "530e1e52-20ae-4f5e-82ae-42a7f7278e58",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d01da539-5b83-4431-bf76-2d44da6767d8",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "aeedae1e-9eca-4089-adbc-b5dafa35f90b",
+          "Name": "walllamp",
+          "Position": "-511.9999,-127.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "da852615-2ca0-481a-92c6-6e77f9a6244e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "75e5b70c-c1ab-4352-a299-d56ec764d399",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "3ea8e486-108b-4568-b0cc-7bde75683f41",
+          "Name": "walllamp",
+          "Position": "-239.9999,-127.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5c83bb04-deff-434f-82e5-1b40f812e4fb",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "67aae54b-d104-4959-a710-e5a289d4c3c3",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "872f1676-dd1a-4d29-8cc5-aeb4c5e40b94",
+          "Name": "walllamp",
+          "Position": "-127.9999,0.001159668,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "dd7264bb-74db-4890-a664-dba0a9068314",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "7bbc2b71-229f-430d-8802-f4d4bf71d904",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "4e6c2402-c06e-4b7b-8c2a-d4719328dd53",
+          "Name": "walllamp",
+          "Position": "-511.9999,0.001159668,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "cfa5eac3-6603-4641-90fe-d88bfa149459",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "7a132cf8-b376-4f74-9867-61b7ecbf75b2",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "dddf00a1-11ca-47d0-8221-e09d0ad77b1b",
+          "Name": "walllamp",
+          "Position": "-239.9999,0.001159668,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "12f3187a-4277-4f9d-8f5e-26c5e3b59496",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9a9215e1-c63b-4afe-8744-2f6e4ba16e11",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "313ed3a1-c0f6-4bb9-99e5-ec81643ac6d8",
+          "Name": "walllamp",
+          "Position": "-383.9999,128.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "8fce331f-afe8-4367-b29b-0f38788e355b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "f9aad228-f5c4-4765-965b-9f8b274c7879",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "7ab934f5-2754-4eb3-881b-02f4db2fb8c2",
+          "Name": "walllamp",
+          "Position": "-127.9999,128.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "928cdee3-1fbc-4301-83b1-e376451e2815",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "c287d1f9-a0e6-4d30-9ede-9a0d33233c9e",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "b12051c3-ebd6-4b82-8ce4-d8422ef2f023",
+          "Name": "walllamp",
+          "Position": "30.10089,15.02239,123.5696",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "58a7ebf0-d323-473e-9934-e6b8a3e5b1ab",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "db05a35a-a18b-41e1-beb0-3868e6ef27b8",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "003f4c32-c708-433b-a84c-5490accabbe4",
+              "Name": "Spot Light",
+              "Position": "-0.00001990018,-0.000006922637,-59.40819",
+              "Rotation": "0,0.7071068,0,0.7071068",
+              "Tags": "light_spot,light",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.SpotLight",
+                  "__guid": "bac63de7-585e-4935-a594-2c2e34d72c85",
+                  "Attenuation": 1,
+                  "ConeInner": 15,
+                  "ConeOuter": 45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "1,0.98481,0.77209,1",
+                  "Radius": 500,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "377df74f-f5c0-481f-9648-c151504d6427",
+          "Name": "walllamp",
+          "Position": "-511.9999,128.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "7d167675-6a10-4adf-9a62-1bb68744886e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "e055de7a-aa4c-4340-9810-f54c6ab341e5",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "5cf1b644-af79-44b6-94a0-e6e0dd1da5dc",
+          "Name": "walllamp",
+          "Position": "-239.9999,128.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e1c9f52a-23e6-466d-a74e-78c13a0fcb7e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "21d31937-4032-4d8d-8d0d-606ff1249a81",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "29882da1-ba61-4557-870f-72c485b1260c",
+          "Name": "walllamp",
+          "Position": "-239.9999,-383.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b154b3f0-b005-4200-9a0d-48e7e3029aaa",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "1c9c096f-dfa5-4cc0-a775-cc9d98045e83",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "952ca96e-62cc-426a-a625-5ee4125d3f55",
+          "Name": "walllamp",
+          "Position": "-239.9999,-511.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "aac52f8a-1cc6-4660-983f-f6835cc16c70",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "597e10ac-8a38-4bfc-80ea-a85d8cd9d28e",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "49f6e6f5-a3a2-4372-95c4-c74df80fa29a",
+          "Name": "walllamp",
+          "Position": "-239.9999,256.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a44031a7-2fe5-4ba0-9168-2d4e0624055c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "01b99372-ef24-4b23-8d44-2ba85863649c",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "62b8f3ce-40f5-476a-a844-21516868128e",
+          "Name": "walllamp",
+          "Position": "-511.9999,-383.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ee0b4754-ab9d-447d-ae6d-88ffd536168a",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "a1b43ef4-f217-49ff-a1d6-8192c41b8338",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "260032cf-6f3a-4ca1-93e1-304a54497bf4",
+          "Name": "walllamp",
+          "Position": "-511.9999,-511.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "982c2ea7-4035-423b-bce5-18b3c7942d98",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "503768ee-0655-4b5d-9291-5973f3470c4b",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "992ac403-4f3a-484a-94b4-7159f7054621",
+          "Name": "walllamp",
+          "Position": "-127.9999,-383.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "29f74e6a-6a6f-4c43-8810-0e824f6884d1",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "ddb9a885-df46-420f-a5ba-93df9bbb3900",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "9339320f-59ba-4eb8-a38f-a4e36112b787",
+          "Name": "walllamp",
+          "Position": "-383.9999,-383.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "30efbe05-c6ff-4610-9b6c-71d98e7a5fc5",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "e6272bc4-6971-4a84-ae6b-4d8b309d5942",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "1f0eae81-ad79-40a5-a9bc-f31981682dd6",
+          "Name": "walllamp",
+          "Position": "-383.9999,-511.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e2dffa44-276b-4159-be9f-d5097f609e35",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "3400f43b-c009-48a5-a992-2db59e9a0aea",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "61dd03c8-b502-441d-8e53-c19d3c98aacd",
+          "Name": "walllamp",
+          "Position": "-383.9999,256.0012,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "aff0e875-8531-43f8-92da-f283935f74dc",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "42637132-6596-4f78-9a07-ebeb4b948e62",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "c2d46841-36bc-4c5c-ac44-bf66172ac038",
+          "Name": "walllamp",
+          "Position": "-558.1608,72.13916,122.2161",
+          "Rotation": "-0.00003400722,0.00003401704,-0.7071068,0.7071068",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "93ad44aa-e6db-43bc-899c-fb4a6f56a5bb",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d663a6b2-48eb-40fb-90ec-202a62e053a7",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "bdea3126-64b3-47aa-9584-54a82f8fa81b",
+          "Name": "walllamp",
+          "Position": "-127.9999,-255.9988,252.0812",
+          "Rotation": "-0.0000481004,0,0.0001443012,0.9999999",
+          "Scale": "0.1,0.1,0.1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "88446b35-0e29-44ee-8720-95463fb0caec",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9552ec84-f171-4ba6-8934-6120b8f9a93b",
+              "IsTrigger": false,
+              "Model": "models/ceiling lamp/walllamp.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "4aff7ded-9336-44af-b961-f917e33a765b",
+          "Name": "chain fence (4)",
+          "Position": "-702.4355,373.1874,34.85936",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Scale": "0.4,0.4,0.4",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b89c3272-9bbb-485b-9c3a-342d03ef0a11",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/trailer park props/chain fence.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "5bcb0135-fa82-44ab-9816-38f23c8d84f6",
+              "IsTrigger": false,
+              "Model": "models/trailer park props/chain fence.vmdl",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "1130b935-dd82-45de-ae78-215aa7db5b6c",
+          "Name": "chain fence (1)",
+          "Position": "-702.4355,477.6464,34.85936",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Scale": "0.4,0.4,0.4",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "55b63cd4-69b5-4c41-8c5a-cf3625b7c806",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/trailer park props/chain fence.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "48b90be7-526d-4315-a137-4937bd01fce1",
+              "IsTrigger": false,
+              "Model": "models/trailer park props/chain fence.vmdl",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "13f97774-3821-4065-967f-77bbcb438315",
+          "Name": "door (21)",
+          "Position": "-497.3184,-389.3386,130.1116",
+          "Rotation": "-0.4449855,0.5494561,0.4448917,0.5496885",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ce6ab5b2-3b92-4c09-b2c6-44a322cff18d",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "4f42601c-645f-43b6-b4ab-9fea7d1c8b43",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "0e30fb3c-0cb9-4696-833e-7c16e981dccd",
+          "Name": "door (20)",
+          "Position": "-371.5241,-399.023,130.112",
+          "Rotation": "-0.4140202,0.5732221,0.4135872,0.5735412",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "807b9a69-4117-41c8-91a4-e2d684285f42",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "eeffe768-ce47-47b9-a191-86bb76edb30a",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "33d727b0-6eb2-4e27-a978-3d34f90f2ead",
+          "Name": "door (19)",
+          "Position": "-307.0554,-395.2316,130.0956",
+          "Rotation": "0.6009404,-0.3726446,-0.6010033,-0.3725612",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "2a55c6fb-01a0-4417-bd26-5eacfe170939",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "039b959c-ca48-4f97-a7ac-fa2df041c87d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "0a999861-c51d-4f76-82c8-8463b1ba3355",
+          "Name": "door (18)",
+          "Position": "-252.6127,-398.7642,132.4603",
+          "Rotation": "0.6846257,0.06549229,-0.7216744,0.0786417",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d353d529-340a-4889-a27e-b9cd5d2cdf91",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "602f4a25-a82c-4206-8278-bdbbf52af544",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "9293c227-ca34-44a2-87e3-bae7a558d1fc",
+          "Name": "door (17)",
+          "Position": "-242.72,-293.6482,130.0981",
+          "Rotation": "0.691313,0.1486154,-0.6913533,0.1484269",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1ccac53c-271d-4d2e-a295-7567c3e38d3b",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "cfc459ad-2cb1-4cb8-8920-2cd3472e3766",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "d4707a53-7705-4ab8-90fb-595abe0b5ba5",
+          "Name": "door (16)",
+          "Position": "-248.4951,-135.9646,130.1232",
+          "Rotation": "0.6514449,-0.2748892,-0.6515843,-0.2747605",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f4790f7b-33ac-46ce-8916-eb0c4de73c57",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "e5d9f4c0-89c5-499f-aa66-ab9edf30c606",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "bb0ac17f-f3d6-416e-8678-2c19bf6a6833",
+          "Name": "door (15)",
+          "Position": "-272.5693,-1.313158,149.7704",
+          "Rotation": "0.4748739,0.2976126,-0.8095971,0.1745678",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5bf7eba0-22b2-4084-839f-b30a318a62e5",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "2faced41-0577-4623-b241-dc9a96a46a1d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "1379390a-730e-4f7c-8b2c-52aae58d257c",
+          "Name": "door (14)",
+          "Position": "-248.8084,122.0979,134.1953",
+          "Rotation": "0.7068279,-0.003364914,-0.7073682,-0.003664677",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "26359763-1960-4a24-a370-2bb322a7c0e7",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "6b37bc41-f33e-4d9b-9cb8-7779ee38f512",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "4d493eab-c17b-413b-ab3e-51bbf131f583",
+          "Name": "door (13)",
+          "Position": "-243.7914,143.3307,130.0941",
+          "Rotation": "0.608779,0.359708,-0.6087922,0.3596811",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "86301646-b41e-4b9b-b9cf-b0a65f6714fe",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "617f2a61-a890-45f0-a98e-d434661e79ee",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "61940774-838a-4995-9705-a3ebff56be8e",
+          "Name": "door (12)",
+          "Position": "-388.0334,159.2608,144.8466",
+          "Rotation": "-0.75015,-0.3514036,0.5072709,-0.2376275",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ed872461-694c-4a52-80f2-af9060d5424c",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/securedoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "4278c12c-fbca-49ec-8378-4e348eb39cc1",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "745aa32b-2713-478d-bf11-f99668f156dc",
+          "Name": "psx style tv",
+          "Position": "-586.4085,33.64735,148.6352",
+          "Rotation": "0.6957918,0.1236285,0.6948444,0.1333455",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c24fec02-5a1a-40e2-ad41-c82a04e0f04c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "0e241456-2934-472f-b0fd-2f5cab623b98",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "e0ea1feb-3055-4e46-ac04-d9f660929e6a",
+          "Name": "psx style tv (4)",
+          "Position": "-645.6839,-58.70264,136.0898",
+          "Rotation": "0.5022182,-0.4961863,-0.4976376,0.5039176",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ce8eb3ac-ca45-459d-b1ad-2a1c7075f7a8",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "517f5e9b-fd0b-40b4-9843-863071e77e07",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "9a4be09d-450f-4e75-aeb6-c5924b8446e7",
+          "Name": "psx style tv (6)",
+          "Position": "-591.2982,29.46144,134.082",
+          "Rotation": "0.6290736,-0.7773459,0.00004914343,0.00002770506",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "93101bba-cbfe-44cb-9714-ed68989e46db",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "bb6445b2-9c82-4691-a693-a23c7ffef9b0",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "a09f501c-e768-4053-a2fd-0981bebfc7be",
+          "Name": "psx style tv (5)",
+          "Position": "-585.2202,14.23713,146.9813",
+          "Rotation": "-0.1101544,-0.08349819,-0.7021596,0.698474",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "85fc3c1d-a399-4477-ab18-3b70e016dc30",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "e22aae17-0aaa-494e-8b1d-bc0a8a86239a",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "ea08ea8c-7685-4cf8-9859-1911e5ec9908",
+          "Name": "psx style tv (8)",
+          "Position": "-666.561,-103.2405,136.1701",
+          "Rotation": "0.5524373,-0.4377826,-0.4509973,0.5475043",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "93a510c4-978f-4fb1-9172-3366441d8b61",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "07b99378-19a9-44d3-b330-f56549e5e89b",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "b98121d4-f42f-4aa9-ba71-221892744249",
+          "Name": "psx style tv (7)",
+          "Position": "-589.0821,8.82869,134.0947",
+          "Rotation": "0.5694149,-0.822049,0.001206068,-0.0008333029",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0d566fd3-9be5-46b6-8aae-04f8826b3867",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "58dee0cb-befa-4d74-9fa7-5ccb193fcebd",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "63c77ce8-db74-4546-9302-b206e36f2195",
+          "Name": "psx style tv (2)",
+          "Position": "-665.8375,-97.84425,147.0111",
+          "Rotation": "0.00181596,0.009243648,-0.7221019,0.6917226",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "26a0bd90-236a-41ae-8419-55d8d069d05b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "7216d2c0-70ea-4698-b870-ac1b926448c1",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "ed484f80-7164-45a4-beee-daa5183436f5",
+          "Name": "psx style tv (3)",
+          "Position": "-631.4763,-26.21419,134.0954",
+          "Rotation": "-0.0001054484,-0.0007820224,-0.7342538,0.6788747",
+          "Scale": "0.06499999,0.06499999,0.06499999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6795c803-8406-4473-8126-1b6147d56fef",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "aa1bc428-54f2-4c7e-a527-3a835ec59d9a",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/psx style tv.vmdl",
+              "Static": true,
+              "Surface": "surfaces/metal.surface"
+            }
+          ]
+        },
+        {
+          "__guid": "d48bf38a-8aad-4f9e-9e14-71d46268a7e9",
+          "Name": "rack",
+          "Position": "-678.7468,-78.64194,127.896",
+          "Scale": "0.2868274,0.2868274,0.2868274",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6a850711-3655-4d2a-aac7-0d39cd3e300c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/cctv rack/rack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "ef31a4b5-6fca-4139-8106-9e15dafc8956",
+              "IsTrigger": false,
+              "Model": "models/cctv rack/rack.vmdl",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "204e3870-3855-492c-bbd6-dff5ee1ceb3a",
+              "Name": "psx style tv (1)",
+              "Position": "-38.06375,60.81039,168.8997",
+              "Rotation": "0.5019901,0.4968437,-0.5030861,0.4980528",
+              "Scale": "0.2266171,0.2266171,0.2266171",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0ad14fb2-8ddc-48b7-aba0-dec5d85c8399",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/cctv rack/psx style tv.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "c623ebce-9178-4383-98fb-ba98ce34440c",
+                  "IsTrigger": false,
+                  "Model": "models/cctv rack/psx style tv.vmdl",
+                  "Static": true,
+                  "Surface": "surfaces/metal.surface"
+                }
+              ]
+            },
+            {
+              "__guid": "d3cc41d7-e2e4-411b-a7df-f3e95bd25d26",
+              "Name": "psx style tv (9)",
+              "Position": "-20.16755,-152.4122,97.95798",
+              "Rotation": "0.000002744516,-0.000001310426,-0.4981475,0.8670923",
+              "Scale": "0.2266171,0.2266171,0.2266171",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "140544ed-c629-44c6-a219-851f0713bcae",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/cctv rack/psx style tv.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "c5a89376-478a-45f9-831f-8c938028c0f3",
+                  "IsTrigger": false,
+                  "Model": "models/cctv rack/psx style tv.vmdl",
+                  "Static": true,
+                  "Surface": "surfaces/metal.surface"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "40fbb6ad-17a2-4add-86ec-17df0852705f",
+      "Name": "Object (8)",
+      "Position": "-698.9443,-109.4858,189.5725",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "3dd65a7a-7d82-4b06-bea8-7566e8246fec",
+          "CutoffAngle": 42.88,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 12.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,3.200042",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "34cca766-a3c6-414a-a1fc-011504bb645e",
+      "Name": "Object (1)",
+      "Position": "-666.1573,-109.4858,189.5725",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "3d21755b-f9c7-4b45-8105-cfbc2558429b",
+          "CutoffAngle": 42.88,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 12.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,36.50005",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "fab02408-7d74-4502-9908-d0bd96300ad6",
+      "Name": "Object (3)",
+      "Position": "-652.9072,-83.09846,128.3418",
+      "Rotation": "0,0.7071068,0,0.7071068",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "b4b243b6-825b-4aa7-95b5-328224f306d9",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "fd1ceb16-d442-45cd-a571-eb66e9c51664",
+      "Name": "Object (2)",
+      "Position": "28.58052,21.75211,2.789304",
+      "Rotation": "0,0.7071068,0,0.7071068",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "9efd7ca2-9d69-484c-a9e5-e5140e599dee",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "1dc1203f-ef3d-4cfa-90ac-605c7446675f",
+      "Name": "Object (4)",
+      "Position": "44.30135,0.9266815,2.789347",
+      "Rotation": "-0.5483582,0.4464339,0.5483582,0.4464339",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "8e0b063f-e105-4a91-bb24-c2d5430632eb",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "f619af22-7443-4cf9-86b6-733842e46c7a",
+      "Name": "Object (10)",
+      "Position": "68.5032,-27.08945,33.42537",
+      "Rotation": "-0.5483582,0.4464339,0.5483582,0.4464339",
+      "Scale": "0.3356589,0.3356589,0.3356589",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "93f388f6-ffa1-4e42-9450-87a580950362",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 12.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "43c8bba2-32a2-4a7b-8e57-2ccf6ea1a9e4",
+      "Name": "Object (11)",
+      "Position": "63.55692,-44.36273,32.49493",
+      "Rotation": "-0.7062322,-0.0351585,0.7062322,-0.0351585",
+      "Scale": "0.3356589,0.3356589,0.3356589",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "09454b8f-b9fd-4151-8a4f-c2eb3e400089",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "e965c8d3-dc75-444a-8c16-9273a33586b2",
+      "Name": "Object (5)",
+      "Position": "28.98374,39.15877,2.789331",
+      "Rotation": "-0.6997004,-0.1020749,0.6997004,-0.1020749",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "70bc5316-2d07-4131-aff8-1ae4e3a1fad6",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "7e004657-ac41-4c3d-a50f-6990b88485cc",
+      "Name": "Object (6)",
+      "Position": "7.493351,-9.804157,2.789326",
+      "Rotation": "0.6754836,-0.2090977,-0.6754836,-0.2090977",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "fe494e04-bb8a-4f55-8d32-03eb838d48fc",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "128,128,28.80004",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "54db4c50-cfad-4863-99ec-9c4b6b454c78",
+      "Name": "Object (7)",
+      "Position": "45.0731,20.35811,23.7703",
+      "Rotation": "0.6754836,-0.2090977,-0.6754836,-0.2090977",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "450beb28-8cb2-4a71-a2c7-1bb7d0fe990f",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "25.70004,35.50007,7.90006",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "af7f8a84-428b-4673-81bc-b7e7822e43ec",
+      "Name": "Object (9)",
+      "Position": "51.46722,20.35811,39.48722",
+      "Rotation": "-0.9889483,-0.1436177,-0.02585781,-0.02620081",
+      "Scale": "0.7590377,0.7590377,0.7590377",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "cb01a57d-bc26-4284-9c7c-c3eea0b41cff",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "decals/swag/blood pool 1.vmat",
+          "Mod2XBlending": false,
+          "Size": "25.70004,35.50007,7.90006",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "22d9a820-d16b-4717-b4b7-a86624f2563e",
+      "Name": "door",
+      "Position": "-578.2417,24.1134,168",
+      "Rotation": "1,0,-0.0000000437114,0",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "b7ec3879-b95a-4d46-8e56-6b368969263d",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/doors/securitydoor.vmat",
+          "Model": "models/door.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "1c5333ae-d021-4bd7-9100-40a703cfaa17",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "8,64,160.0001",
+          "Static": false
+        },
+        {
+          "__type": "Interactable",
+          "__guid": "c639cb55-5b17-487c-8d23-efef3d3ce1db",
+          "Interacted": false,
+          "interactType": "Blocked",
+          "ItemGrabber": false
+        }
+      ]
+    },
+    {
+      "__guid": "3762c9b7-4256-4a8a-8310-931529994242",
+      "Name": "chain fence (3)",
+      "Position": "-237.7056,-218.7547,163.0526",
+      "Scale": "0.4,0.4,0.4",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "597015dc-11a9-489b-b811-3a5bcc644c97",
+          "AnimationGraph": "animgraphs/chain fence door.vanmgrph",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": true,
+          "Model": "models/trailer park props/chain fence door.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "SwankDoor",
+          "__guid": "5099d8c6-479b-4683-a157-b155a93c82ab",
+          "animated": true,
+          "CameraT": {
+            "_type": "gameobject",
+            "go": "45c27bb1-df39-4793-91b1-c5f84b9c7aeb"
+          },
+          "doorCode": 0,
+          "doorPositions": [],
+          "doorRotations": [],
+          "HandT": {
+            "_type": "gameobject",
+            "go": "45fe0532-1a3a-4d61-b458-b01e7c65623a"
+          },
+          "interactables": [
+            {
+              "_type": "component",
+              "component_id": "d98f6924-0b0a-49ca-a2e7-2ac4496698d4",
+              "go": "857a6762-be76-4963-9348-9888ad231105",
+              "component_type": "Interactable"
+            }
+          ],
+          "playerPositions": [
+            "0,-32.594,-88.1",
+            "0,32.227,-88.1"
+          ],
+          "PlayerT": {
+            "_type": "gameobject",
+            "go": "57ba3f6c-29b3-4a68-9e15-0e5826dfbcc1"
+          },
+          "progress": {
+            "_type": "component",
+            "component_id": "44513bec-ab6e-4910-a9a7-adc10d8bf560",
+            "go": "3762c9b7-4256-4a8a-8310-931529994242",
+            "component_type": "Progress"
+          },
+          "renderer": {
+            "_type": "component",
+            "component_id": "597015dc-11a9-489b-b811-3a5bcc644c97",
+            "go": "3762c9b7-4256-4a8a-8310-931529994242",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "sens": 1
+        },
+        {
+          "__type": "Progress",
+          "__guid": "44513bec-ab6e-4910-a9a7-adc10d8bf560",
+          "progress": [
+            0,
+            1
+          ]
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "c4fc1b0e-5059-4751-887d-bef542afd963",
+          "Name": "Bone",
+          "Position": "40,0,-90.00002",
+          "Rotation": "0.4999998,0.4999999,0.5000004,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "b4bafa63-cc4a-43a6-acbe-4f94c70f4cbc",
+              "Name": "Bone_001",
+              "Position": "-0.00001680311,71.61809,0.00004268769",
+              "Rotation": "-0.5213336,-0.4777143,-0.4777146,0.521334",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "43d57b85-2174-4799-acbb-b867b534b913",
+                  "Name": "Bone_001_end",
+                  "Position": "0.00002861022,60,0.00001313684",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                },
+                {
+                  "__guid": "45fe0532-1a3a-4d61-b458-b01e7c65623a",
+                  "Name": "hand",
+                  "Position": "-2.562758,59.55811,57.21976",
+                  "Rotation": "0.7071068,-0.7071068,0.00000003090862,-0.00000003090862",
+                  "Enabled": true,
+                  "NetworkMode": 2
+                }
+              ]
+            },
+            {
+              "__guid": "94b8687d-2366-4694-ba3a-6b036504d134",
+              "Name": "Object",
+              "Position": "0,0,0",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "2f9f7cbc-e631-4505-aa77-3caa47d2b8ab",
+                  "Center": "0,97.29999,-125.4",
+                  "IsTrigger": false,
+                  "Scale": "6.499997,181.9001,88",
+                  "Static": false,
+                  "Surface": "surfaces/metal.surface"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "4b3b50b6-5bc7-4424-bb8f-a7bea4a7a844",
+                  "Center": "0,97.29999,45.8",
+                  "IsTrigger": false,
+                  "Scale": "6.499997,181.9001,88",
+                  "Static": false,
+                  "Surface": "surfaces/metal.surface"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "7da2ff70-7340-427c-b067-03c0ff31d8fa",
+                  "Center": "0,178.6999,-39.69999",
+                  "IsTrigger": false,
+                  "Scale": "6.499997,19.50012,88",
+                  "Static": false,
+                  "Surface": "surfaces/metal.surface"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "57ba3f6c-29b3-4a68-9e15-0e5826dfbcc1",
+          "Name": "Object (1)",
+          "Position": "-0.000001920894,32.22725,-88.10001",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Scale": "2.5,2.5,2.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "45c27bb1-df39-4793-91b1-c5f84b9c7aeb",
+              "Name": "Object",
+              "Position": "0,0,55",
+              "Enabled": true,
+              "NetworkMode": 2
+            }
+          ]
+        },
+        {
+          "__guid": "857a6762-be76-4963-9348-9888ad231105",
+          "Name": "Object (1)",
+          "Position": "40,-0.00003576278,-18.38191",
+          "Rotation": "0.0000002730043,-0.0000002080155,0.04361957,0.9990482",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "516a8bfb-d846-4c08-bd42-7ed59b50fb50",
+              "Center": "0,40.1,13.6",
+              "IsTrigger": false,
+              "Scale": "6.199995,69.80002,160.3",
+              "Static": false,
+              "Surface": "surfaces/metal.surface"
+            },
+            {
+              "__type": "Interactable",
+              "__guid": "d98f6924-0b0a-49ca-a2e7-2ac4496698d4",
+              "Interacted": false,
+              "interactType": "Use",
+              "ItemGrabber": false
+            },
+            {
+              "__type": "FollowTransform",
+              "__guid": "185797a6-1c9e-4309-bad3-410a37d160f0",
+              "followed": {
+                "_type": "gameobject",
+                "go": "b4bafa63-cc4a-43a6-acbe-4f94c70f4cbc"
+              },
+              "followPos": true,
+              "followRot": true,
+              "lerpDis": 0,
+              "lerpSpeedPos": 0,
+              "lerpSpeedRot": 0,
+              "lerpTo": false,
+              "locked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "8d81891b-b4f1-4a38-bc66-9c415f35aec5",
+      "Name": "metal table",
+      "Position": "67.45787,-33.62408,-0.0001706488",
+      "Rotation": "0,-0,-0.2325967,0.9725733",
+      "Scale": "0.1600411,0.1600411,0.1600411",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "371a760b-a06a-4091-846c-59cbbe1ac78e",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/metal table/metal table.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "31189be0-4c2e-448b-b7f5-07e0eb9bea87",
+          "IsTrigger": false,
+          "Model": "models/metal table/metal table.vmdl",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "35da735f-8416-4bee-86fb-7f53b658e6c4",
+      "Name": "vice",
+      "Position": "51.1329,-37.58647,30.25198",
+      "Rotation": "-0.00000005796987,0.00000001386385,0.9725733,0.2325967",
+      "Scale": "0.05065518,0.05065518,0.05065518",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "b9ff2031-d9e3-4542-aadb-69cf403c448f",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/vice/vice.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "e0ef8e67-b8d1-4a00-91f6-034a08c81024",
+      "Name": "flashlight_poquet",
+      "Position": "-32.03522,-35.841,42.09965",
+      "Rotation": "0.00000001789201,0.00000006766395,0.2890321,0.9573194",
+      "Scale": "0.673762,0.673762,0.673762",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c25d59dd-ad09-4d5f-9b0e-f2728cb2b45a",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/exploration objects/photo_camera/flashlight_poquet.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "d59533c6-5135-4498-afe6-d6989008934d",
+          "IsTrigger": false,
+          "Model": "models/exploration objects/photo_camera/flashlight_poquet.vmdl",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "62780eb4-8651-4cc7-b6bc-1d4037bd7654",
+      "Name": "tripode fbx",
+      "Position": "-32.3875,-36.09478,1.88842",
+      "Scale": "0.176327,0.176327,0.176327",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "550a480d-7769-4c14-9d65-e9848fc53110",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/tripod/tripode fbx.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "3d1945d7-71fd-4da5-abda-f1dbdecb7976",
+          "Locking": {},
+          "Model": "models/tripod/tripode fbx.vmdl",
+          "RigidbodyFlags": 0
+        }
+      ]
+    },
+    {
+      "__guid": "8bf0671b-7f70-46b5-a855-a9fe0f3d69b1",
+      "Name": "chainsaw",
+      "Position": "86.52608,-19.47442,32.12892",
+      "Rotation": "0.7071068,-0.00000007770659,-0.7071068,-0.00000007770659",
+      "Scale": "0.146838,0.146838,0.146838",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "3f77786d-f65f-4e58-9328-df6f982b74a7",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/chainsaw/chainsaw.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "dce8e121-576a-4970-9e39-786375bf3cc1",
+      "Name": "Object",
+      "Position": "-704.0493,290.2352,53.36391",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.LineRenderer",
+          "__guid": "445c49f6-4fb8-4169-8799-7b25a09b505d",
+          "Color": {
+            "color": [
+              {
+                "t": 0.5,
+                "c": "0,0,0,1"
+              }
+            ],
+            "alpha": []
+          },
+          "EndCap": "None",
+          "Opaque": true,
+          "Points": [
+            {
+              "_type": "gameobject",
+              "go": "dce8e121-576a-4970-9e39-786375bf3cc1"
+            },
+            {
+              "_type": "gameobject",
+              "go": "7f8ff3fa-76de-4b30-8019-54802ed39405"
+            },
+            {
+              "_type": "gameobject",
+              "go": "67251be9-8cbb-4a67-801d-722928f662ce"
+            },
+            {
+              "_type": "gameobject",
+              "go": "44e9f48e-4a92-4e88-8a09-4fd534672f1c"
+            },
+            {
+              "_type": "gameobject",
+              "go": "cf59d484-3a48-4f99-82bc-65021bd5458c"
+            }
+          ],
+          "SplineBias": 0,
+          "SplineContinuity": 0,
+          "SplineInterpolation": 0,
+          "SplineTension": 0,
+          "StartCap": "None",
+          "Width": {
+            "rangey": "0.4,1",
+            "frames": [
+              {}
+            ]
+          },
+          "Wireframe": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "7f8ff3fa-76de-4b30-8019-54802ed39405",
+          "Name": "Object",
+          "Position": "-0.2744141,0,34.1519",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "67251be9-8cbb-4a67-801d-722928f662ce",
+          "Name": "Object (12)",
+          "Position": "-0.2744141,30.14661,34.1519",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "44e9f48e-4a92-4e88-8a09-4fd534672f1c",
+          "Name": "Object (12)",
+          "Position": "50.11127,30.91568,34.1519",
+          "Enabled": true,
+          "NetworkMode": 2
+        },
+        {
+          "__guid": "cf59d484-3a48-4f99-82bc-65021bd5458c",
+          "Name": "Object (12)",
+          "Position": "50.11127,29.43372,34.1519",
+          "Enabled": true,
+          "NetworkMode": 2
+        }
+      ]
+    },
+    {
+      "__guid": "ca31adc4-4338-445f-b793-5f1719ca3f51",
+      "Name": "kitchen",
+      "Position": "-680.9942,-295.6075,128",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "0.3,0.3,0.3",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "cd301c32-95ee-4c3a-b3c0-dc61a7c108c0",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/trailer park props/kitchen.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "f0e35a09-7fc5-4326-bf93-14aa2410f762",
+          "IsTrigger": false,
+          "Model": "models/trailer park props/kitchen.vmdl",
+          "Static": false,
+          "Surface": "surfaces/wood.surface"
+        }
+      ]
+    },
+    {
+      "__guid": "bc55d95b-ee74-4867-a59f-5aa1a0f79478",
+      "Name": "fridge",
+      "Position": "-688.0721,-170.0357,129.2216",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "0.3,0.3,0.3",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "e6b089c9-19e6-4e3c-b62e-885a65f7969d",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/fridge.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "7ec0cab3-36e1-4fce-918f-60c271a23871",
+          "IsTrigger": false,
+          "Model": "models/fridge.vmdl",
+          "Static": false,
+          "Surface": "surfaces/metal.surface"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": true,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 23.80001,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "level 4",
+  "Description": "",
+  "LastSaved": "2024-04-28T16:57:07.3199024\u002B07:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

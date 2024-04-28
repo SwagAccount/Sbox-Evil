@@ -61,6 +61,7 @@
           },
           {},
           {},
+          {},
           {}
         ],
         "notReloadable": true,
@@ -172,7 +173,8 @@
               "models/key/quad_key_material_base.vmat",
               "models/key/greenkey.vmat",
               "models/key/redkey.vmat",
-              "models/key/whitekey.vmat"
+              "models/key/whitekey.vmat",
+              "models/key/outsidekey.vmat"
             ],
             "modelRenderer": {
               "_type": "component",

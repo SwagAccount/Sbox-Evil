@@ -12,7 +12,9 @@
       "Resources": null,
       "PackageReferences": [],
       "EditorReferences": [
-        "fpopium.crackhead_03#48495"
+        "fpopium.crackhead_03#48495",
+        "tiled.brickwall#42137",
+        "apetavern.pavement_01a#46147"
       ],
       "Metadata": {
         "SingleAssetSource": "maps/level 4.vmap"

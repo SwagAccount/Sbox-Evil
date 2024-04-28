@@ -2284,7 +2284,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "16b83f02-70ca-4ee0-a6ad-08ebb9a7c4c3",
+            "component_id": "9d158e5b-3ea7-49f8-bb3f-6b8e37504e66",
             "go": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
             "component_type": "ThreeDinv"
           },
@@ -4844,7 +4844,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "16b83f02-70ca-4ee0-a6ad-08ebb9a7c4c3",
+            "component_id": "9d158e5b-3ea7-49f8-bb3f-6b8e37504e66",
             "go": "173c6373-ea5d-4eec-93c0-3fbcc8202e0d",
             "component_type": "ThreeDinv"
           },
@@ -5000,7 +5000,7 @@
           "pAng": "0,90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "be1f313d-c916-4371-b020-4c13c43171b9",
+            "component_id": "56b48438-f34b-47d4-af80-25bb2089052f",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -6517,7 +6517,7 @@
           "sceneName": "level 1",
           "Settings": {
             "_type": "component",
-            "component_id": "153d0d2b-c922-4c29-a3b9-308bd06e68f6",
+            "component_id": "2f78dae8-7427-49ca-8116-8dfb4fcd0a62",
             "go": "bc876599-427b-49b4-b2ea-e5cc9264ab02",
             "component_type": "Settings"
           },
@@ -6622,7 +6622,7 @@
           "pAng": "0,-90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "be1f313d-c916-4371-b020-4c13c43171b9",
+            "component_id": "56b48438-f34b-47d4-af80-25bb2089052f",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -7098,7 +7098,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "02b374de-2c54-467b-b719-2e79996d19d5",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "materials/doors/securedoor.vmat",
           "Model": "models/door.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -7132,7 +7132,7 @@
           "pAng": "0,-90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "be1f313d-c916-4371-b020-4c13c43171b9",
+            "component_id": "56b48438-f34b-47d4-af80-25bb2089052f",
             "go": "7975e52d-ef4c-4957-ac43-a2da0736df75",
             "component_type": "PlayerUI"
           },
@@ -8538,7 +8538,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-21T18:57:44.3162448\u002B07:00",
+  "LastSaved": "2024-04-28T14:22:52.4433636\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

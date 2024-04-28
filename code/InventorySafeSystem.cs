@@ -10,6 +10,16 @@ public sealed class InventorySafeSystem : Component
 	string saveName;
 	protected override void OnAwake()
 	{
+		IEnumerable<GameObject> balls = Scene.GetAllObjects(true);
+		foreach(GameObject go in balls)
+		{
+			ThreeDinv tdi = go.Components.Get<ThreeDinv>();
+			if(tdi!=null)
+			{
+				inv = tdi;
+				break;
+			}
+		}
 		if(!FileSystem.Data.FileExists("currentSave.txt"))
 		{
 			FileSystem.Data.WriteAllText("currentSave.txt","defaultSave");

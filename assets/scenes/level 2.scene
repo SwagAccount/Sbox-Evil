@@ -249,7 +249,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "cb4602c9-7468-417b-bf9b-341e0fdb177e",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "materials/door.vmat",
           "Model": "models/door.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -548,7 +548,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "34bfb962-c79f-466e-ad03-e4ee3b1aef2f",
+            "component_id": "3b0c3cbf-9706-4bed-a109-4a23855d3972",
             "go": "ff364efe-e05c-4b57-9eab-3906fd19e9ab",
             "component_type": "ThreeDinv"
           },
@@ -1783,7 +1783,7 @@
           "pAng": "0,0,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "16165193-fde0-40b1-994e-37ee29b54c10",
+            "component_id": "ef9ad5f3-9290-427f-b812-0f047ae430e8",
             "go": "aa823d79-b388-4c88-95cf-579a1fdcdefa",
             "component_type": "PlayerUI"
           },
@@ -2233,7 +2233,7 @@
               "pAng": "0,-90,0",
               "playerUI": {
                 "_type": "component",
-                "component_id": "16165193-fde0-40b1-994e-37ee29b54c10",
+                "component_id": "ef9ad5f3-9290-427f-b812-0f047ae430e8",
                 "go": "aa823d79-b388-4c88-95cf-579a1fdcdefa",
                 "component_type": "PlayerUI"
               },
@@ -2258,6 +2258,68 @@
               "progress": [
                 0
               ]
+            }
+          ]
+        },
+        {
+          "__guid": "44294d39-020d-4aae-a3e4-ca91145516fe",
+          "Name": "door (3)",
+          "Position": "-2371.248,740,39.99972",
+          "Rotation": "1,0,0,-0.00000004371139",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "40e13b44-59f6-4793-ac35-66fea9b2b81e",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/doors/staffdoor.vmat",
+              "Model": "models/door.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "35866bcd-a6c8-4624-8ff8-7725b8ea31d1",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "8,64,160.0001",
+              "Static": false,
+              "Surface": "surfaces/wood.surface"
+            },
+            {
+              "__type": "Interactable",
+              "__guid": "b61bdca1-2330-4e16-b578-2cb64628e68a",
+              "Interacted": false,
+              "interactType": "Open",
+              "ItemGrabber": false
+            },
+            {
+              "__type": "DoorSystem",
+              "__guid": "919d3fde-8a86-4eac-ae9c-9b68a57ef2f5",
+              "doorCode": 0,
+              "interactable": {
+                "_type": "component",
+                "component_id": "b61bdca1-2330-4e16-b578-2cb64628e68a",
+                "go": "44294d39-020d-4aae-a3e4-ca91145516fe",
+                "component_type": "Interactable"
+              },
+              "pAng": "0,90,0",
+              "playerUI": {
+                "_type": "component",
+                "component_id": "ef9ad5f3-9290-427f-b812-0f047ae430e8",
+                "go": "aa823d79-b388-4c88-95cf-579a1fdcdefa",
+                "component_type": "PlayerUI"
+              },
+              "pPos": "32,-432,0",
+              "saveSystem": {
+                "_type": "component",
+                "component_id": "7c7b774f-9349-4c93-a275-640338f058ae",
+                "go": "b37f9c6c-7088-4b4d-9424-f36db3b36a1c",
+                "component_type": "SaveSystem"
+              },
+              "sceneLoad": "scenes/level 4.scene|staff"
             }
           ]
         }
@@ -3827,7 +3889,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "34bfb962-c79f-466e-ad03-e4ee3b1aef2f",
+            "component_id": "3b0c3cbf-9706-4bed-a109-4a23855d3972",
             "go": "ff364efe-e05c-4b57-9eab-3906fd19e9ab",
             "component_type": "ThreeDinv"
           },
@@ -4749,7 +4811,7 @@
           "sceneName": "level 2",
           "Settings": {
             "_type": "component",
-            "component_id": "fe4444ae-ccf2-44a5-8be2-f7d9a3ed1700",
+            "component_id": "0a033e3d-19e4-46a9-8085-709bc63f733e",
             "go": "41e8fda1-f267-4e25-bbbd-49d9449d4c06",
             "component_type": "Settings"
           },
@@ -4774,7 +4836,7 @@
         {
           "__type": "Sandbox.SkyBox2D",
           "__guid": "286bd109-b3c9-44f7-897a-8ac97b6d5a83",
-          "SkyMaterial": "materials/skybox/light_test_sky_sunny02.vmat",
+          "SkyMaterial": "materials/error.vmat",
           "Tint": "0,0,0,1"
         }
       ]
@@ -5313,7 +5375,7 @@
   },
   "Title": "level 2",
   "Description": "",
-  "LastSaved": "2024-04-21T18:57:54.0021069\u002B07:00",
+  "LastSaved": "2024-04-24T21:16:37.8081219\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

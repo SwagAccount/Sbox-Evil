@@ -20,8 +20,10 @@ public sealed class SwankDoor : Component
 	private MovementLocker movementLocker;
 	private GameObject player;
 	bool Using;
+	Vector3 forward;
 	protected override void OnAwake()
 	{
+		forward = PlayerT.Transform.World.Forward;
 		IEnumerable<GameObject> playerballs = Scene.GetAllObjects(true);
 		foreach(GameObject go in playerballs)
 		{
@@ -51,17 +53,42 @@ public sealed class SwankDoor : Component
 			interactable.Interacted = to;
 		}
 	}
+	bool facingForward()
+	{
+		Vector3 playerForward = player.Transform.World.Forward.Normal;
+        Vector3 objectForward = forward;
+
+        float dotForward = Vector3.Dot(playerForward, objectForward);
+
+        float dotBackward = Vector3.Dot(playerForward, -objectForward);
+
+        if (dotForward > dotBackward)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+	}
+	bool ff;
 	protected override void OnUpdate()
 	{
 		if(Interacted())
 		{
 			SetInteracted(false);
+			ff = facingForward();
 			if (progress.progress[1] == 1) Using = true;
 			else ConsoleSystem.Run( "playermessage", "Locked." );
 		}
 		if(!animated)
 		{
 			rotatedDoor.Transform.LocalRotation = Angles.Lerp(doorRotations[0],doorRotations[1],progress.progress[0]);
+			PlayerT.Transform.Rotation = Rotation.LookAt(
+				Vector3.Lerp(ff ? forward : -forward,
+				forward,
+				1-progress.progress[0]
+				));
 			if(doorPositions.Count > 0) rotatedDoor.Transform.LocalPosition = Vector3.Lerp(doorPositions[0],doorPositions[1],progress.progress[0]);
 		}
 		else

@@ -63,7 +63,7 @@
           "pAng": "0,90,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "55db03ae-0a51-4fdd-8ff9-f6bb2ae68a5e",
+            "component_id": "a53d11a0-0dc6-4ba2-8711-a28bed3b84fe",
             "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
             "component_type": "PlayerUI"
           },
@@ -125,7 +125,7 @@
           "pAng": "0,0,0",
           "playerUI": {
             "_type": "component",
-            "component_id": "55db03ae-0a51-4fdd-8ff9-f6bb2ae68a5e",
+            "component_id": "a53d11a0-0dc6-4ba2-8711-a28bed3b84fe",
             "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
             "component_type": "PlayerUI"
           },
@@ -141,10 +141,71 @@
       ]
     },
     {
+      "__guid": "c779f3cd-9a98-4737-b602-9eb00598b0fb",
+      "Name": "door (3)",
+      "Position": "-1019.222,-1632,168",
+      "Rotation": "1,0,0,-0.00000004371139",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "003267b2-3acc-433e-8984-91c1efa012fb",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/doors/staffdoor.vmat",
+          "Model": "models/door.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "d998d7e0-1c57-42b6-9856-9218f6a5f25a",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "8,64,160.0001",
+          "Static": false,
+          "Surface": "surfaces/metal.surface"
+        },
+        {
+          "__type": "Interactable",
+          "__guid": "d7b614e9-98c8-453b-a364-3a34d52aa293",
+          "Interacted": false,
+          "interactType": "Open",
+          "ItemGrabber": false
+        },
+        {
+          "__type": "DoorSystem",
+          "__guid": "f8a7aebb-7e85-4dbb-b470-6e034b838559",
+          "doorCode": 0,
+          "interactable": {
+            "_type": "component",
+            "component_id": "d7b614e9-98c8-453b-a364-3a34d52aa293",
+            "go": "c779f3cd-9a98-4737-b602-9eb00598b0fb",
+            "component_type": "Interactable"
+          },
+          "pAng": "0,0,0",
+          "playerUI": {
+            "_type": "component",
+            "component_id": "a53d11a0-0dc6-4ba2-8711-a28bed3b84fe",
+            "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
+            "component_type": "PlayerUI"
+          },
+          "pPos": "-928,-416,128.5",
+          "saveSystem": {
+            "_type": "component",
+            "component_id": "b1f46a73-9bd2-4a7a-a961-09a8ef1da2f6",
+            "go": "95378a6a-a334-460a-abf9-20f1ce014787",
+            "component_type": "SaveSystem"
+          },
+          "sceneLoad": "scenes/level 4.scene|staff"
+        }
+      ]
+    },
+    {
       "__guid": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
       "Name": "player",
-      "Position": "-1003.098,53.64575,0.0002251006",
-      "Rotation": "0,-0,-0.7071068,0.7071068",
+      "Position": "-1004.177,-1632.407,128.0614",
       "Tags": "player",
       "Enabled": true,
       "NetworkMode": 2,
@@ -7587,7 +7648,7 @@
               "pAng": "0,90,0",
               "playerUI": {
                 "_type": "component",
-                "component_id": "55db03ae-0a51-4fdd-8ff9-f6bb2ae68a5e",
+                "component_id": "a53d11a0-0dc6-4ba2-8711-a28bed3b84fe",
                 "go": "e1a7ff1e-b7e7-40e0-a2f5-87e960aba5bc",
                 "component_type": "PlayerUI"
               },
@@ -12135,7 +12196,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "462313ec-4772-456f-b9f5-d4a225ffd88e",
+            "component_id": "e25f802b-4095-4e9d-909a-01327c7600fc",
             "go": "35ea2738-ba53-49ec-83fe-2cb57d341557",
             "component_type": "ThreeDinv"
           },
@@ -12893,7 +12954,7 @@
           "getJson": false,
           "inv": {
             "_type": "component",
-            "component_id": "462313ec-4772-456f-b9f5-d4a225ffd88e",
+            "component_id": "e25f802b-4095-4e9d-909a-01327c7600fc",
             "go": "35ea2738-ba53-49ec-83fe-2cb57d341557",
             "component_type": "ThreeDinv"
           },
@@ -14719,7 +14780,7 @@
           "sceneName": "level 3",
           "Settings": {
             "_type": "component",
-            "component_id": "b6fcdb7c-1f95-4b92-83d7-809b2fe0210e",
+            "component_id": "1c1d1493-5d87-4249-b746-3911192fa7f3",
             "go": "38f00730-9bbf-446a-a5e7-6254f6d7c5dc",
             "component_type": "Settings"
           },
@@ -15420,7 +15481,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "72bc11db-abf4-43f4-87c5-536cdc440b4a",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15446,7 +15507,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "ca0177e0-b69f-4458-aec8-398cf0e8913d",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15472,7 +15533,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "b3fe8838-7e06-41da-b8bf-9cb2ec5ad151",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15498,7 +15559,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "b09a8f46-9bb6-4036-9a75-b13df23b4450",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15524,7 +15585,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "79f1854f-6f80-457d-801b-c0a48bf0c3ec",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15550,7 +15611,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "c92aeba5-82d3-45a9-944c-d30b5e0e6126",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15576,7 +15637,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "2243b271-e823-4879-9959-d99af6162442",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15602,7 +15663,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "1be4c588-067d-474d-9f55-9935c5a8d2fd",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15628,7 +15689,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "5e610ec0-698b-40f5-a968-be6f9ea4c2fb",
           "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/error.vmat",
+          "MaterialOverride": "models/bench/wood.vmat",
           "Model": "models/draws/draws.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
@@ -15675,7 +15736,7 @@
   },
   "Title": "level 3",
   "Description": "",
-  "LastSaved": "2024-04-21T18:59:00.8591233\u002B07:00",
+  "LastSaved": "2024-04-28T15:11:39.5691709\u002B07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

@@ -18,7 +18,30 @@ public sealed class SaveSystem : Component
 	string saveName;
 	protected override void OnAwake()
 	{
-		
+		bool gotplayer = false;
+		IEnumerable<GameObject> balls = Scene.GetAllObjects(true);
+		foreach(GameObject go in balls)
+		{
+			if(go.Tags.Has("player") && !gotplayer)
+			{
+				gotplayer =true;
+				player = go;
+			}
+			WorldItemSaveSystem wss = go.Components.Get<WorldItemSaveSystem>();
+			EnemySaveSystem ess = go.Components.Get<EnemySaveSystem>();
+			LightsScript ls = go.Components.Get<LightsScript>();
+			ProgressSave ps = go.Components.Get<ProgressSave>();
+			DeletedObjectsSaveSystem doss = go.Components.Get<DeletedObjectsSaveSystem>();
+			Settings s = go.Components.Get<Settings>();
+			InventorySafeSystem iss = go.Components.Get<InventorySafeSystem>();
+			if(wss!=null) worldItemSaveSystem = wss;
+			if(ess!=null) enemySaveSystem = ess;
+			if(ls!=null) lightsScript = ls;
+			if(ps!=null) progressSave = ps;
+			if(doss!=null) deletedObjectsSaveSystem = doss;
+			if(s!=null) Settings = s;
+			if(iss!=null) inventorySafeSystem = iss;
+		}
 		if(!FileSystem.Data.FileExists("currentSave.txt"))
 		{
 			FileSystem.Data.WriteAllText("currentSave.txt","defaultSave");
@@ -117,6 +140,7 @@ public sealed class SaveSystem : Component
 			player.Transform.Position = new Vector3(pSD.posX,pSD.posY,pSD.posZ);
 			player.Transform.Rotation = new Angles(pSD.angX,pSD.angY,pSD.angZ);
 			HEALTHDETECTOR hp = player.Components.Get<HEALTHDETECTOR>();
+			Log.Info(player);
 			hp.hp = pSD.hp;
 			hp.bleedAmount = pSD.bleedAmount;
 			SurvivalFeatures sF = player.Components.Get<SurvivalFeatures>();
