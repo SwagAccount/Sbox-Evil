@@ -3,18 +3,22 @@
   "GameObjects": [
     {
       "__guid": "d38c20b5-7b56-4d34-a2b0-b4d90a6b47fc",
+      "Flags": 0,
       "Name": "Settings",
       "Tags": "settings",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "__Prefab": "prefabs/settings.prefab"
     },
     {
       "__guid": "cab3e369-2d43-4aa9-9e6d-79fd1cb5ac85",
+      "Flags": 0,
       "Name": "Main",
       "Position": "149.995,149.995,-212.125",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ScreenPanel",
@@ -31,7 +35,7 @@
           "SaveName": "defaultSave",
           "Settings": {
             "_type": "component",
-            "component_id": "58577df6-b64a-4114-916b-097022b4e2da",
+            "component_id": "d9797217-3539-49d4-9dbe-489c096ae91f",
             "go": "d38c20b5-7b56-4d34-a2b0-b4d90a6b47fc",
             "component_type": "Settings"
           }
@@ -40,10 +44,11 @@
     },
     {
       "__guid": "5d3888b6-9d01-47e4-852e-a8cbe5bb55e6",
+      "Flags": 0,
       "Name": "Background",
       "Position": "149.995,149.995,-212.125",
-      "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ScreenPanel",
@@ -63,9 +68,9 @@
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -84,8 +89,8 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-12T00:28:38.9796103\u002B07:00",
+  "LastSaved": "2024-06-09T04:12:48.2108656\u002B07:00",
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

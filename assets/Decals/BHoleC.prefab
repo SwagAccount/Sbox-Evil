@@ -1,20 +1,24 @@
 {
   "RootObject": {
-    "__guid": "54e23b97-098d-40f7-a9ba-906f1cce1b2d",
+    "__guid": "8606a980-8c2a-44e8-aee0-c7a9e53f1ad6",
+    "Flags": 0,
     "Name": "bholec",
     "Enabled": true,
     "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Children": [
       {
-        "__guid": "5ba3b6bf-e4d1-4aeb-b4f4-6257f45bfbf0",
+        "__guid": "ddeb8ce4-847c-4e41-b1ee-41a2871456a4",
+        "Flags": 0,
         "Name": "Projector",
         "Position": "-2.165137,0,0",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
-            "__type": "DecalRenderer",
-            "__guid": "ae7ad6f2-6a83-491f-86e6-5af547f282e6",
+            "__type": "Sandbox.DecalRenderer",
+            "__guid": "fc803229-1f54-4181-ba54-95f1d792ed69",
             "CutoffAngle": 47.92,
             "CutoffAngleSoftness": 5.21,
             "Material": "decals/conc hit.vmat",
@@ -26,14 +30,16 @@
         ]
       },
       {
-        "__guid": "d1607c21-7d3c-414b-93b6-d5b9a0604fc4",
+        "__guid": "2e97e97d-921c-4cc8-86a0-02ec82a4c88f",
+        "Flags": 0,
         "Name": "SoundPlayer",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
-            "__type": "SoundPointComponent",
-            "__guid": "d3a66b15-7aa6-4fd8-a41f-e9f3c8c53967",
+            "__type": "Sandbox.SoundPointComponent",
+            "__guid": "473c3eba-ef4f-46e2-bc95-c6b26515b2a6",
             "DistanceAttenuation": false,
             "DistanceAttenuationOverride": false,
             "Force2d": false,
@@ -47,9 +53,13 @@
             "ReflectionOverride": false,
             "Reflections": false,
             "Repeat": false,
-            "SoundEvent": "sounds/impacts/impact-bullet-concrete.sound",
+            "SoundEvent": "sounds/impacts/bullets/impact-bullet-concrete.sound",
             "SoundOverride": false,
             "StopOnNew": false,
+            "TargetMixer": {
+              "Name": "unknown",
+              "Id": "00000000-0000-0000-0000-000000000000"
+            },
             "Volume": 1
           }
         ]
@@ -60,6 +70,6 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

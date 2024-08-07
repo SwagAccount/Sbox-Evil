@@ -1,10 +1,12 @@
 {
   "RootObject": {
     "__guid": "7975e52d-ef4c-4957-ac43-a2da0736df75",
+    "Flags": 0,
     "Name": "player",
     "Tags": "player",
     "Enabled": true,
     "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Components": [
       {
         "__type": "Sandbox.CharacterController",
@@ -15,7 +17,8 @@
         "Height": 64,
         "IgnoreLayers": "",
         "Radius": 11.57,
-        "StepHeight": 18
+        "StepHeight": 18,
+        "UseCollisionRules": false
       },
       {
         "__type": "SurvivalFeatures",
@@ -445,6 +448,10 @@
         "SoundEvent": "sounds/heart beats/hb9.sound",
         "SoundOverride": true,
         "StopOnNew": false,
+        "TargetMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
+        },
         "Volume": 1
       },
       {
@@ -466,6 +473,10 @@
         "SoundEvent": "sounds/heart beats/hb9.sound",
         "SoundOverride": true,
         "StopOnNew": false,
+        "TargetMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
+        },
         "Volume": 1
       },
       {
@@ -477,10 +488,12 @@
     "Children": [
       {
         "__guid": "fe42f514-2e8a-4905-927a-9d82b3fea378",
+        "Flags": 0,
         "Name": "CamHold",
         "Position": "0,0,55",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "CameraController",
@@ -496,11 +509,13 @@
         "Children": [
           {
             "__guid": "46b480c5-46a2-4c26-ad6d-4c7859d1b9bf",
+            "Flags": 0,
             "Name": "Camera",
             "Position": "0,0,0",
             "Tags": "maincamera",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.AudioListener",
@@ -617,10 +632,12 @@
             "Children": [
               {
                 "__guid": "ccf252cd-b08f-49be-a3d3-c59bd094814f",
+                "Flags": 0,
                 "Name": "Camera",
                 "Position": "0,0,0",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Components": [
                   {
                     "__type": "Sandbox.CameraComponent",
@@ -651,11 +668,13 @@
                 "Children": [
                   {
                     "__guid": "f6baed5f-3eb7-4067-b7d3-87ce9af5d381",
+                    "Flags": 0,
                     "Name": "fag",
                     "Position": "0.7407812,-0.07449914,-1.275339",
                     "Rotation": "-0.3052808,0.6005778,-0.6102632,0.4167596",
                     "Scale": "0.02022672,0.02022672,0.02022672",
                     "NetworkMode": 2,
+                    "NetworkInterpolation": true,
                     "Components": [
                       {
                         "__type": "FagDealer",
@@ -876,7 +895,8 @@
                         "CreateBoneObjects": false,
                         "Model": "models/fag/fag.vmdl",
                         "RenderType": "Off",
-                        "Tint": "1,1,1,1"
+                        "Tint": "1,1,1,1",
+                        "UseAnimGraph": true
                       },
                       {
                         "__type": "Sandbox.Rigidbody",
@@ -908,11 +928,13 @@
                     "Children": [
                       {
                         "__guid": "eee14470-79b3-4c52-b8b1-1f07d0ba14f7",
+                        "Flags": 0,
                         "Name": "smoke",
                         "Position": "0,0,4.485",
                         "Tags": "light_point,light",
                         "Enabled": true,
                         "NetworkMode": 2,
+                        "NetworkInterpolation": true,
                         "Components": [
                           {
                             "__type": "Sandbox.PointLight",
@@ -928,11 +950,13 @@
                         "Children": [
                           {
                             "__guid": "94ff90bd-3990-48b1-ac5c-97f8ed5d8948",
+                            "Flags": 0,
                             "Name": "SmokeEffect",
                             "Position": "0,0,0",
                             "Tags": "particles",
                             "Enabled": true,
                             "NetworkMode": 2,
+                            "NetworkInterpolation": true,
                             "Components": [
                               {
                                 "__type": "Sandbox.ParticleSphereEmitter",
@@ -1049,6 +1073,7 @@
                       },
                       {
                         "__guid": "98870691-be3f-4718-b734-0707a97ad695",
+                        "Flags": 0,
                         "Name": "puff",
                         "Position": "7.610134,-26.83088,-25.47112",
                         "Rotation": "0.3052809,-0.6005779,0.6102633,0.4167597",
@@ -1056,6 +1081,7 @@
                         "Tags": "particles",
                         "Enabled": true,
                         "NetworkMode": 2,
+                        "NetworkInterpolation": true,
                         "Components": [
                           {
                             "__type": "Sandbox.ParticleSpriteRenderer",
@@ -1192,10 +1218,12 @@
               },
               {
                 "__guid": "fb354e40-72a2-48e2-bcb7-1964c9393aab",
+                "Flags": 0,
                 "Name": "WeaponDealer",
                 "Position": "0,0,0",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Components": [
                   {
                     "__type": "WeaponDealer",
@@ -1204,7 +1232,7 @@
                     "selectedGun": "m16",
                     "bHoleDB": {
                       "_type": "component",
-                      "component_id": "ab2f8b13-e31d-4042-88dc-939d49acf87d",
+                      "component_id": "0660f1d6-2c08-41e0-b770-9340f2f5a909",
                       "go": "e7701585-383a-4c2e-bce4-b210ab146ff3",
                       "component_type": "BulletHoleDB"
                     },
@@ -1305,18 +1333,22 @@
               },
               {
                 "__guid": "7d8fa1a3-dd17-41e7-af5e-bc437e565274",
+                "Flags": 0,
                 "Name": "interacthand",
                 "Position": "0,0,0",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Children": [
                   {
                     "__guid": "c45b90b8-d430-4ed7-864c-dd41af3eefae",
+                    "Flags": 0,
                     "Name": "Object",
                     "Position": "-3,0,0.4000001",
                     "Rotation": "-0.4559359,0.5404835,0.5404835,0.4559358",
                     "Enabled": true,
-                    "NetworkMode": 2
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true
                   }
                 ]
               }
@@ -1324,11 +1356,13 @@
           },
           {
             "__guid": "66c66fcc-1d6b-446f-a436-66960d7cd985",
+            "Flags": 0,
             "Name": "arms",
             "Position": "1.759007,-0.000001674372,-22.97357",
             "Rotation": "0,0,1,-0.00000004371139",
             "Scale": "50,50,50",
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
@@ -1337,57 +1371,70 @@
                 "CreateBoneObjects": true,
                 "Model": "models/arms.vmdl",
                 "RenderType": "On",
-                "Tint": "1,1,1,1"
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
               }
             ],
             "Children": [
               {
                 "__guid": "cf191f31-8bc1-40ce-9d64-9fa1c59ed33e",
+                "Flags": 0,
                 "Name": "bone",
                 "Position": "0.132446,-0.0000000003220373,0",
                 "Rotation": "0.01052865,-0.7070282,-0.7070286,-0.01052886",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Children": [
                   {
                     "__guid": "8f13d0b2-48e5-49cd-bd38-b6c611b6a4b9",
+                    "Flags": 0,
                     "Name": "shoulder_l",
                     "Position": "0.00000001072883,0.4038897,0.0000001099237",
                     "Rotation": "-0.7171988,0.006540785,0.02710037,0.6963107",
                     "Enabled": true,
                     "NetworkMode": 2,
+                    "NetworkInterpolation": true,
                     "Children": [
                       {
                         "__guid": "d50d0c91-3389-4426-899d-f01d7bee52fa",
+                        "Flags": 0,
                         "Name": "arm_l",
                         "Position": "0.00000005167268,0.05888883,-0.0000004078447",
                         "Rotation": "-0.4186982,0.003321145,-0.03292508,0.9075223",
                         "Enabled": true,
                         "NetworkMode": 2,
+                        "NetworkInterpolation": true,
                         "Children": [
                           {
                             "__guid": "258a1818-ecf9-4873-8b31-37f90cb3b87b",
+                            "Flags": 0,
                             "Name": "forarm_l",
                             "Position": "0.00000005573033,0.1607989,-0.0000002717971",
                             "Rotation": "-0.03003257,0.001058146,-0.2452712,0.9689887",
                             "Enabled": true,
                             "NetworkMode": 2,
+                            "NetworkInterpolation": true,
                             "Children": [
                               {
                                 "__guid": "2f838a52-b3c8-4481-bcd7-fb55dee9ddc6",
+                                "Flags": 0,
                                 "Name": "hand_l",
                                 "Position": "0.00000004291534,0.1996828,-0.0000003242492",
                                 "Rotation": "-0.1943404,-0.09282104,0.09710148,0.971693",
                                 "Enabled": true,
                                 "NetworkMode": 2,
+                                "NetworkInterpolation": true,
                                 "Children": [
                                   {
                                     "__guid": "1b1a062e-12d8-4c80-8852-af705fd26e34",
+                                    "Flags": 0,
                                     "Name": "handend_l",
                                     "Position": "-0.00000001907348,0.09977891,-0.0000002419948",
                                     "Rotation": "-0.09720187,-0.03059091,0.05663587,0.9931809",
                                     "Enabled": true,
-                                    "NetworkMode": 2
+                                    "NetworkMode": 2,
+                                    "NetworkInterpolation": true
                                   }
                                 ]
                               }
@@ -1399,43 +1446,53 @@
                   },
                   {
                     "__guid": "493da82c-9a79-41f2-a8d4-a590908c9f1a",
+                    "Flags": 0,
                     "Name": "shoulder_r",
                     "Position": "0.0000002479553,0.4038894,0.0000004973537",
                     "Rotation": "-0.02710073,0.6963105,0.717199,0.006540434",
                     "Enabled": true,
                     "NetworkMode": 2,
+                    "NetworkInterpolation": true,
                     "Children": [
                       {
                         "__guid": "f0ae209d-d6b3-4625-8843-92a6037eb440",
+                        "Flags": 0,
                         "Name": "arm_r",
                         "Position": "-0.0000002865533,0.05888927,-0.0000004220008",
                         "Rotation": "-0.4186983,-0.003321152,0.03292503,0.9075223",
                         "Enabled": true,
                         "NetworkMode": 2,
+                        "NetworkInterpolation": true,
                         "Children": [
                           {
                             "__guid": "5e69a268-849e-4ac1-8763-302ae7889874",
+                            "Flags": 0,
                             "Name": "forarm_r",
                             "Position": "-0.0000002595782,0.1607989,0.000000004768371",
                             "Rotation": "-0.03003243,-0.001058608,0.245271,0.9689888",
                             "Enabled": true,
                             "NetworkMode": 2,
+                            "NetworkInterpolation": true,
                             "Children": [
                               {
                                 "__guid": "496da3eb-a757-455d-97f5-89bb46998648",
+                                "Flags": 0,
                                 "Name": "hand_r",
                                 "Position": "-0.0000001478195,0.1996823,-0.00000007629394",
                                 "Rotation": "-0.1943404,0.09282102,-0.09710136,0.9716931",
                                 "Enabled": true,
                                 "NetworkMode": 2,
+                                "NetworkInterpolation": true,
                                 "Children": [
                                   {
                                     "__guid": "b7590bd0-a636-4c2c-af2d-c20060157721",
+                                    "Flags": 0,
                                     "Name": "handend_r",
                                     "Position": "-0.00000002384185,0.09977842,-0.0000002408027",
                                     "Rotation": "0.09720197,-0.03059086,0.05663581,-0.993181",
                                     "Enabled": true,
-                                    "NetworkMode": 2
+                                    "NetworkMode": 2,
+                                    "NetworkInterpolation": true
                                   }
                                 ]
                               }
@@ -1449,35 +1506,43 @@
               },
               {
                 "__guid": "848cfba3-a629-4071-8fdd-0ed4d5b25cba",
+                "Flags": 0,
                 "Name": "blender_implicit",
                 "Position": "0,0,0",
                 "Rotation": "0,-0,-0.7071066,-0.7071069",
                 "Enabled": true,
-                "NetworkMode": 2
+                "NetworkMode": 2,
+                "NetworkInterpolation": true
               },
               {
                 "__guid": "91a669bb-2f9e-431a-b114-b396a93a049d",
+                "Flags": 0,
                 "Name": "_iklockdriver_Left_Arm",
                 "Position": "0,0,0",
                 "Enabled": true,
-                "NetworkMode": 2
+                "NetworkMode": 2,
+                "NetworkInterpolation": true
               },
               {
                 "__guid": "7371a0ff-719f-407b-b7e7-07732bcfc258",
+                "Flags": 0,
                 "Name": "_iklockdriver_Right_Arm",
                 "Position": "0,0,0",
                 "Enabled": true,
-                "NetworkMode": 2
+                "NetworkMode": 2,
+                "NetworkInterpolation": true
               }
             ]
           },
           {
             "__guid": "74526f4a-c69e-42f8-833a-dd5ddc644183",
+            "Flags": 0,
             "Name": "Spot Light",
             "Position": "-4.247109,-0.0000002531474,2.489269",
             "Tags": "light_spot,light",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.SpotLight",
@@ -1485,7 +1550,6 @@
                 "Attenuation": 4.01,
                 "ConeInner": 24.67,
                 "ConeOuter": 45,
-                "Cookie": "cookie_tutorial_texture_flashlight.vtex",
                 "FogMode": "Enabled",
                 "FogStrength": 1,
                 "LightColor": "0.91373,0.98039,1,1",
@@ -1496,33 +1560,41 @@
           },
           {
             "__guid": "7161ef6f-63f4-4640-a8a5-1ca5efe2ed2c",
+            "Flags": 0,
             "Name": "le",
             "Position": "0,7.271657,-16.30402",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Children": [
               {
                 "__guid": "50084d0e-3918-42d4-8a33-f85c11f2250f",
+                "Flags": 0,
                 "Name": "lh",
                 "Position": "0,-0.0000004768372,-10.4191",
                 "Enabled": true,
-                "NetworkMode": 2
+                "NetworkMode": 2,
+                "NetworkInterpolation": true
               }
             ]
           },
           {
             "__guid": "d8f7c80d-c7fc-43d4-ac5c-0c06119aed9a",
+            "Flags": 0,
             "Name": "re",
             "Position": "0,-7.272,-16.304",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Children": [
               {
                 "__guid": "745b0c1a-66a8-4798-bd5b-7dad748237e4",
+                "Flags": 0,
                 "Name": "rh",
                 "Position": "0,0,-10.419",
                 "Enabled": true,
-                "NetworkMode": 2
+                "NetworkMode": 2,
+                "NetworkInterpolation": true
               }
             ]
           }
@@ -1530,26 +1602,32 @@
       },
       {
         "__guid": "7b11a933-5bde-4f16-ad90-2b22451b4e3a",
+        "Flags": 0,
         "Name": "Screen",
         "Enabled": true,
-        "NetworkMode": 2
+        "NetworkMode": 2,
+        "NetworkInterpolation": true
       },
       {
         "__guid": "19aeb0ba-3b41-4523-9130-88a284f1fe43",
+        "Flags": 0,
         "Name": "RightFoot",
         "Position": "0,-6.832558,0",
         "Tags": "trigger",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "__Prefab": "foot.prefab"
       },
       {
         "__guid": "7f5b69b7-28d4-47ae-abdf-d3b2059a667d",
+        "Flags": 0,
         "Name": "LeftFoot",
         "Position": "0,6.833,0",
         "Tags": "trigger",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "Footstepper",
@@ -1560,18 +1638,22 @@
       },
       {
         "__guid": "e7701585-383a-4c2e-bce4-b210ab146ff3",
+        "Flags": 0,
         "Name": "bulletholebase",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "__Prefab": "prefabs/bulletholebase.prefab"
       },
       {
         "__guid": "e98540fd-0994-45e9-af2f-0ffaf0890c94",
+        "Flags": 0,
         "Name": "Hand R",
         "Position": "18.38234,-4,46.74519",
         "Rotation": "0.125333,0.000000005478479,0.9921147,-0.00000004336671",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "FakeIK",
@@ -1606,12 +1688,14 @@
         "Children": [
           {
             "__guid": "35eb742f-16cd-4014-8bf0-8e0350301b01",
+            "Flags": 0,
             "Name": "hand",
             "Position": "-1.798767,-0.0000002468296,0.08461879",
             "Rotation": "0,0.7071068,0,0.7071068",
             "Scale": "0.5,0.5,0.5",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.ModelRenderer",
@@ -1625,19 +1709,23 @@
           },
           {
             "__guid": "51ca134a-5e80-4529-b636-6b2b557894bb",
+            "Flags": 0,
             "Name": "Arm",
             "Position": "2.949225,0.07140487,-0.1740583",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Children": [
               {
                 "__guid": "7b4c1466-e812-4cef-9c77-e6bca5d4b48c",
+                "Flags": 0,
                 "Name": "arm",
                 "Position": "-4.420472,-0.00000008684219,0.4418446",
                 "Rotation": "0,0.7071068,0,0.7071068",
                 "Scale": "0.5,0.5,0.5",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Components": [
                   {
                     "__type": "Sandbox.ModelRenderer",
@@ -1655,11 +1743,13 @@
       },
       {
         "__guid": "6ae6352e-6706-4ac9-9005-ec4235c4e2ac",
+        "Flags": 0,
         "Name": "Hand",
         "Position": "18.38234,4,46.74519",
         "Rotation": "0.125333,0.000000005478479,0.9921147,-0.00000004336671",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "FakeIK",
@@ -1694,12 +1784,14 @@
         "Children": [
           {
             "__guid": "8673a6f6-dc52-4215-af69-08f1d3a1e7ed",
+            "Flags": 0,
             "Name": "hand",
             "Position": "-1.798767,-0.0000002468296,0.08461879",
             "Rotation": "0,0.7071068,0,0.7071068",
             "Scale": "0.5,0.5,0.5",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.ModelRenderer",
@@ -1713,19 +1805,23 @@
           },
           {
             "__guid": "d24a1d37-1b7e-4695-8748-91db667b054e",
+            "Flags": 0,
             "Name": "Arm",
             "Position": "2.949225,0.07140487,-0.1740583",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Children": [
               {
                 "__guid": "c837acd6-bd43-4568-ad8b-a2adb854f958",
+                "Flags": 0,
                 "Name": "arm",
                 "Position": "-4.420472,-0.00000008684219,0.4418446",
                 "Rotation": "0,0.7071068,0,0.7071068",
                 "Scale": "0.5,0.5,0.5",
                 "Enabled": true,
                 "NetworkMode": 2,
+                "NetworkInterpolation": true,
                 "Components": [
                   {
                     "__type": "Sandbox.ModelRenderer",
@@ -1747,6 +1843,6 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

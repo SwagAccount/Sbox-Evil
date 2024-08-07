@@ -1,17 +1,24 @@
 {
   "RootObject": {
-    "Id": "88ce3043-665d-4e49-988d-bb986d975981",
+    "__guid": "88ce3043-665d-4e49-988d-bb986d975981",
+    "Flags": 0,
     "Name": "bholew",
     "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Children": [
       {
-        "Id": "4c33c10f-466c-45a1-842d-b4759575fc0c",
+        "__guid": "4c33c10f-466c-45a1-842d-b4759575fc0c",
+        "Flags": 0,
         "Name": "Projector",
         "Position": "-0.3842604,0,0",
         "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
-            "__type": "DecalRenderer",
+            "__type": "Sandbox.DecalRenderer",
+            "__guid": "1b9f6f56-e71d-4d4b-94f7-7b48e22358a3",
             "CutoffAngle": 47.92,
             "CutoffAngleSoftness": 5.21,
             "Material": "decals/woodhole.vmat",
@@ -23,21 +30,36 @@
         ]
       },
       {
-        "Id": "253d65b6-3c0c-48eb-9423-ab289f6ba5a5",
+        "__guid": "253d65b6-3c0c-48eb-9423-ab289f6ba5a5",
+        "Flags": 0,
         "Name": "SoundPlayer",
         "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
-            "__type": "SoundPointComponent",
+            "__type": "Sandbox.SoundPointComponent",
+            "__guid": "a2a27b9e-455d-4093-aca8-a4fb82e5c47b",
+            "DistanceAttenuation": false,
+            "DistanceAttenuationOverride": false,
             "Force2d": false,
             "MaxRepeatTime": 1,
             "MinRepeatTime": 1,
+            "Occlusion": false,
+            "OcclusionOverride": false,
+            "OcclusionRadius": 32,
             "Pitch": 1,
             "PlayOnStart": true,
+            "ReflectionOverride": false,
+            "Reflections": false,
             "Repeat": false,
-            "SoundEvent": "sounds/impacts/impact-bullet-wood.sound",
+            "SoundEvent": "sounds/impacts/bullets/impact-bullet-wood.sound",
             "SoundOverride": false,
             "StopOnNew": false,
+            "TargetMixer": {
+              "Name": "unknown",
+              "Id": "00000000-0000-0000-0000-000000000000"
+            },
             "Volume": 1
           }
         ]
@@ -47,5 +69,7 @@
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
-  "__references": []
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
 }

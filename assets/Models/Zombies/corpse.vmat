@@ -2,24 +2,19 @@
 
 Layer0
 {
-	shader "materials/rustygren/alphachanneltransparency.shader"
+	shader "sbox-marblerrific/materials/alphachanneltransparency.shader"
 
 	//---- Texture Filtering ----
 	F_TEXTURE_FILTERING 3 // Point Sample
 
-	g_bAlphafromColour "1"
-
 	//---- Color ----
-	Color "models/zombies/corpse.png"
-
-	//---- ColorSettings ----
-	g_bSolidColor "0"
+	Color "Models/Zombies/CORPSE.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"
 
 	//---- Texture Coordinates ----
-	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordOffset "[1.000 1.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 
 	//---- Translucent ----
